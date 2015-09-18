@@ -38,8 +38,8 @@ An dieser Stelle muss gesagt werden, dass beide Team-Typen ihre Daseinsberechtig
 ### Intention
 Ich selber arbeite in einem solchem interdisziplinären Team und finde die Arbeit sehr angenehm. Man ist direkt bei einem Projektstart dabei und bekommt auch jeden Zwischenschritt mit. Die erhöht die Transparenz und auch die Kenntnis über das Projekt. Gerade weil man im ständigen Austausch seiner Teamkollegen steht.
 
-```php
+{% highlight php linenos %}
 <?php
 
 echo "Hello world";
-```
+{% endhighlight %}
