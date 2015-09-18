@@ -4,7 +4,7 @@ title:      "Effiziente Teamkomposition für multiple Projekte"
 subtitle:   "Interdeziplinäres Arbeiten innerhalb von großen Strukturen."
 date:       2015-09-18 09:44:00
 author:     "Marco Bunge"
-header-img: "img/modern-work-de.jpg"
+header-img: "img/modern-work-de.jpeg"
 ---
 In großen großen Strukturen werden Fachbereiche häufig in Kompetenz-teams zusammengefasst. Dies ist auch sehr sinnvoll. In einem Bereich wie der der Webentwicklung sind viele Kompetenzbereiche involviert.
 
