@@ -2,7 +2,7 @@
 layout:     post
 title:      "Effiziente Teamkomposition für multiple Projekte"
 subtitle:   "Interdeziplinäres Arbeiten innerhalb von großen Strukturen."
-date:       2015-09-18 09:44:00
+date:       2015-09-19 09:44:00
 author:     "Marco Bunge"
 header-img: "img/modern-work-de.jpeg"
 ---
