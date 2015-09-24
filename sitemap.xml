@@ -9,14 +9,13 @@ layout: null
   {% for post in site.posts %}
   <url>
     <loc>{{ post.url | prepend: site.baseurl }}</loc>
-    <changefreq>daily</changefreq>
-    <priority>1/priority>
+    <priority>1</priority>
   </url>
   {% endfor %}
   {% for page in site.pages %}
   <url>
     <loc>{{ page.url | prepend: site.baseurl }}</loc>
-    <changefreq>daily</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>{% endfor %}
 </urlset>
