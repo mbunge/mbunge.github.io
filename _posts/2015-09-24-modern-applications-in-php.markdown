@@ -2,7 +2,7 @@
 layout:     post
 title:      "modern PHP application bootstraping"
 subtitle:   "Dynamic bootstraping with middlewares"
-date:       2015-09-19 09:44:00
+date:       2015-09-24 18:57:00
 author:     "Marco Bunge"
 header-img: "img/modern-work-de.jpeg"
 ---
