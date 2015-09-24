@@ -23,6 +23,24 @@
                     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 </li>
                 {% endif %}{% endfor %}
+                <li>
+                    <a target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss"></i></a>
+                </li>
+                {% if site.twitter_username %}
+                <li>
+                    <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>
+                </li>
+                {% endif %}
+                {% if site.facebook_username %}
+                <li>
+                    <a target="_blank" href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook"></i></a>
+                </li>
+                {% endif %}
+                {% if site.github_username %}
+                <li>
+                    <a target="_blank" href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a>
+                </li>
+                {% endif %}
             </ul>
         </div>
         <!-- /.navbar-collapse -->
