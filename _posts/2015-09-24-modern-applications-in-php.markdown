@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "modern Applications with PHP"
+title:      "modern PHP application bootstraping"
 subtitle:   "Dynamic bootstraping with middlewares"
 date:       2015-09-19 09:44:00
 author:     "Marco Bunge"
