@@ -49,6 +49,9 @@ hr.small {
   z-index: 3;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+.navbar-custom .navbar-toggle {
+  border: none;
+}
 .navbar-custom .navbar-brand {
   font-weight: 800;
 }
@@ -62,7 +65,6 @@ hr.small {
 .navbar-custom.is-fixed {
   /* when the user scrolls down, we hide the header right above the viewport */
   position: fixed;
-  top: -61px;
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;
