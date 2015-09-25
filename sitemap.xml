@@ -8,13 +8,13 @@ layout: null
 
   {% for post in site.posts %}
   <url>
-    <loc>{{ post.url | prepend: site.baseurl }}</loc>
+    <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
     <priority>1</priority>
   </url>
   {% endfor %}
   {% for page in site.pages %}
   <url>
-    <loc>{{ page.url | prepend: site.baseurl }}</loc>
+    <loc>{{ page.url | prepend: site.baseurl | prepend: site.url }}</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>{% endfor %}
