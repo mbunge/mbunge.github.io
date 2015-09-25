@@ -71,13 +71,15 @@ hr.small {
   transition: transform 0.3s;
 }
 .navbar-custom.is-fixed .navbar-brand,
-.navbar-custom.is-fixed .nav li a {
+.navbar-custom.is-fixed .nav li a,
+.navbar-custom .navbar-toggle .icon-bar {
   color: #404040;
 }
 .navbar-custom.is-fixed .navbar-brand:hover,
 .navbar-custom.is-fixed .navbar-brand:focus,
 .navbar-custom.is-fixed .nav li a:hover,
-.navbar-custom.is-fixed .nav li a:focus {
+.navbar-custom.is-fixed .nav li a:focus,
+.navbar-custom .navbar-toggle:hover .icon-bar {
   color: #0085a1;
 }
 .intro-header {
