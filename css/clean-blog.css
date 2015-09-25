@@ -66,16 +66,23 @@ hr.small {
   position: fixed;
   background-color: #ffffff;
 }
-.navbar-custom.is-fixed .navbar-brand,
-.navbar-custom.is-fixed .nav li a,
 .navbar-custom .navbar-toggle .icon-bar {
+  background-color: #404040;
+}
+
+.navbar-custom.is-fixed .navbar-brand,
+.navbar-custom.is-fixed .nav li a {
   color: #404040;
+}
+
+.navbar-custom .navbar-toggle:hover .icon-bar,
+.navbar-custom .navbar-toggle:focus .icon-bar {
+  background-color: #0085a1;
 }
 .navbar-custom.is-fixed .navbar-brand:hover,
 .navbar-custom.is-fixed .navbar-brand:focus,
 .navbar-custom.is-fixed .nav li a:hover,
-.navbar-custom.is-fixed .nav li a:focus,
-.navbar-custom .navbar-toggle:hover .icon-bar {
+.navbar-custom.is-fixed .nav li a:focus {
   color: #0085a1;
 }
 .intro-header {
