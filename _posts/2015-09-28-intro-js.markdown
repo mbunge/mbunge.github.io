@@ -1,5 +1,10 @@
 ---
-published: false
+layout:     post
+title:      "Intro.js"
+subtitle:   "Fast and easy product introductions"
+date:       2015-09-28 12:36:19
+author:     "Marco Bunge"
+header-img: "img/modern-work-de.jpeg"
 ---
 
 Usabli.ca has published a nice introduction tool for your products called Intro.js. They are known for their comparision table [CSS Frontend Frameworks](http://usablica.github.io/front-end-frameworks/compare.html)
