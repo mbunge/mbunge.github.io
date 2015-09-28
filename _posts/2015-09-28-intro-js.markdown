@@ -17,7 +17,13 @@ Usabli.ca has published a nice introduction tool for your products called Intro.
 
 These sources will be loaded in your _bower\_components_ folder.
 
-> __Tip__: Tp find the correct bower folder, check out your .bowerrc and look for your "directory" option. If you don't have a .bowerrc file, your default folder will be _bower\_components_
+<div class="callout callout-info">
+
+#### Tip
+
+To find the correct bower folder, check out your .bowerrc and look for your "directory" option. If you don't have a .bowerrc file, your default folder will be _bower\_components_
+
+</div>
 
 ### Build your HTML
 
@@ -25,7 +31,7 @@ Intro.js is providing a simple api. We could add a _data-step_ attribute to an e
 
 Now we need to attach a click event to any element - we use a button with an id - which is executing `introJs().start()`.
 
-{% highlight html linenos %}
+{% highlight html %}
 <!doctype html>
 <html lang="en">
 <head>
