@@ -67,11 +67,14 @@ Gratulations we build our own product presentation within minutes.
 
 Intro.js is providing more custom data attributes, JavaScript functions and events (like `introJs.start()`) to create more interaction with the user.
 
-Watch the <a href="http://usablica.github.io/intro.js/example/index.html" target="_blank">examples</a> or the <a href="https://github.com/usablica/intro.js#api" target="_blank">api</a> to get fancy with Intro.js.
+Watch the <a href="http://usablica.github.io/intro.js/example/index.html" target="_blank">examples</a> or the <a href="https://github.com/usablica/intro.js#api" target="_blank">api</a> to get fancy with Intro.js. You also could use these nice <a href="http://code.mendhak.com/angular-intro.js/example/index.html" target="_blank">angular directives</a> for your awesome angular app.
 
 ## At least...
 
 Your a welcome to comment on this post with your own intros, questions or expierences.
 
+## Links
+
 - <a href="http://usablica.github.io/intro.js/" target="_blank">Intro.js</a>
+- <a href="http://code.mendhak.com/angular-intro.js/example/index.html" target="_blank">Intro.js angular directives</a>
 - <a href="https://twitter.com/usablica" target="_blank">@usablica on twitter</a>
