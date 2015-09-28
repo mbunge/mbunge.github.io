@@ -13,7 +13,7 @@ Usabli.ca has published a nice introduction tool for your products called Intro.
 
 ### Download all sources with Bower
 
-```bower install intro.js --save```
+`bower install intro.js --save`
 
 These sources will be loaded in your _bower\_components_ folder.
 
@@ -25,7 +25,7 @@ Intro.js is providing a simple api. We could add a _data-step_ attribute to an e
 
 Now we need to attach a click event to any element - we use a button with an id - which is executing `introJs().start()`.
 
-```html
+{% highlight html linenos %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -56,7 +56,7 @@ Now we need to attach a click event to any element - we use a button with an id 
 </script>
 </body>
 </html>
-```
+{% endhighlight %}
 
 Gratulations we build our own product presentation within minutes.
 
