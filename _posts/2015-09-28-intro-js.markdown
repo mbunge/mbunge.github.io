@@ -68,7 +68,7 @@ Watch the [examples](http://usablica.github.io/intro.js/example/index.html) or t
 
 ## At least...
 
-Your a welcome to comment on this post with your own, questions or expierences. 
+Your a welcome to comment on this post with your own intros, questions or expierences.
 
 - [Intro.js](http://usablica.github.io/intro.js/)
 - [@usablica on twitter](https://twitter.com/usablica)
