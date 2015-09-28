@@ -19,7 +19,7 @@ These sources will be loaded in your _bower\_components_ folder.
 
 <div class="callout callout-info">
     <h4>Tip</h4>
-    <p>To find the correct bower folder, check out your .bowerrc and look for your "directory" option. If you don't have a .bowerrc file, your default folder will be <i>bower\_components</i></p>
+    <p>To find the correct bower folder, check out your .bowerrc and look for your "directory" option. If you don't have a .bowerrc file, your default folder will be <i>bower_components</i></p>
 </div>
 
 ### Build your HTML
