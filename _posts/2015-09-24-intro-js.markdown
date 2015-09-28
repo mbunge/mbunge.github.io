@@ -2,11 +2,11 @@
 published: false
 ---
 
-Usabli.ca has published a nice introduction tool for your products called Intro.js.
+Usabli.ca has published a nice introduction tool for your products called Intro.js. They are known for their comparision table [CSS Frontend Frameworks](http://usablica.github.io/front-end-frameworks/compare.html)
 
 ## Getting startet in few steps
 
-### Download all sources with Bower
+## Download all sources with Bower
 
 ```bower install intro.js --save```
 
