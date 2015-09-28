@@ -16,5 +16,5 @@ These sources will be loaded in your "bower_components" folder.
 
 
 
-<a target="_blank" href="https://twitter.com/usablica">Intro.js documents</a>. 
-<a target="_blank" href="https://twitter.com/usablica">@usablica on twitter</a>. 
+- [Intro.js documentation](http://usablica.github.io/intro.js/)
+- [@usablica on twitter](https://twitter.com/usablica)
