@@ -1,0 +1,20 @@
+---
+published: false
+---
+
+Usabli.ca has published a nice introduction tool for your products called Intro.js.
+
+## Getting startet in few steps
+
+### Download all sources with Bower
+
+```bower install intro.js --save```
+
+These sources will be loaded in your "bower_components" folder.
+
+> __Tip__: Tp find the correct bower folder, check out your .bowerrc and look for your "directory" option. If you don't have a .bowerrc file, your default folder will be _bower\_components_
+
+
+
+<a target="_blank" href="https://twitter.com/usablica">Intro.js documents</a>. 
+<a target="_blank" href="https://twitter.com/usablica">@usablica on twitter</a>. 
