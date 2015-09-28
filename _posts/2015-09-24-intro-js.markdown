@@ -10,9 +10,48 @@ Usabli.ca has published a nice introduction tool for your products called Intro.
 
 ```bower install intro.js --save```
 
-These sources will be loaded in your "bower_components" folder.
+These sources will be loaded in your _bower\_components_ folder.
 
 > __Tip__: Tp find the correct bower folder, check out your .bowerrc and look for your "directory" option. If you don't have a .bowerrc file, your default folder will be _bower\_components_
+
+## Build your HTML
+
+Intro.js is providing a simple api. We could add a _data-step_ attribute to an element to attach a step. Optionally we could set a step title by adding a _data-intro_ attribute.
+
+Now we need to attach a click event to any element - we use a button with an id - which is executing `introJs().start()`.
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro.js sample</title>
+
+    <link rel="stylesheet" href="./bower_components/intro.js/introjs.css">
+    <link rel="stylesheet" href="./bower_components/intro.js/themes/introjs-dark.css">
+</head>
+<body>
+
+<div>
+    <button id="introStart">Start Intro.JS Demo</button>
+    <p data-step="1" data-intro="Step 1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, consequatur corporis doloremque ea eius eligendi error nesciunt nisi non odio odit quas qui quis sapiente sequi veritatis, vero voluptate voluptatem.</p>
+    <p data-step="2" data-intro="Step 2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, consequatur corporis doloremque ea eius eligendi error nesciunt nisi non odio odit quas qui quis sapiente sequi veritatis, vero voluptate voluptatem.</p>
+    <p data-step="3" data-intro="Step 3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, consequatur corporis doloremque ea eius eligendi error nesciunt nisi non odio odit quas qui quis sapiente sequi veritatis, vero voluptate voluptatem.</p>
+    <p data-step="4" data-intro="Step 4">Finish</p>
+</div>
+
+<script type="text/javascript" src="./bower_components/intro.js/intro.js"></script>
+<script type="text/javascript">
+    (function(introJs){
+        //attach click event to start our intro
+        document.getElementById('introStart').onclick = function(){
+            introJs().start();
+        };
+    })(introJs);
+</script>
+</body>
+</html>
+```
 
 
 
