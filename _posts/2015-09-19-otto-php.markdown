@@ -52,7 +52,7 @@ Otto is using Vagrant for our deelopment environment. We need to <a href="https:
 
 ### Initialize Otto
 
-Simply execute `otto compile`. Otto is automatically detect your project type and prepares Otto to managae our app lifecycle.
+Simply execute `otto compile`. Otto is automatically detect your project type and prepares Otto to managae our app lifecycle. All needed files such as Vagrantfile has been created in will be saved in _.otto_.
 
 You should get an output similar to the following:
 
@@ -79,4 +79,8 @@ You should get an output similar to the following:
 
 ### Kickstart development environment
 
-Execute `otto dev` and we start our development environment.
+Execute `otto dev` and vagrant will be initalized and started.
+
+<div class="callout callout-info">
+    <p>If Vagrant is throwing an error, simply restart your cli.</p>
+</div>
