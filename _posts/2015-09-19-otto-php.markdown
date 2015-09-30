@@ -52,6 +52,19 @@ Otto is using Vagrant for our deelopment environment. We need to <a href="https:
 
 ### Initialize Otto
 
+The PHP support is not yet good. We use <a href="https://github.com/scotch-io/scotch-box/blob/master/Vagrantfile" target="_target">Scotch Box's Vagrantfile</a> instead. We also need to create a custom Appfile which is looking like this:
+
+{% highlight text %}
+application {
+    name = "otto-php-example"
+    type = "custom"
+}
+
+customization "dev" {
+    vagrant = "./Vagrantfile"
+}
+{% endhighlight %}
+
 Simply execute `otto compile`. Otto is automatically detect your project type and prepares Otto to managae our app lifecycle. All needed files such as Vagrantfile has been created in will be saved in folder _.otto_.
 
 You should get an output similar to the following:
