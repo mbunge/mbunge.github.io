@@ -1,0 +1,50 @@
+---
+layout:     post
+title:      "Otto - PHP development and deployment"
+subtitle:   "Development and Deployment Made Easy with Successor to Vagrant"
+published:  2015-10-01 12:36:19
+author:     "Marco Bunge"
+header-img: "img/modern-work-de.jpeg"
+---
+
+Otto has been created by the developers of vagrant. Otto has been developed with new gotten knowledge while vagrant development. 
+Otto will developed simultaneously to Vagrant.
+
+## Prepare Otto
+
+First of all we need to <a href="https://ottoproject.io/downloads.html" target="_blank">download</a> the latest version of otto. 
+Unzip the binary to any folder and add the containing folder to your PATH.
+
+If you typing `otto` in you cli you should get similar output.
+
+{% highlight text %}
+$ otto
+usage: otto [--version] [--help] <command> [<args>]
+
+Available commands are:
+    build      Build the deployable artifact for the app
+    compile    Prepares your project for being run.
+    deploy     Deploy the application
+    dev        Start and manage a development environment
+    infra      Builds the infrastructure for the Appfile
+    status     Status of the stages of this application
+    version    Prints the Otto version
+{% endhighlight %}
+
+## Create development environment
+
+### Init a new project with composer
+
+If you already have a composer project you can skip this step.
+
+Initialize a new project with `php composer.phar init` and follow the instructions. We won't install any dependencies.
+After our project has been initalized we execute `composer install`.
+
+<div class="callout callout-info">
+    <h4>Download composer</h4>
+    <p>Get the latest composer version: <code>curl -sS https://getcomposer.org/installer | php</code></p>
+</div>
+
+### Initialize Otto
+
+Simply execute `otto compile`. Otto is automatically detect your project type and prepares Otto to managae our app lifecycle.
