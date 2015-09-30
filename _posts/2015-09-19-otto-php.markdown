@@ -45,6 +45,37 @@ After our project has been initalized we execute `composer install`.
     <p>Get the latest composer version: <code>curl -sS https://getcomposer.org/installer | php</code></p>
 </div>
 
+### Install vagrant
+
+Otto is using Vagrant for our deelopment environment. We need to <a href="https://www.vagrantup.com/downloads.html">download and install</a> Vagrant first.
+
 ### Initialize Otto
 
 Simply execute `otto compile`. Otto is automatically detect your project type and prepares Otto to managae our app lifecycle.
+
+You should get an output similar to the following:
+
+{% highlight text %}
+←[0m←[1m==> Loading Appfile...←[0m
+←[0m←[1m==> Fetching all Appfile dependencies...←[0m
+←[0m←[1m==> Compiling...←[0m
+←[0m    Application:    ottoPhpExample (php)←[0m
+←[0m    Project:        ottoPhpExample←[0m
+←[0m    Infrastructure: aws (simple)←[0m
+←[0m←[0m
+←[0m    Compiling infra...←[0m
+←[0m    Compiling foundation: consul←[0m
+←[0m←[1m==> Compiling main application...←[0m
+←[0m←[32m←[1m==> ←[32mCompilation success!←[0m
+←[0m←[32m    ←[32mThis means that Otto is now ready to start a development environment,
+    deploy this application, build the supporting infastructure, and
+    more. See the help for more information.
+
+    Supporting files to enable Otto to manage your application from
+    development to deployment have been placed in the output directory.
+    These files can be manually inspected to determine what Otto will do.←[0m
+{% endhighlight %}
+
+### Kickstart development environment
+
+Execute `otto dev` and we start our development environment.
