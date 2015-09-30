@@ -46,9 +46,9 @@ After our project has been initalized we execute `composer install`.
     <p>Get the latest composer version: <code>curl -sS https://getcomposer.org/installer | php</code></p>
 </div>
 
-### Install vagrant and vmWare
+### Install vagrant and VirtualBox
 
-Otto is using Vagrant for our deelopment environment. We need to <a href="https://www.vagrantup.com/downloads.html">download and install</a> Vagrant first.
+Otto is using Vagrant for our deelopment environment. We need to <a href="https://www.vagrantup.com/downloads.html">download and install</a> Vagrant and <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">VirtualBox</a> first.
 
 ### Initialize Otto
 
