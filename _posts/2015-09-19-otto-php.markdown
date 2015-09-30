@@ -2,7 +2,8 @@
 layout:     post
 title:      "Otto - PHP development and deployment"
 subtitle:   "Development and Deployment Made Easy with Successor to Vagrant"
-published:  2015-10-01 12:36:19
+published:  false
+date: 2015-10-01 12:36:19
 author:     "Marco Bunge"
 header-img: "img/modern-work-de.jpeg"
 ---
@@ -45,7 +46,7 @@ After our project has been initalized we execute `composer install`.
     <p>Get the latest composer version: <code>curl -sS https://getcomposer.org/installer | php</code></p>
 </div>
 
-### Install vagrant
+### Install vagrant and vmWare
 
 Otto is using Vagrant for our deelopment environment. We need to <a href="https://www.vagrantup.com/downloads.html">download and install</a> Vagrant first.
 
