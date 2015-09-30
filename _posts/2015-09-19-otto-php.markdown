@@ -52,16 +52,12 @@ Otto is using Vagrant for our deelopment environment. We need to <a href="https:
 
 ### Initialize Otto
 
-The PHP support is not yet good. We use <a href="https://github.com/scotch-io/scotch-box/blob/master/Vagrantfile" target="_target">Scotch Box's Vagrantfile</a> instead. We also need to create a custom Appfile which is looking like this:
+First of all we need to create a custom Appfile which is looking like this:
 
 {% highlight text %}
 application {
     name = "otto-php-example"
-    type = "custom"
-}
-
-customization "dev" {
-    vagrant = "./Vagrantfile"
+    type = "php"
 }
 {% endhighlight %}
 
@@ -98,5 +94,5 @@ Execute `otto dev` and vagrant will be initalized and started.
     <p>If Vagrant is throwing an error, simply restart your cli.</p>
 </div>
 <div class="callout callout-info">
-    <p>Unforunatly .</p>
+    <p>Unforunatly it was not possible to initalize a stable dev environment for PHP. Please write a comment if you have some addtions. I'll wait for version 0.2 to start PHP</p>
 </div>
