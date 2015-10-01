@@ -56,7 +56,7 @@ Otto is using Vagrant for our deelopment environment. We need to <a href="https:
 
 First of all we need to create a custom Appfile which is looking like this:
 
-{% highlight hcl %}
+{% highlight text %}
 application {
     name = "otto-php-example"
     type = "php"
