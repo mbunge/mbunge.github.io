@@ -61,6 +61,10 @@ application {
     name = "otto-php-example"
     type = "php"
 }
+
+customization "php" {
+    php_version = "5.6"
+}
 {% endhighlight %}
 
 <div class="callout callout-info">
