@@ -1,4 +1,4 @@
-# Otto 0.1 Review
+# Otto 0.1.1 Review
 
 Otto ist eine App-Lifecycle-Verwaltung. Damit lassen ganz einfach und schnell Entwicklungsumgebungen 
 mit Hilfe von Vagrant (ab Version 1.7.4) und Virtualbox (oder vmWare) erzeugen und ganze Deployments (aktuell nur für AWS) 
