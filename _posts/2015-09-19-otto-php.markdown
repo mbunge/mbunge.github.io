@@ -62,6 +62,11 @@ application {
 }
 {% endhighlight %}
 
+<div class="callout callout-info">
+<h4>Appfile syntax is HCL</h4>
+    <p>Getting more information about HCL syntax <a href="https://ottoproject.io/docs/appfile/syntax.html" target="_blank">here</a></p>
+</div>
+
 Simply execute `otto compile`. Otto is automatically detect your project type and prepares Otto to managae our app lifecycle. All needed files such as Vagrantfile has been created in will be saved in folder _.otto_.
 
 You should get an output similar to the following:
