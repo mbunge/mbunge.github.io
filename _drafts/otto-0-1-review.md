@@ -12,7 +12,7 @@ PHP 5.6, Composer und Git. Dazu aber später mehr.
 Otto ist komplett in Go geschrieben und lässt sich komplett über eine sogenannte Appfile verwalten. 
 Die Appfile-Syntax selber nutzt HCL als Konfigurationssprache.
 
-## Lasst den Spaß beginnen
+## Alles Vorbereiten - Los geht's!
 
 Wir nutzen Vagrant 1.7.4 zusammen mit VirtualBox (ab Version 4.0).
 
@@ -54,5 +54,35 @@ Nun führen wir `otto` aus und wenn alles geklappt hat bekommen wir folgenden Ou
 
 Unter Windows benötigen wir ebenfalls Vagrant 1.7.4 und Virtualbox ab Version 4.0. Dazu laden wir uns einfach [Virtualbox](http://download.virtualbox.org/virtualbox/5.0.4/VirtualBox-5.0.4-102546-Win.exe) und [Vagrant](https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4.msi) herunter und installieren beide, anschließend müssen wir Windows neu starten.
 
-Anschließend laden wir Otto herunter und entpacken es uns optimalerweise unter `C:\HashiCorp\Otto`. Nun müssen wir Otto noch zu den Umgebungsvariablen hinzufügen. Dazu drücken wir einfach `Windowstaste + Pause > Erweiterte Systemeinstellungen > Umgebungsvariablen` und fügen am Ende `;C:\HashiCorp\Otto`. Wichtig ist, dass euer Eintrag mit einem Semikolon geprefixed ist!
+#### Otto installieren
 
+Anschließend laden wir Otto herunter und entpacken es uns optimalerweise unter `C:\HashiCorp\Otto`. Nun müssen wir Otto noch zu den Umgebungsvariablen hinzufügen. Dazu drücken wir einfach `Windowstaste + Pause > Erweiterte Systemeinstellungen > Umgebungsvariablen` und fügen am zu PATH Variable `;C:\HashiCorp\Otto` am Ende hinzu. Wichtig ist, dass euer Eintrag mit einem Semikolon geprefixed ist!
+
+## Lasst den Spaß beginnen
+
+### Otto unter Ubuntu
+
+Wie schon eingangs erwähnt ist Otto recht intelligent und weiß automatisch welche Umgebung er für welche Sprache installieren muss.
+
+In unserem Beispiel erstellen wir uns einfach einen neuen Ordner `~/otto-php-test` und erzeugen darin eine index.php, die uns _Hello World_ ausgibt.
+
+```
+mkdir ~/otto-php-test
+cd ~/otto-php-test
+echo "<?php echo 'Hello World';" > index.php
+```
+
+Wir wollen die Kontrolle über unser Projekt behalten. Darum sagen wir Otto, dass er uns ein PHP 5.6 Projekt mit dem Namen `otto-php-test` erzeugen soll. Hierfür legen wir eine Appfile mit folgendem Inhalt an:
+
+```hcl
+application {
+    name = "otto-php-example"
+    type = "php"
+}
+
+customization "php" {
+    php_version = "5.6"
+}
+```
+
+Dies ist übrigens die standardkonfiguration für PHP wenn keine Appfile angegeben wurde. _name_ und _type_ sind Pflichtfelder für die _application_ Sektion!
