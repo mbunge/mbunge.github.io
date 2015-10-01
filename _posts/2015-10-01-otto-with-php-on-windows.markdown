@@ -2,7 +2,6 @@
 layout:     post
 title:      "Otto with PHP on windows"
 subtitle:   "Development environment for PHP applications"
-date: 2015-10-01 12:49:19
 author:     "Marco Bunge"
 header-img: "img/modern-work-de.jpeg"
 ---
