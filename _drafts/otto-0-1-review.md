@@ -20,23 +20,16 @@ Wir nutzen Vagrant 1.7.4 zusammen mit VirtualBox 5.
 
 #### Vagrant installieren / auf neue Versionen patchen
 
-Wir benötigen mindestens Vagrant in der Version 1.7.4 (July 17, 2015), unter Ubuntu ist nur Vagrant 1.6.5 verfügbar. 
-
-#### Virtualbox auf die neuste Version upgraden
-
-Wir wollen gerne mit der aktuellsten VirtualBox version arbeiten. Sollte auf unserer Maschine eine Alte Version vorliegen 
-müssen wir diese zuvor deinstallieren und den Prozess beenden.
+Wir benötigen mindestens Vagrant in der Version 1.7.4 (July 17, 2015), unter Ubuntu ist nur Vagrant 1.6.5 verfügbar, daher können wir hier nicht mit APT arbeiten. Wir laden das Paket einfach via _wget_ und installieren es mit dpkg.
 
 ```
-sudo apt-get purge virtualbox
-pkill virtualbox
+wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.deb
+dpkg -i vagrant_1.7.4_x86_64.deb
 ```
 
-Anschließend erweitern wir unsere `/etc/apt/sources.list` mit folgendem Eintrag:
+#### Virtualbox installieren
 
-`deb http://download.virtualbox.org/virtualbox/debian precise contrib`
+Virtualbox lässt sich einfach und schnell installieren. Wir führen einfach folgenden Befehl aus:
 
-Und isntallieren den Dazugehörigen Key:
-
-`wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -`
+`sudo apt-get install virtualbox`
 
