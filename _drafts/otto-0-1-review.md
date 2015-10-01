@@ -46,7 +46,7 @@ sudo export PATH $PATH:~/otto
 
 Nun führen wir `otto` aus und wenn alles geklappt hat bekommen wir folgenden Output
 
-[BILD 1]
+[otto-bild-1.jpg]
 
 ### Umgebung unter Windows installieren
 
@@ -59,8 +59,6 @@ Unter Windows benötigen wir ebenfalls Vagrant 1.7.4 und Virtualbox ab Version 4
 Anschließend laden wir Otto herunter und entpacken es uns optimalerweise unter `C:\HashiCorp\Otto`. Nun müssen wir Otto noch zu den Umgebungsvariablen hinzufügen. Dazu drücken wir einfach `Windowstaste + Pause > Erweiterte Systemeinstellungen > Umgebungsvariablen` und fügen am zu PATH Variable `;C:\HashiCorp\Otto` am Ende hinzu. Wichtig ist, dass euer Eintrag mit einem Semikolon geprefixed ist!
 
 ## Lasst den Spaß beginnen
-
-### Otto unter Ubuntu
 
 Wie schon eingangs erwähnt ist Otto recht intelligent und weiß automatisch welche Umgebung er für welche Sprache installieren muss.
 
@@ -86,3 +84,22 @@ customization "php" {
 ```
 
 Dies ist übrigens die standardkonfiguration für PHP wenn keine Appfile angegeben wurde. _name_ und _type_ sind Pflichtfelder für die _application_ Sektion!
+
+Nun können müssen wir mit `otto compile` einmal alle Dateien im warsten Sinne des Wortes komplieren. 
+
+[otto-bild-2.jpg]
+
+Otto legt uns einen `.otto` ornder an in dem unter anderem unsere Vagrantfile abliegt. Zudem wird eine `.ottoid` Datei angelegt die nicht bearbeitet werden darf. Darüber führt Otto Rückschlüsse zur aktuellen Umgebung.
+
+Nun ist es soweit! Wir können unsere Umgebung zum ersten Mal mit `otto dev` starten. Initial lädt uns Otto nun die Standart vagrant box `hashicorp/precise64` und fügt alle Abhängikeiten hinzu. Und leider bricht Otto hier unter 'Ubuntu und Windows auch ab.
+
+## Probleme
+
+Leider war es uns nicht möglich mit otto 0.1.1 unter Ubuntu und Window über den Compile-Step hinaus zu kommen. 
+Zudem hängt hat otto aktuell noch Probleme mit Dateien größer als 2GB umzugehen.
+
+[otto-bild-3.jpg]
+
+## Fazit
+
+Otto ist noch in der Entwicklung und das merkt man auch. Das Kopilieren und automatische erkennen funktionert in der Praxis recht super, doch leider kommt man nicht darüber hinaus. Auch schade ist, dass es noch keinen Deploymentprozess für FTP, SFTP / SCP gibt, aber hier soll auf jedenfall noch nachgebessert werden. Mit der Version 0.2 wurden schon neue Features angekündigt. Zum Beispiel wird es möglich sein eigene Apps / Plugins in Otto zu integrieren.
