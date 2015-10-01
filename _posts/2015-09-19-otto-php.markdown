@@ -1,9 +1,8 @@
 ---
 layout:     post
-title:      "Otto - PHP development and deployment"
-subtitle:   "Development and Deployment Made Easy with Successor to Vagrant"
-published:  false
-date: 2015-10-01 12:36:19
+title:      "Otto with PHP on windows"
+subtitle:   "Development environment for PHP applications"
+date: 2015-10-01 12:49:19
 author:     "Marco Bunge"
 header-img: "img/modern-work-de.jpeg"
 ---
@@ -95,6 +94,7 @@ Execute `otto dev` and vagrant will be initalized and started.
 <div class="callout callout-info">
     <p>If Vagrant is throwing an error, simply restart your cli.</p>
 </div>
-<div class="callout callout-info">
-    <p>Unforunatly it was not possible to initalize a stable dev environment for PHP. Please write a comment if you have some addtions. I'll wait for version 0.2 to start PHP</p>
+<div class="callout callout-warning">
+    <h3>Conclusion</h3>
+    <p>Unforunatly it was not possible to create a stable dev environment with otto 0.1 for PHP on Windows 7. Please write a comment if you have some addtions. I'll keep track and add all improvements in this post or in linked posts. A new coming feature for otto 0.2 are apps which are interessting to test in combination with PHP.</p>
 </div>
