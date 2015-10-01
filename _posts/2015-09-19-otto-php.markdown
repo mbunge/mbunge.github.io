@@ -92,9 +92,10 @@ You should get an output similar to the following:
 Execute `otto dev` and vagrant will be initalized and started.
 
 <div class="callout callout-info">
+<h4>Tip!</h4>
     <p>If Vagrant is throwing an error, simply restart your cli.</p>
 </div>
 <div class="callout callout-warning">
-    <h3>Conclusion</h3>
+    <h4>Conclusion</h4>
     <p>Unforunatly it was not possible to create a stable dev environment with otto 0.1 for PHP on Windows 7. Please write a comment if you have some addtions. I'll keep track and add all improvements in this post or in linked posts. A new coming feature for otto 0.2 are apps which are interessting to test in combination with PHP.</p>
 </div>
