@@ -15,7 +15,6 @@ page_type: article
 		                    <h2 class="subheading" itemprop="description">{{ page.subtitle }}</h2>
 		                    {% endif %}
 		                    <span class="meta">Posted by <span itemprop="author">{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}</span> on {{ page.date | date: "%B %-d, %Y" }}</span>
-		                    <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}"/>
 		                </div>
 		            </div>
 		        </div>
