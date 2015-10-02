@@ -8,4 +8,4 @@ Disallow: /fonts/
 Disallow: /mail/
 Disallow: /less/
 
-Sitemap: http://marco-bunge.de/sitemap.xml
+Sitemap: http://mbunge.github.com/sitemap.xml
