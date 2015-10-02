@@ -14,8 +14,9 @@ description: "Codeninja, Webworker, Guitarplayer"
         </h3>
         {% endif %}
     </a>
-    <p class="post-meta">Posted by <span itemprop="author">{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}</span> on {{ page.date | date: "%B %d, %Y" }}</p>
-    <meta itemprop="datePublished" content="{{ page.date }}">
+    <p class="post-meta">Posted by <span itemprop="author">{% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %}</span> on {{ post.date | date: "%B %d, %Y" }}</p>
+    <meta itemprop="datePublished" content="{{ post.date }}">
+	<span class="hide"><img itemprop="image" src="{{ site.baseurl }}/{% if post.header-img %}{{ post.header-img }}{% else %}{{ site.header-img }}{% endif %}" alt="{{ post.title }}"></span>
 </div>
 <hr>
 {% endfor %}
