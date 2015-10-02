@@ -1,0 +1,14 @@
+---
+Layout: null
+---
+User-agent: *
+
+Crawl-delay: 4
+Disallow: /img/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /mail/
+Disallow: /less/
+
+Sitemap: {{site.url}}/sitemap.xml
