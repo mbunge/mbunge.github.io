@@ -19,8 +19,8 @@ easiest way to optimize and controll your presenation on Facebook and Twitter.
 Twitter Cards is basing on the OpenGraph protocol and give you some more options to control your
 presenation on twitter.
 
-Here are two examples for <a href="https://www.facebook.com/marco.bunge.dev/posts/981850491866979">Facebook</a> 
-and <a href="https://twitter.com/makk_eightbit/status/650003842491371521">Twitter</a>
+Here are two examples for <a target="_blank" href="https://www.facebook.com/marco.bunge.dev/posts/981850491866979">Facebook</a> 
+and <a target="_blank" href="https://twitter.com/makk_eightbit/status/650003842491371521">Twitter</a>
 
 ### Let's get the sources
 
