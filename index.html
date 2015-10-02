@@ -3,21 +3,23 @@ layout: page
 description: "Codeninja, Webworker, Guitarplayer"
 ---
 
-{% for post in paginator.posts %}
-<div class="post-preview" itemscope itemtype="http://schema.org/BlogPosting">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 itemprop="headline" class="post-title">{{ post.title }}</h2>
-        {% if post.subtitle %}
-        <h3 itemprop="description" class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">Posted by <span itemprop="author">{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}</span> on {{ page.date | date: "%B %-d, %Y" }}</p>
-	<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}"/>
+<div itemscope itemtype="http://schema.org/Blog">
+	{% for post in paginator.posts %}
+	<div class="post-preview" itemscope itemtype="http://schema.org/BlogPosting">
+	    <a href="{{ post.url | prepend: site.baseurl }}">
+	        <h2 itemprop="headline" class="post-title">{{ post.title }}</h2>
+	        {% if post.subtitle %}
+	        <h3 itemprop="description" class="post-subtitle">
+	            {{ post.subtitle }}
+	        </h3>
+	        {% endif %}
+	    </a>
+	    <p class="post-meta">Posted by <span itemprop="author">{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}</span> on {{ page.date | date: "%B %-d, %Y" }}</p>
+		<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}"/>
+	</div>
+	<hr>
+	{% endfor %}
 </div>
-<hr>
-{% endfor %}
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
