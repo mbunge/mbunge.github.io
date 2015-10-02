@@ -3,11 +3,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{% if page.description %}{{ page.description }} - {{ site.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="description" content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}">
     <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }} - {{ site.keywords }}{% else %}{{ site.keywords }}{% endif %}" />
     <meta name="author" content="{{site.author}}">
     <meta name="robots" content="index, follow" />
     <meta name="revisit-after" content="4 days" />
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@{{twitter_username}}"/>
+    <meta name="twitter:creator" content="@{{twitter_username}}"/>
+    <meta property="og:locale" content="en_EN" />
+    <meta property="og:type" content="{{page.page_type}}" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:description" content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:image" content="{% if page.header-img %}{{ page.header-img | prepend: '/' | prepend: site.baseurl }}{% else %}{{ site.header-img | prepend: '/' | prepend: site.baseurl }}{% endif %}" />
 
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
