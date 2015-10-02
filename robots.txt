@@ -2,7 +2,6 @@
 Layout: null
 ---
 User-agent: *
-Crawl-delay: 4
 
 Disallow: /img/
 Disallow: /js/
