@@ -17,7 +17,7 @@
     <meta property="og:description" content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}" />
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
     <meta property="og:site_name" content="{{ site.title }}" />
-    <meta property="og:image" content="{% if page.header-img %}{{ page.header-img | prepend: '/' | prepend: site.baseurl }}{% else %}{{ site.header-img | prepend: '/' | prepend: site.baseurl }}{% endif %}" />
+    <meta property="og:image" content="{% if page.header-img %}{{ page.header-img | prepend: '/' | prepend: site.baseurl }}{% else %}{{ site.header-img | prepend: site.baseurl }}{% endif %}" />
 
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
