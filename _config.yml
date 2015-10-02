@@ -4,7 +4,7 @@ header-img: img/default.jpg
 email: mjls@web.de
 description: "Blogging about open-source, PHP and webtechnologies"
 author: "Marco Bunge"
-keywords: "PHP, webtechnologies, open-source"
+keywords: "open-source, PHP, webtechnologies"
 baseurl: ""
 twitter_username: makk_eightbit
 github_username:  mbunge
