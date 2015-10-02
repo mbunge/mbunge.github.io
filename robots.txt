@@ -8,6 +8,5 @@ Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
 Disallow: /mail/
-Disallow: /less/
 
 Sitemap: {{site.url}}/sitemap.xml
