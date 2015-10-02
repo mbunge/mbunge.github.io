@@ -1,8 +1,10 @@
 # Site settings
-title: Marco Bunge
+title: "Marco Bunge"
 header-img: img/default.jpg
 email: mjls@web.de
-description: "Blogging about Software, Frameworks and Workflows. Code documentation of Furnace"
+description: "Blogging about open-source, PHP and webtechnologies"
+author: "Marco Bunge"
+keywords: "PHP, webtechnologies, open-source"
 baseurl: ""
 url: "http://marco-bunde.de"
 twitter_username: makk_eightbit
