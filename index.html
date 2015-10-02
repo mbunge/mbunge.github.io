@@ -15,7 +15,6 @@ description: "Codeninja, Webworker, Guitarplayer"
 	        {% endif %}
 	    </a>
 	    <p class="post-meta">Posted by <span itemprop="author">{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}</span> on {{ page.date | date: "%B %-d, %Y" }}</p>
-		<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}"/>
 	</div>
 	<hr>
 	{% endfor %}
