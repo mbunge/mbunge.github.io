@@ -4,7 +4,19 @@
 {% include head.html %}
 
 <body>
-
+    <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Organization",
+      "name" : "{{site.name}}",
+      "url" : "{{site.url}}}}",
+      "sameAs" : [
+        "https://www.facebook.com/{{site.facebook_username}}",
+        "https://www.twitter.com/{{site.twitter_username}}",
+        "https://www.github.com/{{site.github_username}}",
+      ]
+    }
+    </script>
     {% include nav.html %}
 
     {{ content }}
