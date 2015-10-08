@@ -4,7 +4,7 @@ title:      "Modern Applications with PHP"
 subtitle:   "Part 1 - Building Applications with existing components"
 author:     "Marco Bunge"
 date:       2015-10-10 19:41:47
-published:  2015-10-10 19:41:47
+published:  false
 header-img: "img/downloads-bg.jpg"
 ---
 
