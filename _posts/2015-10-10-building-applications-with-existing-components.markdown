@@ -63,11 +63,13 @@ We also follow a modern release cycle with <a href="http://semver.org/" target="
 <a href="http://keepachangelog.com/" target="_blank">changelog</a> and 
 <a href="https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows" target="_blank">a branching workflow</a>.
 
+We will also comply with the PSR standards defined by <a href="http://www.php-fig.org/" target="_blank">PHP-FIG</a>
+
+## Next steps
+
 I will publish a post regarding to this series each two weeks. I will also create a GitHub repository where.
 If you would like to still informed or contribute, just follow me on twitter or via 
-<a href="mailto:mjls@web.de">email</a> for detailed information.
-
-We will also comply with the PSR standards defined by <a href="http://www.php-fig.org/" target="_blank">PHP-FIG</a>
+<a href="mailto:mjls@web.de?subject=Modern Applications with PHP" target="_blank">email</a> for detailed information.
  
 ## Wishes and suggestions
 
