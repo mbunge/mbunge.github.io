@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Modern Applications with PHP"
-subtitle:   "Part 1 - Building Applications with existing components"
+title:      "Building Applications with existing Components"
+subtitle:   "Modern Applications with PHP - Part 1"
 author:     "Marco Bunge"
 date:       2015-10-10 19:41:47
 published:  false
