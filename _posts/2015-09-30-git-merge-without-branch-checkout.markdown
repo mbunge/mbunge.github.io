@@ -8,7 +8,7 @@ author:     "Marco Bunge"
 header-img: "img/modern-work-de.jpeg"
 ---
 
-##TL;DR
+## TL;DR
 
 __Replace example with your target branch!__
 
@@ -24,6 +24,7 @@ Your team is using git and your team mate implemented a new method to a class.
 You need the current changes, which must not be published to master branch. Follow these steps:
 
 ## Solution
+
 ### Fetch all branches
 
 `git fetch origin`
