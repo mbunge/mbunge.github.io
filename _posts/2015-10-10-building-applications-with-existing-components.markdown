@@ -3,8 +3,8 @@ layout:     post
 title:      "Building Applications with existing Components"
 subtitle:   "Modern Applications with PHP - Part 1"
 author:     "Marco Bunge"
-date:       2015-10-10 19:41:47
-published:  false
+date:       2015-10-10 12:24:47
+published:  2015-10-10 12:24:47
 header-img: "img/downloads-bg.jpg"
 ---
 
