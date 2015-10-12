@@ -1,6 +1,4 @@
-
- 
- ---
+---
 layout:     post
 title:      "Git removed ignored files"
 subtitle:   "Remove files which are ignored in .gitignore"
