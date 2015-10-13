@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Git removed ignored files"
+title:      "Git remove ignored files"
 subtitle:   "Remove files which are ignored in .gitignore"
 date:       2015-10-12 16:59:47
 published:  2015-10-12 16:59:47
