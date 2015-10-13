@@ -9,8 +9,8 @@ page_type: article
         {% if counter < max_related_posts %}
             {% if page.url != post.url %}
                 <article class="col-xs-12 col-md-4">
-                    <h4><small><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></small></h4>
-                    {% if post.subtitle %}<p><small>{{post.subtitle}}</small></p>{% endif %}   
+                    <h4><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4>
+                    {% if post.subtitle %}<h5>{{post.subtitle}}</h5>{% endif %}   
                 </article>
                 {% assign counter = counter | plus: 1 %}
             {% endif %}
