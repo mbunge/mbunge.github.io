@@ -5,7 +5,7 @@ subtitle:   "Cross referencing of latest blog posts"
 author:     "Marco Bunge"
 date:       2015-10-14 16:05:47
 published:  2015-10-14 16:05:47
-header-img: "img/download-bg.jpg"
+header-img: "img/downloads-bg.jpg"
 ---
 
 When a user is entering your blog on a specific post, he is reading it and mostly he is leaving your page. The entry page is
