@@ -5,7 +5,7 @@ subtitle:   "Cross referencing of latest blog posts"
 author:     "Marco Bunge"
 date:       2015-10-14 16:05:47
 published:  2015-10-14 16:05:47
-header-img: "img/download_bg.jpg"
+header-img: "img/download-bg.jpg"
 ---
 
 When a user is entering your blog on a specific post, he is reading it and mostly he is leaving your page. The entry page is
@@ -28,7 +28,7 @@ I created a simple but powerfull snippet for Jekyll:
         {% if page.url != post.url %}
             <article class="col-xs-12 col-md-4">
                 <h4><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4>
-                {% if post.subtitle %}<h5>{{post.subtitle}}</h5>{% endif %}   
+                {% if post.subtitle %}<h5>{{post.subtitle}}</h5>{% endif %}  
             </article>
             {% assign counter = counter | plus: 1 %}
         {% endif %}
