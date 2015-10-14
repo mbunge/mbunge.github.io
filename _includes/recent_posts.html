@@ -1,8 +1,6 @@
-
 {% assign counter = 0 %}
-{% assign max_recent_posts = site.max_recent_posts %}
 {% for post in site.posts | sort: "date" %}
-    {% if counter < max_related_posts %}
+    {% if counter < site.max_recent_posts %}
         {% if page.url != post.url %}
             <article class="col-xs-12 col-md-4">
                 <h4><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4>
