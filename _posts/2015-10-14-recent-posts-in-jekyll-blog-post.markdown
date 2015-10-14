@@ -4,7 +4,7 @@ title:      "Recent posts in Jekyll blog post"
 subtitle:   "Cross referencing of latest blog posts"
 author:     "Marco Bunge"
 date:       2015-10-14 16:05:47
-published:  false
+published:  2015-10-14 16:05:47
 header-img: "img/download_bg.jpg"
 ---
 
