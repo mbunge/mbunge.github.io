@@ -3,7 +3,7 @@ layout:     post
 title:      "Recent posts in Jekyll blog post"
 subtitle:   "Cross referencing of latest blog posts"
 author:     "Marco Bunge"
-date:       2015-10-13 19:41:47
+date:       2015-10-14 16:05:47
 published:  false
 header-img: "img/download_bg.jpg"
 ---
