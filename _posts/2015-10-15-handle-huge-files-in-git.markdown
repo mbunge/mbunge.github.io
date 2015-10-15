@@ -39,3 +39,5 @@ You could solve this issue with following settings in your local `.git/config`:
     <h4>Note</h4>
     <p>Please exetend the `[core]` section in your config instead of duplicate or replace it.</p>
 </div>
+
+Detailed information could be found here: <a href="https://github.com/hbons/SparkleShare/issues/519" target="_blank">Better git memory usage settings for huge files</a>
