@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Handle huge files in git"
+title:      "Deal with huge files in git"
 subtitle:   "Fix <code>fatal: Out of memory, malloc failed</code>"
 author:     "Marco Bunge"
 date:       2015-10-15 10:34:47
