@@ -24,11 +24,6 @@ fatal: Out of memory, malloc failed (tried to allocate 1476237742 bytes)
 
 You could solve this issue with following settings in your local `.git/config`:
 
-<div class="callout callout-warning">
-    <h4>Note</h4>
-    <p>Please exetend the `[core]` section in your config instead of duplicate or replace it.</p>
-</div>
-
 {% highlight ini %}
 [core]
   packedGitLimit = 128m
@@ -39,3 +34,8 @@ You could solve this issue with following settings in your local `.git/config`:
   packSizeLimit = 128m
   windowMemory = 128m
 {% endhighlight %}
+
+<div class="callout callout-warning">
+    <h4>Note</h4>
+    <p>Please exetend the `[core]` section in your config instead of duplicate or replace it.</p>
+</div>
