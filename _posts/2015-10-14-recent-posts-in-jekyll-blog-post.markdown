@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Recent posts in Jekyll blog post"
-subtitle:   "Cross referencing of latest blog posts"
+title:      "Minimize the chance that a user leaves your page immidiatly"
+subtitle:   "Cross referencing of latest blog posts in Jekyll"
 author:     "Marco Bunge"
 date:       2015-10-14 16:05:47
 published:  2015-10-14 16:05:47
