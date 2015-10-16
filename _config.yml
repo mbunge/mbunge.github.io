@@ -16,5 +16,5 @@ max_recent_posts: 3
 markdown: kramdown
 highlighter: pygments
 permalink: pretty
-paginate: 5
+paginate: 7
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","_drafts"]
