@@ -1,0 +1,12 @@
+{% assign counter = 0 %}
+{% for post in site.posts | sort: "date" %}
+    {% if counter < site.max_recent_posts %}
+        {% if page.url != post.url %}
+            <article class="col-xs-12 col-md-4">
+                <h4><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4>
+                {% if post.subtitle %}<h5>{{post.subtitle}}</h5>{% endif %}   
+            </article>
+            {% assign counter = counter | plus: 1 %}
+        {% endif %}
+    {% endif %}    
+{% endfor %}

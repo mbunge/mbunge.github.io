@@ -2,22 +2,6 @@
 layout: default
 page_type: article
 ---
-{% capture relations %}
-    {% assign counter = 0 %}
-    {% assign max_related_posts = 3 %}
-    {% for post in site.posts | sort: "date" %}
-        {% if counter < max_related_posts %}
-            {% if page.url != post.url %}
-                <article class="col-xs-12 col-md-4">
-                    <h4><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4>
-                    {% if post.subtitle %}<h5>{{post.subtitle}}</h5>{% endif %}   
-                </article>
-                {% assign counter = counter | plus: 1 %}
-            {% endif %}
-        {% endif %}    
-    {% endfor %}
-{% endcapture %}
-
 <div itemscope itemtype="http://schema.org/BlogPosting">
 	<!-- Post Header -->
 	<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
@@ -47,8 +31,8 @@ page_type: article
 	            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			<span itemprop="articleBody">{{ content }}</span>
 	                <hr>
-					<aside class="row">{{relations}}</aside>
-					<hr>
+			<aside class="row">{% include recent_posts.html %}</aside>
+			<hr>
 	                <ul class="pager">
 	                    {% if page.previous.url %}
 	                    <li class="previous">

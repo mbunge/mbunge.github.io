@@ -10,10 +10,11 @@ twitter_username: makk_eightbit
 github_username:  mbunge
 facebook_username:  marco.bunge.dev
 url: "http://www.marco-bunge.com"
+max_recent_posts: 3
 
 # Build settings
 markdown: kramdown
 highlighter: pygments
 permalink: pretty
-paginate: 5
+paginate: 7
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","_drafts"]
