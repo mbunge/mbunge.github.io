@@ -7,7 +7,6 @@ published:  2015-09-30 18:27:47
 author:     "Marco Bunge"
 header-img: "img/modern-work-de.jpeg"
 ---
-
 ## TL;DR
 
 __Replace example with your target branch!__
