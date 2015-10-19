@@ -21,12 +21,20 @@ tools.
 
 We will use the following tools:
 
-- __composer__ is managing our packages and dependencies
-- __PuliPHP__ will manage our non-php-files - like pictures, config files, html views
-- Our application is to the PSR standard, defined by __PHP-FIG__
-- We want to provide a stable application, there for we need to test it in our case with __PHPUnit__
 - __GIT__ is helping us to keep track of each change and provide team based development workflow
+- __composer__ is managing our packages and dependencies
+- We want to provide a stable application, therefore we need to test it in our case with __PHPUnit__
+- Our application is to the PSR standard, defined by __PHP-FIG__
+- __PuliPHP__ will manage our non-php-files - like pictures, config files, html views
 
 ## Let's get up and running
 
 Here we go, we will now define a common application setup.
+
+### Setup the folders
+
+### Initialize composer
+
+### Prepare our test environment
+
+## What's next?
