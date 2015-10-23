@@ -14,12 +14,12 @@ header-img: "img/downloads-bg.jpg"
 	<p>These tools are a set of small tight cgi binaries written in C.</p>
 </blockquote>
 
-We know a lot of big and micro-frameworks, components. All these lines has to be written to solve a problem.
-Building applications on top of PHP. You could also write your own application framework with plain PHP.
+There are a lot of macro-frameworks, micro-frameworks, components. All these lines has to be written to solve a problem: __Building applications on top of PHP.__ We want to save time and work efficent, we want to use well tested and integrated components to create our applications. 
+__We want to use the power of the open source community to be reach our goal faster and share our results and experience with the open source community.__
 
 ## The basic lifecycle
 
-I want to build a basic application by using existing components, without a specific framework. All these 
+We want to build a basic application by using existing components, without a specific framework. All these 
 frameworks do have advantages and disadvantages. We want to use only the best solutions, which fits our needs.
 
 An application could be everything. A small RSS-Reader, a command-line-tool, cron-worker, Webshop, Blog, 
@@ -34,9 +34,7 @@ and is returning a response to stdout or stderr when an error occurs.
 
 ## The world of components
 
-There are many components in the PHP-Land. Symfony, Zend, Aura PHP, StackPHP, the PHP league are organizations which develope
-component based frameworks, and components for a special usage. There are also more special componenty like HybridAuth, Geocoder,
-Doctrine, Propel, PHPUnit or Behat which are specialiced components.
+There are many components in the PHP-Land. Symfony, Zend, Aura PHP, StackPHP, the PHP league are organizations which develop component based frameworks, and components for a special usage. There are also more special components like HybridAuth, Geocoder, Doctrine, Propel, PHPUnit or Behat for a specific use.
 
 With <a href="https://getcomposer.org/" target="_blank">composer</a>, a dependency manager, we are able to bundle or components and get ready for use.
 
@@ -48,7 +46,7 @@ Creating one or more applications from scratch which is fitting our needs.
 
 A roadmap is the foundation of development tasks. The roadmap defines rough milestones for a project.
 
-This series of Building Applications with existing Components has a defined roadmap:
+This series of Modern Applications with PHP has a defined roadmap:
 
  - Initializing our dev environment
  - A basic web application with basic routing and hello world
@@ -65,10 +63,9 @@ We also follow a modern release cycle with <a href="http://semver.org/" target="
 
 We will also comply with the PSR standards defined by <a href="http://www.php-fig.org/" target="_blank">PHP-FIG</a>
 
-## Next steps
+## Waht's next?
 
-I will publish a post regarding to this series each two weeks. I will also create a GitHub repository where.
-If you would like to still informed or contribute, just follow me on twitter or via 
+A new post regarding to this series will published every two weeks. If you would like to still informed or contribute, just follow me on <a href="https://twitter.com/intent/user?screen_name=makk_eightbit" target="_blank">twitter</a> or via 
 <a href="mailto:mjls@web.de?subject=Modern Applications with PHP" target="_blank">email</a> for detailed information.
  
 ## Wishes and suggestions
