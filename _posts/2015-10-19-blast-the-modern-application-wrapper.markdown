@@ -69,4 +69,4 @@ In the next post I will show you how to setup the project foundation, with all t
  - a CLI-Interface to manage our blog
  - to be continued...
 
-* in progress
+*in progress
