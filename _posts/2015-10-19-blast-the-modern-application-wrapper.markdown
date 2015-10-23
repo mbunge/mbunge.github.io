@@ -1,48 +1,41 @@
 ---
 layout:     post
-title:      "Reusing components to build scalable applications"
-subtitle:   "A smart way to build modern applications"
+title:      "Tools and services for modern applications"
+subtitle:   "Modern Applications with PHP - Part 2"
 author:     "Marco Bunge"
-date:       2015-10-15 10:34:47
+date:       2015-10-23 10:34:47
 published:  false
 header-img: "img/downloads-bg.jpg"
 ---
 
+It's Friday, and as promised I will post every two weeks an article of my series "Modern Applications with PHP".
+
 The requirements and types to modern applications are oftern very diffrent. Restful api
 services, any kind of administration, form handlers, and much more.
 
-I show you, how to build an application based on already existing and well tested 
-components.
+For a modern application development process we need to ensure to work together in a team on the same sourcecode base, build, test, deliver changes and fixes as fast as possibile. We also need to ensure a stable and documented sourcecode base.
 
-## The foundation
+## The development environment
 
-At the beginning, we need to plan our environment. Their are tons of useful tools and services to develope and provider php applications. We want to use following still improving and well tested services and tools.
-
-- __GIT__ is helping us to keep track of each change and provide team based development workflow
-- __composer__ is managing our packages and dependencies
-- __Travis CI__ is our free continious integration tool. It is running 
-- We want to provide a stable application, therefore we need to test it in our case with __PHPUnit__
-- Our application is to the PSR standard, defined by __PHP-FIG__
+Their are tons of useful tools, services and standards to develop and provide php applications. We want to use still improving and well tested services and tools, like the following.
 
 ### GIT and Github
 
-It is crucial to use a versioning tool like <a href="https://git-scm.com/">GIT</a> while development. The advantage is to keep track of all changes, working on the source code with a hole team at the same time and you could easily add new features without touching the stable code base with branching.
+It is crucial to use a versioning tool like <a href="https://git-scm.com/">GIT</a> while development. Their are many advantages. Keeping track of all changes. Working on one sourcecode base with a hole team at the same time. Add new features or fixes without touching the stable sourcecode base with branching.
 
-We are also want to work with the <a href="https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows" target="_blank">git branching model</a> and <a href="http://semver.org/" target="_blank">semantic versioning</a>. 
+We want to use the <a href="https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows" target="_blank">git branching model</a> and <a href="http://semver.org/" target="_blank">semantic versioning</a> by default..
 
-Our code will be hosted on GitHub, a great social development host. GitHub is integrating many other services, and you managing projects is smart and easy.
-
-Alternatives to Git: <a href="http://tortoisesvn.net/index.html" target="_blank">SVN</a>, <a href="https://www.mercurial-scm.org/" target="_blank">Mercurial (hg)</a>
+Our sourcecode will be hosted on <a href="https://github.com">GitHub</a>. We will be able to get access to many service integrations. Managing teams, projects and as well sourcecode is also smart and easy.
 
 ### Composer and Bower
 
-<a href="https://getcomposer.org/" target="_blank">Composer</a> is helping to manage our php dependecies to other packages and also delivering a smart commond bus to define convinience commands for e.g. testing. We will use composer also to provide autoloading out of the box. 
+<a href="https://getcomposer.org/" target="_blank">Composer</a> is helping to manage our php dependencies to other packages and also delivering a smart commond bus to define convinience commands for e.g. testing. Furthermore we will use composer to provide autoloading out of the box. 
 
 <a href="http://bower.io/" target="_blank">Bower</a> is a similar tool to composer but specialized in managing dependencies for JS (Client-side and NPM) and CSS. Therefore Bower will be our tool provide all client-side packages and as well all tools to automate building, preprocessing which is more comfortable with npm and JS.
 
 ### Vagrant
 
-Our development environment won't be our own os environment. We also need to keep in mind that our team members could have a diffrent environment configuration. Therefore we will use <a href="https://www.vagrantup.com/" target="_blank">Vagrant</a>, a smart virtualizing tool. We also want use the well known dev LAMP stack <a href="https://box.scotch.io/" target="_blank">Scotch box</a> as a base environment.
+Our development environment won't be our own os environment. We also need to keep in mind that our team members could have a diffrent environment configuration. Therefore we will use <a href="https://www.vagrantup.com/" target="_blank">Vagrant</a>, a smart virtualizing tool. We also want use the well-known dev LAMP stack <a href="https://box.scotch.io/" target="_blank">Scotch box</a> as our development environment.
 
 ### Travis CI and Coveralls
 
@@ -52,13 +45,28 @@ Continious integration with <a href="https://travis-ci.org/" target="_blank">Tra
 
 ### PHPUnit
 
-All our source code needs to be tested. We are not able to ensure a correct functionality of our application. Therefore we are using <a href="https://phpunit.de/" target="_blank">PHPUnit 4.8</a>
+All our sourcecode needs to be tested. We are not able to ensure a correct functionality of our application without any tests. Therefore we are using <a href="https://phpunit.de/" target="_blank">PHPUnit 4.8</a>
 
 
 ### PHP Code Sniffer (phpcs), editorconfig.org and PHP-FIG PSR-2
 
-PHP Code sniffer is checking our code against the <a href="http://www.php-fig.org/psr/psr-2/" target="_blank">PSR-2 standard</a>, defined by PHP-FIG
+PHP Code sniffer is checking our sourcecode against the <a href="http://www.php-fig.org/psr/psr-2/" target="_blank">PSR-2 standard</a>, defined by PHP-FIG.
+
+<a href="http://editorconfig.org/">Editorconfig</a> is using one file to specify your editorconfig. This is usefull, to work in teams and ensure the same config for the hole team. Editorconfig is providing a plugin for all known IDE's like NetBeans, SublimeText, VIM, PhpStorm, textmate <a href="http://editorconfig.org/#download" target="_blank">and many more</a>.
 
 ## What's next?
 
-In the next post I will show you how to setup the project fpundation, with all tools mentioned above. Feel free to ask questions!
+In the next post I will show you how to setup the project foundation, with all tools and services mentioned above. We will also create our first class, test it build it and will explore the magic CI process.  Feel free to ask questions! I would also be happy if you share this post.
+
+## Roadmap
+
+ - __Initializing our dev environment*__
+ - A basic web application with basic routing and hello world
+ - A basic CLI wrapper
+ - Database connector
+ - Custom views
+ - Introducing MVC with the basic Blog-Example
+ - a CLI-Interface to manage our blog
+ - to be continued...
+
+* in progress
