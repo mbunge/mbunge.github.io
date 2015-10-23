@@ -10,7 +10,7 @@ header-img: "img/downloads-bg.jpg"
 
 It's Friday, and as promised I will post every two weeks an article of my series "Modern Applications with PHP".
 
-In the previous article a introduced this series and talked about the application development with components and it's benefits.
+In the previous <a href="http://www.marco-bunge.com/2015/10/10/building-applications-with-existing-components/" target="_blank">article</a> a introduced this series and talked about the application development with components and it's benefits.
 
 The requirements and types to modern applications are oftern very diffrent. Restful api
 services, any kind of administration, form handlers, and much more.
