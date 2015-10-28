@@ -26,7 +26,7 @@
                             {% if cat_page.category %}
                                 {% if cat_page.category == page.category %}
                                 <li>
-                                    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.cat_page }}</a>
+                                    <a href="{{ page.url | prepend: site.baseurl }}">{{ cat_page.title }}</a>
                                 </li>
                                 {% endif %}
                             {% endif %}
