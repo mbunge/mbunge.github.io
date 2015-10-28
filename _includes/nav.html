@@ -18,21 +18,26 @@
                 <li>
                     <a href="{{ site.baseurl }}/">Blog</a>
                 </li>
-                {% for page in site.pages %}{% if page.category %}
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ page.category }} <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        {% for cat_page in site.pages %}
-                            {% if cat_page.category %}
-                                {% if cat_page.category == page.category %}
-                                <li>
-                                    <a href="{{ page.url | prepend: site.baseurl }}">{{ cat_page.title }}</a>
-                                </li>
-                                {% endif %}
-                            {% endif %}
-                        {% endfor %}
-                    </ul>
-                </li>
+                {% assign cat = 1 %}
+                {% for page in site.pages %}
+                {% if cat > 0 %}
+                    {% if page.category %}
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ page.category }} <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                {% for cat_page in site.pages %}
+                                    {% if cat_page.category %}
+                                        {% if cat_page.category == page.category %}
+                                        <li>
+                                            <a href="{{ page.url | prepend: site.baseurl }}">{{ cat_page.title }}</a>
+                                        </li>
+                                        {% endif %}
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endif %}
+                    {% assign cat = 0 %}
                 {% elsif page.title %}
                 <li>
                     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
