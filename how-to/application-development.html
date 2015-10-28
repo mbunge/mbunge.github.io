@@ -8,7 +8,7 @@ category:   "How to"
 <div itemscope itemtype="http://schema.org/Blog">
 {% for post in site.posts %}
     {% if post.series %}
-        {% if post.series == "Modern Applications with PHP" %}
+        {% if post.series == "application development" %}
             <div class="post-preview" itemscope itemtype="http://schema.org/BlogPosting">
                 <a href="{{ post.url | prepend: site.baseurl }}">
                     <h2 itemprop="headline" class="post-title">{{ post.title }}</h2>
