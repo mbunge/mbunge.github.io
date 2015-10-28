@@ -6,6 +6,7 @@ author:     "Marco Bunge"
 date:       2015-10-23 10:34:47
 published:  2015-10-23 10:34:47
 header-img: "img/downloads-bg.jpg"
+series:     "Modern Applications with PHP"
 ---
 
 It's Friday, and as promised I will post every two weeks an article of my series "Modern Applications with PHP".
