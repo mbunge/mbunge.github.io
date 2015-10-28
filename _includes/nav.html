@@ -18,7 +18,22 @@
                 <li>
                     <a href="{{ site.baseurl }}/">Blog</a>
                 </li>
-                {% for page in site.pages %}{% if page.title %}
+                {% for page in site.pages %}{% if page.category %}
+                <li class="dropdown">
+                    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.category }}</a>
+                    <ul class="dropdown-menu">
+                        {% for cat_page in site.pages %}
+                            {% if cat_page.category %}
+                                {% if cat_page.category == page.category %}
+                                <li>
+                                    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.cat_page }}</a>
+                                </li>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% elsif page.title %}
                 <li>
                     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 </li>
