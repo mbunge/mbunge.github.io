@@ -1,8 +1,7 @@
 ---
 layout: page
-description: "Codeninja, Webworker, Guitarplayer"
+description: "Modern application development with PHP"
 ---
-
 <div itemscope itemtype="http://schema.org/Blog">
 {% for post in site.posts %}
 {% if series == "Modern Applications with PHP" %}
