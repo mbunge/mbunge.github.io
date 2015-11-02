@@ -17,6 +17,6 @@ To generate visivility I test diffrent strategies and ideas and finally use foll
 3. Get in touch with others on diffrent platforms like Twitter, Facebook, GitHub, StackOverflow, Reddit, coderwall, etc!
 4. Still improve your blog, new features are welcome!
 5. Use technical standards like <a href="https://developers.google.com/structured-data/" target="blank">structured data</a>, <a href="http://www.marco-bunge.com/2015/10/02/enhance-your-website-for-social-platforms/" target="_blank">open graph and twitter cards</a>.
-6. Share your posts on relevant platforms like Twitter, <a href="http://dzone.com">dzone</a> and <a href="https://www.sitepoint.com/versioning" target="_blank">sitepoint versioning</a>
+6. Share your posts on relevant platforms like Twitter, <a href="http://dzone.com" target="_blank">dzone</a> and <a href="https://www.sitepoint.com/versioning" target="_blank">sitepoint versioning</a>
 7. Be yourself!
 8. Don't force your self to write an article, if you aren't motivated. One article per week is perfectly good.
