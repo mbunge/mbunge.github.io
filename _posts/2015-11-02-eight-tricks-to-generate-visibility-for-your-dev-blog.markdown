@@ -6,7 +6,7 @@ author:     "Marco Bunge"
 date:       2015-11-02 13:34:47
 published:  2015-11-02 13:34:47
 header-img: "img/downloads-bg.jpg"
-tags:
+categories:
   - internet
   - marketing
   - development
