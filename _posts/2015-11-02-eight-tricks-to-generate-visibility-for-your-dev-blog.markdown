@@ -6,6 +6,11 @@ author:     "Marco Bunge"
 date:       2015-11-02 13:34:47
 published:  2015-11-02 13:34:47
 header-img: "img/downloads-bg.jpg"
+tags:
+  - internet
+  - marketing
+  - development
+  - blog
 ---
 
 My blog has been started on Septemper 9th, 2015. I wrote 10 relevant posts in my blog until now and pubished an article in a dev magazine. The first month was very successfull.
