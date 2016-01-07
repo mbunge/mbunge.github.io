@@ -6,10 +6,29 @@ author:     "Marco Bunge"
 date:       2016-01-08 10:18:53
 published:  false
 header-img: "img/downloads-bg.jpg"
+series:     "application development"
 categories:
   - php
   - application
   - development
 ---
 
-Today I will show you how to setup the project foundation, with all tools and services mentioned (in this post)[http://www.marco-bunge.com/2015/10/23/blast-the-modern-application-wrapper/]. We will also create our first class, test it build it and will explore the magic CI process. Feel free to ask questions! I would also be happy if you share this post.
+Today I will show you how to setup the project foundation, with all tools and services mentioned <a href="http://www.marco-bunge.com/2015/10/23/blast-the-modern-application-wrapper/">in post "Tools and services for modern applications"</a>. We will also create our first class, test it and explore the magical continious integration process. Feel free to ask questions! I would also be happy if you share this post.
+
+## Setup infrastructure
+
+### Git
+
+### Composer
+
+### php unit
+
+## simple PHP Application
+
+## Continious Integration
+
+We will use travis-ci, a free continious integration service.
+
+### Test automation
+
+### Code coverage
