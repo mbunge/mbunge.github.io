@@ -13,7 +13,7 @@ categories:
   - development
 ---
 
-Today I will show you how to setup the project foundation, with all tools and services mentioned <a href="http://www.marco-bunge.com/2015/10/23/blast-the-modern-application-wrapper/">in post "Tools and services for modern applications"</a>. We will also create our first class, test it and explore the magical continious integration process. Feel free to ask questions! I would also be happy if you share this post.
+Today I will show you how to setup the project foundation, with all tools and services mentioned <a href="http://www.marco-bunge.com/2015/10/23/blast-the-modern-application-wrapper/" target="_blank">in post "Tools and services for modern applications"</a>. We will also create our first class, test it and explore the magical continious integration process. Feel free to ask questions! I would also be happy if you share this post.
 
 ## Setup infrastructure
 
