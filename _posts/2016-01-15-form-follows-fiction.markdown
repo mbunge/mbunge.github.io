@@ -4,7 +4,7 @@ title:      "Form follows Fiction"
 subtitle:   "A different but inspiring approach for design theory"
 author:     "Marco Bunge"
 date:       2016-01-15 10:08:53
-published:  false
+published:  2016-01-15 10:08:53
 header-img: "img/downloads-bg.jpg"
 categories:
   - design
