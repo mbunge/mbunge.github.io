@@ -12,7 +12,7 @@ categories:
 
 ## A mind changer?
 
-__Form follows fiction__ describes design approach which is based on it's stories. This means for architecture, that a building is representing a story. In my opinion this approach should be project onto each type of design. A product, a website, your garden, all these things should representing a story.
+__Form follows fiction__ describes a design approach which is based on it's stories. This means for architecture, that a building is representing a story. In my opinion this approach should be project onto each type of design. A product, a website, your garden, all these things should representing a story.
 
 I recommend this inspiring TED talk by Ole Scheeren:
 
