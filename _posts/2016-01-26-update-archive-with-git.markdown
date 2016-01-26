@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      "Git remove ignored files"
-subtitle:   "Remove files which are ignored in .gitignore"
-date:       2015-10-12 16:59:47
-published:  false
+title:      "Deployment strategy with git"
+subtitle:   "Continious updates for a specific date or an interval of time"
+date:       2015-01-26 08:16:47
+published:  2015-01-26 08:16:47
 author:     "Marco Bunge"
 header-img: "img/modern-work-de.jpeg"
 series:     "git"
