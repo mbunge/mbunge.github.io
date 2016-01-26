@@ -84,7 +84,7 @@ git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB
 Pass our change list as subcommand `$()`:
 
 {% highlight bash %}
-git archive -o update.zip HEAD $(git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB)`
+git archive -o update.zip HEAD $(git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB)
 {% endhighlight %}
 
 ## Enhanced commands
