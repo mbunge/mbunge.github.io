@@ -6,6 +6,10 @@ author:     "Marco Bunge"
 date:       2015-10-02 19:41:47
 published:  2015-10-02 19:41:47
 header-img: "img/modern-work-de.jpeg"
+tags:
+ - marketing
+ - seo
+ - social media
 ---
 
 Facebook and Twitter are well known and still growing social platforms with a huge range. If you
