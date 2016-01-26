@@ -6,6 +6,11 @@ author:     "Marco Bunge"
 date:       2015-10-01 13:27:47
 published:  2015-10-01 13:27:47
 header-img: "img/modern-work-de.jpeg"
+series:     "application development"
+tags:
+ - otto
+ - development
+ - environment
 ---
 
 Otto has been created by the developers of vagrant. Otto has been developed with new gotten knowledge while vagrant development. 
