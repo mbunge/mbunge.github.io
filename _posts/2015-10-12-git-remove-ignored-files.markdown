@@ -7,6 +7,9 @@ published:  2015-10-12 16:59:47
 author:     "Marco Bunge"
 header-img: "img/modern-work-de.jpeg"
 series:     "git"
+tags:
+ - how-to
+ - git
 ---
 
 Nobody is perfect and sometimes you need to add some folders or files to .gitignore, but they are already pushed to repo.
