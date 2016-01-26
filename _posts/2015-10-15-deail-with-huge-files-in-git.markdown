@@ -7,6 +7,9 @@ date:       2015-10-15 10:34:47
 published:  2015-10-15 10:34:47
 header-img: "img/downloads-bg.jpg"
 series:     "git"
+tags:
+ - git
+ - how-to
 ---
 
 Sometimes you could get issues with allocated memory while commiting any huge file in your git repository. 
