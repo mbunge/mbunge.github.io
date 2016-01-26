@@ -42,7 +42,7 @@ We get a lis of all changes of our last commit.
 /.gitignore
 /src/Application.php
 /tests/ApplicationTest.php
-{% highlight text %}
+{% endhighlight %}
 
 But we need all changes since a specific date until now. Therefore we use git reference `HEAD` and passing a date `HEAD@{"2016-01-15 00:00:00"}`. 
 
