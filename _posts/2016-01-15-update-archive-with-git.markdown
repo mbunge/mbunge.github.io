@@ -11,16 +11,14 @@ series:     "git"
 
 Everyone knows the benefits of git. Many developers are using common commands like pull, push, commit, merge, fetch. But Git does also have tools for your deployment strategy.
 
-## Deployment
-
-> Software deployment is all of the activities that make a software system available for use. ([Wikipedia](https://en.wikipedia.org/wiki/Software_deployment))
-
 <div class="callout callout-info">
-  <h4>Description</h4>
-  <p><a href="https://en.wikipedia.org/wiki/Software_deployment" targte="_blank">Software deployment is all of the activities that make a software system available for use.</a></p>
+  <h4>Deployment</h4>
+  <p>Software deployment is all of the activities that make a software system available for use. <a href="https://en.wikipedia.org/wiki/Software_deployment" targte="_blank">(Wikipedia)</a></p>
 </div>
 
 In other words: we want to publish changes from our development server to our production or staging server.
+
+## Strategy
 
 We want to use git for our three step deployment strategy.
 
