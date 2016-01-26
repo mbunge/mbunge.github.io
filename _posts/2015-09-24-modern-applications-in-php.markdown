@@ -3,8 +3,15 @@ layout:     post
 title:      "modern PHP application bootstraping"
 subtitle:   "Dynamic bootstraping with middlewares"
 date:       2015-09-24 18:57:00
+published:  2015-09-24 18:57:00
 author:     "Marco Bunge"
 header-img: "img/modern-work-de.jpeg"
+series: "application development"
+tags:
+ - PHP
+ - development
+ - how-to
+ - application
 ---
 
 Modern Applications need a modern easy to use and extend worklflow with decoupled dependecies. A few framewroks like slim or StackPHP are using middlewares to deliver a extensible workflow on application level.
