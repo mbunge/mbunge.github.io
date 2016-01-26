@@ -9,47 +9,100 @@ header-img: "img/modern-work-de.jpeg"
 series:     "git"
 ---
 
-# Deployment
+Everyone knows the benefits of git. Many developers are using common commands like pull, push, commit, merge, fetch. But Git does also have tools for your deployment strategy.
 
-## Allgemeines
+## Deployment
 
-- Es dürfen nur auf Staging getestete Änderungen veröffentlicht werden!
-- Es müssen Featurebranches geführt werden
+> Software deployment is all of the activities that make a software system available for use. ([Wikipedia](https://en.wikipedia.org/wiki/Software_deployment))
 
-## Alle Dateien für ein Update Auflisten
+<div class="callout callout-info">
+  <h4>Description</h4>
+  <p><a href="https://en.wikipedia.org/wiki/Software_deployment" targte="_blank">Software deployment is all of the activities that make a software system available for use.</a></p>
+</div>
+
+In other words: we want to publish changes from our development server to our production or staging server.
+
+We want to use git for our three step deployment strategy.
+
+1. create an archive with all changes from a specific date
+2. upload our archive to our production server
+3. extract and publish our changes on production server
+
+## Create update archive
+
+Creating an archive with git is very easy. We just need to call
+
+`git archive -o archive.zip`
+
+This command creates an archive containing all files from our current branch. But we want to get all latest changes from a specific date. 
+
+### Get all changes of a commit, branch, or another reference
+
+`git diff --name-only HEAD`
+
+This command shows a list of all changes of our last commit.
+
+But we need all changes since a specific date until now. Therefore we use git reference `HEAD` and passing a date `HEAD@{"2016-01-15 00:00:00"}`. 
+
+<div class="callout callout-info">
+    <h4>Tip</h4>
+    <p>We could also pass a statement like for a specific moment:</p>
+    <ul>
+      <li>one day ago <code>HEAD@{"1 day ago"}</code></li>
+      <li>eight days ago <code>HEAD@{"8 days ago"}</code></li>
+      <li>one week ago <code>HEAD@{"1 week ago"}</code></li>
+      <li>five weeks ago <code>HEAD@{"5 weeks ago"}</code></li>
+      <li>one month ago <code>HEAD@{"1 month ago"}</code></li>
+    </ul>
+</div>
+
+Get a list of all changes from a specific date, related to head reference:
+
+`git diff --name-only HEAD@{"2016-01-15 00:00:00"}`
+
+We need a filtered list of all files except deleted file For our deployment. Adding `--diff-filter to our diff command:
+
+`git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB`
+
+<div class="callout callout-info">
+    <h4><a href="https://git-scm.com/docs/git-diff" target="_blank">git diff</a></h4>
+    <p><b>--diff-filter=[(A|C|D|M|R|T|U|X|B)…​[*]]</b><br>Select only files that are Added (A), Copied (C), Deleted (D), Modified (M), Renamed (R), have their type (i.e. regular file, symlink, submodule, …​) changed (T), are Unmerged (U), are Unknown (X), or have had their pairing Broken (B). Any combination of the filter characters (including none) can be used. When * (All-or-none) is added to the combination, all paths are selected if there is any file that matches other criteria in the comparison; if there is no file that matches other criteria, nothing is selected.</p>
+</div>
+
+
+
+Or for scrum teams with contious deployment each two weeks
+ 
+`git diff --name-only HEAD@{"2016-01-15 00:00:00"}`
+
+### create an archive with changes from a specific date
+
+We need to pass out change list as subcommand `$()`:
+
+`git archive -o update.zip HEAD $(git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB)`
+
+## Usefull commands
+
+### Archive with branch name and date
+
+`git archive -o update-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).zip HEAD $(git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB)`
+
+### Archive with branch name and date for scrumteams (deployment every two weeks)
+
+`git archive -o update-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).zip HEAD $(git diff --name-only HEAD@{"2 weeks ago"} --diff-filter=ACMRTUXB)`
+
+### txt file with all changes, including deleted
+
+`git diff --name-status HEAD@{"2016-01-15 00:00:00"} > updates-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).txt`
+
+### txt file with all changes, excluding deleted
 
 `git diff --name-status HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB > updates-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).txt`
 
-## Major Deployments
+## Conclusion
 
-Alle Zwei Wochen (Sprint Ende) aus Major Branch (sprint-{nummer}-major)
+This small tool is helping small teams to provide a manual deployment strategy for bugfixes and hotfixes or sprint deployment. You could combine this commands with unit testing. This is very helpful for emergency deployments, especially when your ci is not available!
 
-Major Deployments enthalten Integrationen und Anpassungen die das Verhalten und die Funktionalität der Software veränden. Hierzu wird ein update.zip erzeugt was alle Änderungen enthält.
+## Further links
 
-`git archive -o update-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).zip HEAD $(git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB)`
-
-## Minor Deployments
-
-Jeden Di, Mi, Do aus Minor Branch (sprint-{nummer}-minor)
-
-Minor Deployments enthalten Fixes, Hotfixes und Designänderungen. Allgemein nehmen diese Änderungen keinen Einfluss auf die Funktionstüchtigkeit der Software.
-
-`git archive -o update-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).zip HEAD $(git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB)`
-
-## Update auf Server
-
-Einfach das Archiv in das Zielverzeichnis laden und folgende Commands ausführen:
-
-`touch maintanace.flag; unzip update-<timestamp>.zip; cd magento/ tar -cf stashed.tar ./*; mv stashed.tar ../; cd ../; tar --overwrite -xf stashed.tar; rm -f stashed.tar; rm -rf magento/; rm -f maintanace.flag`
-
-`<timestamp>` sollte durch den tatsächlichen Timestamp ersetzt werden (z.B. 20160205-123445).
-
-Der Command versetzt das System in den Wartungsmodus entpackt das Archiv und verschiebt die Dateien ohne Systemfehler, durch erzeugen eines temporären TAR-Archivs an ihre richtigen Positionen. Anschließend werden alle temporären Dateien entfernt und der Wartungsmodus wird deaktiviert.
-
-## Commands
-
-- `date +%Y%m%d-%H%M%S` erzeugt eine Datemusausgabe z.B. wandelt `05.02.1996 12:34:45` in `19960205-123445` um
-- `git archive -o update.zip HEAD` erzeugt ein zip archiv von der Referenz HEAD, wobei die Referenz auch eine Comit-ID, Branch und ähnliches sein kann.
-- `git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB`erzeugt eine Ausgabe über alle geänderten Dateien
-
-- `$()`erzeugt einen Subcommand und übermittelt die Ausgabe an den Eltern Command
+<a href="http://www.binarytides.com/linux-scp-command/" target="_blank">Upload files with SCP</a>
