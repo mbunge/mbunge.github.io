@@ -2,8 +2,8 @@
 layout:     post
 title:      "Deployment strategy with git"
 subtitle:   "Continious updates for a specific date or an interval of time"
-date:       2015-01-26 08:16:47
-published:  2015-01-26 08:16:47
+date:       2016-01-26 08:16:47
+published:  2016-01-26 08:16:47
 author:     "Marco Bunge"
 header-img: "img/modern-work-de.jpeg"
 series:     "git"
