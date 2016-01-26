@@ -7,6 +7,10 @@ published:  2016-01-26 08:16:47
 author:     "Marco Bunge"
 header-img: "img/modern-work-de.jpeg"
 series:     "git"
+tags:
+ - deployment
+ - git
+ - software
 ---
 
 Everyone knows the benefits of git. Many developers are using common commands like pull, push, commit, merge, fetch. But Git does also have tools for your deployment strategy.
