@@ -8,6 +8,7 @@ published:  2016-01-15 10:08:53
 header-img: "img/downloads-bg.jpg"
 categories:
   - design
+series: "design"
 ---
 
 ## A mind changer?
