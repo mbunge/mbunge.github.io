@@ -7,6 +7,11 @@ date:       2015-10-10 12:24:47
 published:  2015-10-10 12:24:47
 header-img: "img/downloads-bg.jpg"
 series:     "application development"
+tags:
+ - PHP
+ - development
+ - application
+ - how-to
 ---
 
 <blockquote cite="https://groups.google.com/forum/?hl=en#!original/comp.infosystems.www.authoring.cgi/PyJ25gZ6z7A/M9FkTUVDfcwJ">
