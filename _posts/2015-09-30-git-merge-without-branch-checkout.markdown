@@ -7,6 +7,9 @@ published:  2015-09-30 18:27:47
 author:     "Marco Bunge"
 header-img: "img/modern-work-de.jpeg"
 series:     "git"
+tags: 
+ - git
+ - how-to
 ---
 ## TL;DR
 
