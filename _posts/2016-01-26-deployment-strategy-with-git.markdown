@@ -81,19 +81,27 @@ Pass our change list as subcommand `$()`:
 
 ### Archive with branch name and datetime
 
-`git archive -o update-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).zip HEAD $(git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB)`
+{% highlight bash %}
+git archive -o update-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).zip HEAD $(git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB)
+{% endhighlight %}
 
 ### Archive with branch name and datetime for scrumteams (deployment every two weeks)
 
-`git archive -o update-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).zip HEAD $(git diff --name-only HEAD@{"2 weeks ago"} --diff-filter=ACMRTUXB)`
+{% highlight text %}
+git archive -o update-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).zip HEAD $(git diff --name-only HEAD@{"2 weeks ago"} --diff-filter=ACMRTUXB)
+{% endhighlight %}
 
 ### txt file with all changes, including deleted
 
-`git diff --name-status HEAD@{"2016-01-15 00:00:00"} > updates-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).txt`
+{% highlight text %}
+git diff --name-status HEAD@{"2016-01-15 00:00:00"} > updates-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).txt
+{% endhighlight %}
 
 ### txt file with all changes, excluding deleted
 
-`git diff --name-status HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB > updates-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).txt`
+{% highlight text %}
+git diff --name-status HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB > updates-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).txt
+{% endhighlight %}
 
 ## Conclusion
 
