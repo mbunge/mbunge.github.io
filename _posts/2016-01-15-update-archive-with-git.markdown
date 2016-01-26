@@ -28,8 +28,6 @@ We want to use git for our three step deployment strategy.
 
 ## Create update archive
 
-Creating an archive with git is very easy. We just need to call
-
 `git archive -o archive.zip`
 
 This command creates an archive containing all files from our current branch. But we want to get all latest changes from a specific date. 
@@ -38,7 +36,13 @@ This command creates an archive containing all files from our current branch. Bu
 
 `git diff --name-only HEAD`
 
-This command shows a list of all changes of our last commit.
+We get a lis of all changes of our last commit.
+
+{% highlight text %}
+/.gitignore
+/src/Application.php
+/tests/ApplicationTest.php
+{% highlight text %}
 
 But we need all changes since a specific date until now. Therefore we use git reference `HEAD` and passing a date `HEAD@{"2016-01-15 00:00:00"}`. 
 
@@ -54,11 +58,11 @@ But we need all changes since a specific date until now. Therefore we use git re
     </ul>
 </div>
 
-Get a list of all changes from a specific date, related to head reference:
+### Get a list of all changes from a specific date, related to head reference.
 
 `git diff --name-only HEAD@{"2016-01-15 00:00:00"}`
 
-We need a filtered list of all files except deleted file For our deployment. Adding `--diff-filter to our diff command:
+We need a filtered list of all files except deleted file For our deployment. Adding `--diff-filter`:
 
 `git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB`
 
@@ -67,25 +71,19 @@ We need a filtered list of all files except deleted file For our deployment. Add
     <p><b>--diff-filter=[(A|C|D|M|R|T|U|X|B)…​[*]]</b><br>Select only files that are Added (A), Copied (C), Deleted (D), Modified (M), Renamed (R), have their type (i.e. regular file, symlink, submodule, …​) changed (T), are Unmerged (U), are Unknown (X), or have had their pairing Broken (B). Any combination of the filter characters (including none) can be used. When * (All-or-none) is added to the combination, all paths are selected if there is any file that matches other criteria in the comparison; if there is no file that matches other criteria, nothing is selected.</p>
 </div>
 
-
-
-Or for scrum teams with contious deployment each two weeks
- 
-`git diff --name-only HEAD@{"2016-01-15 00:00:00"}`
-
 ### create an archive with changes from a specific date
 
-We need to pass out change list as subcommand `$()`:
+Pass our change list as subcommand `$()`:
 
 `git archive -o update.zip HEAD $(git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB)`
 
-## Usefull commands
+## Enhanced commands
 
-### Archive with branch name and date
+### Archive with branch name and datetime
 
 `git archive -o update-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).zip HEAD $(git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB)`
 
-### Archive with branch name and date for scrumteams (deployment every two weeks)
+### Archive with branch name and datetime for scrumteams (deployment every two weeks)
 
 `git archive -o update-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).zip HEAD $(git diff --name-only HEAD@{"2 weeks ago"} --diff-filter=ACMRTUXB)`
 
