@@ -1,0 +1,5 @@
+- Infos zu Iconary
+- Wie kam die Idee zu Iconary?
+- Mit welchen Kompetenzen ist euer Team ausgestellt und wie groß seit Ihr?
+- Wie sieht die Zukunft von Iconary aus?
+- Finanziert sich Iconary durch Bootstraping, Venture Capital oder ganz anders?
