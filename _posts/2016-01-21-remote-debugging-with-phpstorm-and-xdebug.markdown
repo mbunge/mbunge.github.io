@@ -17,7 +17,7 @@ Nowadays we are working with virtual machines or remote environments by default.
 working with project teams on compley solutions. We are using versioning like git. We just need to fit these modern development 
 standards. 
 
-__One of these standards is remote debuging.__
+__One of these standards is remote debugging.__
 
 Let's assume we have a development, staging and production environment. An error occurs on staging or production for any reasons. 
 First of all, this error should not happend, but exists. The written code is still correct. And again the error should not exist. 
@@ -26,9 +26,12 @@ At this point, we want to debug and solve this problem. Smart as Sherlock Holmes
 Xdebug is perfectly good integrated in <a href="https://www.jetbrains.com/phpstorm/" target="_blank">PHPStorm</a>. Let's debug on any remote system, 
 including <a href="https://www.vagrantup.com/" target="_blank">Vagrant</a> - __which is still remote on your local machine__.
 
-I assume a Ubuntu / Debian os, but you could still adapt this how to for any OS. I use the vagrant <a href="https://box.scotch.io/">Scotch Box 2.5</a> as very good working a LAMP stack.
+<div class="callout callout-success">
+  <h4>Requirements</h4>
+  <p>I assume an Ubuntu / Debian os, but you could still adapt for any OS. I use the vagrant <a href="https://box.scotch.io/">Scotch Box 2.5</a> as very good working a LAMP stack.</p>
+</div>
 
-## prepare Xdebug on remote system
+## Prepare Xdebug on remote system
 
 We need to install xdebug
 
@@ -99,7 +102,7 @@ PHP executable: /usr/bin/php5
 
 We need to configure mappings on remote server, to find sources and stop on breakpoints on our local system.
 
-- select ```File | Settings > Language & Frameworks | PHP | Servers```
+- select `File | Settings > Language & Frameworks | PHP | Servers`
 - click green '+' and add following:
 
 {% highlight text %}
@@ -109,13 +112,16 @@ Port: 80
 Debugger: xdebug
 {% endhighlight %}
 
-__If you use Vagrant:__ root folder (e.g. `/var/www`) should be associated with mounted folder in Vagrantfile:
+<div class="callout callout-info">
+  <h4>For Vagrant</h4>
+  <p>root folder (e.g. <code>/var/www</code>) should be associated with mounted folder in Vagrantfile. </p>
+  <pre><code class="language-text" data-lang="text">config.vm.synced_folder ".", "/var/www", :mount_options =&gt; ["dmode=777", "fmode=666"]</code></pre>
+</div>
 
-{% highlight text %}
-config.vm.synced_folder ".", "/var/www", :mount_options => ["dmode=777", "fmode=666"]
-{% endhighlight %}
-
-__Optional:__ If you use an further folders folder like laravel public for index.php and assets, create an additonal mapping for this location: `/var/www/public`
+<div class="callout callout-info">
+  <h4>Optional</h4>
+  <p>If you use an further folders folder like laravel public for index.php and assets, create an additonal mapping for this location: <code>/var/www/public</code></p>
+</div>
 
 ### Debugger
 
@@ -132,7 +138,7 @@ You are now debug with clicking on `Run > Debug`.
 
 #### Smart debugging
 
-In PHPStorm active rmote listening for debug connections by clicking `Run > Start listening for PHP debug connections`
+In PHPStorm activate remote listening for debug connections by clicking `Run > Start listening for PHP debug connections`
 
 Or you could use these convenience snippets to enable debugging directly within your application or as shortcut in your browser:
 
