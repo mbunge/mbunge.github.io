@@ -124,7 +124,7 @@ __Optional:__ If you use an further folders folder like laravel public for index
 
 ### Let's have fun
 
-Create a breakpoint by click on any linenumber with a method or other control structure like `ìf`.
+Create a breakpoint by click on any linenumber with a method or other control structure like `if`.
 
 #### Default debugging
 
