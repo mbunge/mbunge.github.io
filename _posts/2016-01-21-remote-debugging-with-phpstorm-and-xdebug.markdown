@@ -71,7 +71,10 @@ Webserver url: <associated with vhost ServerName !!!!>
 {% endhighlight %}
 
 - choose __mappings__ tab
-- Leave all options as is, expect the following `Deployment path on server '<given servername>': /var/www`
+- Leave all options as is, expect the following: 
+{% highlight text %}
+Deployment path on server '<given servername>': /var/www
+{% endhighlight %}
 
 ### Remote interpreter
 
@@ -106,12 +109,12 @@ Port: 80
 Debugger: xdebug
 {% endhighlight %}
 
-__If you use Vagrant:__ root folder should be associated with mounted folder in Vagrantfile 
+__If you use Vagrant:__ root folder (e.g. `/var/www`) should be associated with mounted folder in Vagrantfile:
+
 {% highlight text %}
 config.vm.synced_folder ".", "/var/www", :mount_options => ["dmode=777", "fmode=666"]
 {% endhighlight %}
 
-- choose for root `/var/www`
 __Optional:__ If you use an further folders folder like laravel public for index.php and assets, create an additonal mapping for this location: `/var/www/public`
 
 ### Debugger
