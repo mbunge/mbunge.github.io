@@ -21,8 +21,8 @@ Both of them are supporting the Open Graph Protocol, which are very fast to impl
 easiest way to optimize and controll your presenation on Facebook and Twitter. Other platforms like  
 
 <div class="callout callout-info">
-  <h4>Further Open Graph support</h4>
-  <p>LinkedIn, Xing, Pinterest are also supporting open graph protocol. Google+ is only supporting schema.org and structured data.</p>
+  <h4>Tip</h4>
+  <p><a href="https://developer.linkedin.com/docs/share-on-linkedin" target="_blank">LinkedIn</a>, <a href="https://developers.pinterest.com/docs/rich-pins/overview/" target="_blank">Pinterest</a>, <a href="https://developers.google.com/+/web/snippet/" target="_blank">Google&plus;</a> and <a href="https://dev.xing.com/plugins/share_button/docs" target="_blank">Xing</a> are also supporting Open Graph Protocol.</p>
 </div>
 
 Twitter Cards is basing on the Open Graph Protocol and give you some more options to control your
