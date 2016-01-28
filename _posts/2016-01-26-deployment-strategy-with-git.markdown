@@ -117,7 +117,7 @@ git diff --name-status HEAD@{"2016-01-15 00:00:00"} > updates-$(git rev-parse --
 git diff --name-status HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB > updates-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).txt
 {% endhighlight %}
 
-### txt file with all deleted files, excluding deleted
+### txt file with all deleted files
 
 {% highlight bash %}
 git diff --name-status HEAD@{"2016-01-15 00:00:00"} --diff-filter=D > updates-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).txt
