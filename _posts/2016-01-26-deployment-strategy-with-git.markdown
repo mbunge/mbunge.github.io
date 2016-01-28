@@ -117,6 +117,12 @@ git diff --name-status HEAD@{"2016-01-15 00:00:00"} > updates-$(git rev-parse --
 git diff --name-status HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB > updates-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).txt
 {% endhighlight %}
 
+### txt file with all deleted files, excluding deleted
+
+{% highlight bash %}
+git diff --name-status HEAD@{"2016-01-15 00:00:00"} --diff-filter=D > updates-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).txt
+{% endhighlight %}
+
 ## Conclusion
 
 This small tool is helping small teams to provide a manual deployment strategy for bugfixes and hotfixes or sprint deployment. You could combine this commands with unit testing. This is very helpful for emergency deployments, especially when your ci is not available!
