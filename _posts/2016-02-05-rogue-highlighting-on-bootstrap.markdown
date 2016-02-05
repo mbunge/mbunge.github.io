@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Replacing pygments with rogue for GitHub update on Jekyll 3.0"
+title:      "Prepare rogue for GitHub update on Jekyll 3.0"
 subtitle:   "Fix highlighting with bootstrap and add GitHub flavored highlighting"
 date:       2016-02-05 23:49:12
 published:  2016-02-05 23:49:12
