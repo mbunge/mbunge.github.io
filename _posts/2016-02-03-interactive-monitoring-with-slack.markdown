@@ -3,7 +3,7 @@ layout:     post
 title:      "Interactive monitoring with Slack"
 subtitle:   "Slack for REST-API debugging and error monitoring "
 date:       2016-01-26 08:16:47
-published:  2016-01-26 08:16:47
+published:  false
 author:     "Marco Bunge"
 header-img: "img/modern-work-de.jpeg"
 series:     "application development"
