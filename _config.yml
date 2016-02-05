@@ -14,7 +14,9 @@ max_recent_posts: 3
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 permalink: pretty
 paginate: 7
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","_drafts"]
