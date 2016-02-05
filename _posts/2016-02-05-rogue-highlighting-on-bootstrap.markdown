@@ -1,19 +1,16 @@
 ---
 layout:     post
 title:      "Prepare rogue for GitHub update on Jekyll 3.0"
-subtitle:   "Fix highlighting with bootstrap and add GitHub flavored highlighting"
-date:       2016-02-05 23:49:12
-published:  2016-02-05 23:49:12
+subtitle:   "Replace pygments with rogue and fix highlighting"
+date:       2016-02-05 23:54:47
+published:  2016-02-05 23:54:47
 author:     "Marco Bunge"
 header-img: "img/modern-work-de.jpeg"
 series:     "application development"
 tags:
- - css
- - jekyll
- - rogue
- - pygemnts
- - syntax highlighting
  - howto
+ - github
+ - pages
 ---
 
 Github updated to jekyll to version 3.0. Due to this update pygments is not longer supported. Therefore I need to update stylings and configuration.
