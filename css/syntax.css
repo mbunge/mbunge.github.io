@@ -8,8 +8,15 @@
 .highlight pre,
 .highlight .table>tbody>tr>td
 {
-  border: none;
+  border: 0;
 }
+.highlight .table-responsive {
+    margin-bottom: 0;
+}
+.highlight .table>tbody>tr>td {
+    padding: 8px 8px 0 8px;
+}
+
 .highlight  { background: #fafafa; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
