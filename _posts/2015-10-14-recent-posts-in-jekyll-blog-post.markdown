@@ -24,7 +24,7 @@ to look for your blog index to get the recent posts. Your older posts will link 
 
 I created a simple but powerfull snippet for Jekyll:
 
-{% highlight liquid %}
+```
 {% raw %}
 {% assign counter = 0 %}
 {% for post in site.posts | sort: "date" %}
@@ -39,4 +39,4 @@ I created a simple but powerfull snippet for Jekyll:
     {% endif %}    
 {% endfor %}
 {% endraw %} 
-{% endhighlight %}
+```

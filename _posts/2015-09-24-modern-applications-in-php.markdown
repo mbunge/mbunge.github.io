@@ -22,7 +22,7 @@ Since I'm working on an own collection of components to speed up my projects - p
 
 My first idea was to decouple any task of setup from my application in to an Bootstrap.
 
-{% highlight php linenos %}
+```php
 <?php
 
 $application = new Furnace\Application\Application();
@@ -32,13 +32,13 @@ $bootstrap = new Furnace\Application\Bootstrap(__DIR__ . '/../app');
 $application->boot($bootstrap);
 $response = $application->run();
 $response->send();
-{% endhighlight %}
+```
 
 The idea is still good. My application is aware of all dependecies, the configuration and it's context while the bootstrap is setting my application up for it's runtime environment, like web, restApi or CLI.
 
 Instead of using a monolitic Bootstrap, I want to be able to include all setups with a middleware dynamically. The middleware is running an instance of SetupInterface which is defind as follows:
 
-{% highlight php linenos %}
+```php
 <?php
 
 namespace Furnace\Application;
@@ -48,11 +48,11 @@ interface MiddlewareInterface
     public function execute(ApplicationInterface $application);
 }
 
-{% endhighlight %}
+```
 
 A new Bootstrap definition would look like this:
 
-{% highlight php linenos %}
+```php
 <?php
 
 use Furnace\Application;
@@ -96,7 +96,7 @@ $application->boot($middleware);
 //dispatch and get the response
 $response = $application->run();
 $response->send();
-{% endhighlight %}
+```
 
 Now we got a new decoupled, efficent way of application bootstraping.
 

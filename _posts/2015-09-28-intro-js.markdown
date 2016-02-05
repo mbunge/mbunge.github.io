@@ -34,7 +34,7 @@ Intro.js is providing a simple api. We could add a _data-step_ attribute to an e
 
 Now we need to attach a click event to any element - we use a button with an id - which is executing `introJs().start()`.
 
-{% highlight html %}
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -65,7 +65,7 @@ Now we need to attach a click event to any element - we use a button with an id 
 </script>
 </body>
 </html>
-{% endhighlight %}
+```
 
 Gratulations we build our own product presentation within minutes.
 

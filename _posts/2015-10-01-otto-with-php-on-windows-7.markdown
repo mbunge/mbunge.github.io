@@ -25,7 +25,7 @@ Unzip the binary to any folder and add the containing folder to your PATH.
 
 If you typing `otto` in you cli you should get similar output.
 
-{% highlight text %}
+```text
 $ otto
 usage: otto [--version] [--help] <command> [<args>]
 
@@ -37,7 +37,7 @@ Available commands are:
     infra      Builds the infrastructure for the Appfile
     status     Status of the stages of this application
     version    Prints the Otto version
-{% endhighlight %}
+```
 
 ## Create development environment
 
@@ -61,7 +61,7 @@ Otto is using Vagrant for our deelopment environment. We need to <a href="https:
 
 First of all we need to create a custom Appfile which is looking like this:
 
-{% highlight text %}
+```text
 application {
     name = "otto-php-example"
     type = "php"
@@ -70,7 +70,7 @@ application {
 customization "php" {
     php_version = "5.6"
 }
-{% endhighlight %}
+```
 
 <div class="callout callout-info">
 <h4>Appfile syntax is HCL</h4>
@@ -81,7 +81,7 @@ Simply execute `otto compile`. Otto is automatically detect your project type an
 
 You should get an output similar to the following:
 
-{% highlight text %}
+```text
 ←[0m←[1m==> Loading Appfile...←[0m
 ←[0m←[1m==> Fetching all Appfile dependencies...←[0m
 ←[0m←[1m==> Compiling...←[0m
@@ -100,7 +100,7 @@ You should get an output similar to the following:
     Supporting files to enable Otto to manage your application from
     development to deployment have been placed in the output directory.
     These files can be manually inspected to determine what Otto will do.←[0m
-{% endhighlight %}
+```
 
 ### Kickstart development environment
 

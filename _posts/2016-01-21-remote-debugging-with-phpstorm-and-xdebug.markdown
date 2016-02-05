@@ -43,10 +43,10 @@ and configure it.
 
 Add following lines to configuration file (zend_extention should be already configured):
 
-{% highlight ini %}
+```ini
 xdebug.remote_enable = on
 xdebug.remote_connect_back = on
-{% endhighlight %}
+```
 
 __Gratulations, we finish the easy part.__
 
@@ -60,7 +60,7 @@ We need to tell PHPStorm were our root location is and how to connect to this lo
 - click green '+' and choose Type 'SFTP' and a name associated with vhost ServerName 
 - __choose `conection` settings as follows__
 
-{% highlight text %}
+```
 SFTP Host: 127.0.0.1
 Port: 2222
 Root path: <click auto detect!!!>
@@ -71,13 +71,13 @@ Password: vagrant
 ---- some other configuration ----
 
 Webserver url: <associated with vhost ServerName !!!!>
-{% endhighlight %}
+```
 
 - choose __mappings__ tab
 - Leave all options as is, expect the following: 
-{% highlight text %}
+```
 Deployment path on server '<given servername>': /var/www
-{% endhighlight %}
+```
 
 ### Remote interpreter
 
@@ -87,7 +87,7 @@ PHPStorm needs to no
 - click __[...]__ beside interpreter and after that green '+' and choose 'remote'
 - choose SSH Credentials and configure as follows
 
-{% highlight text %}
+```
 Host: 127.0.0.1 Port: 2222
 User name: vagrant
 Auth type: password
@@ -96,7 +96,7 @@ Password: vagrant
 ---- some other configuration ----
 
 PHP executable: /usr/bin/php5
-{% endhighlight %}
+```
 
 ### Mappings
 
@@ -105,12 +105,12 @@ We need to configure mappings on remote server, to find sources and stop on brea
 - select `File | Settings > Language & Frameworks | PHP | Servers`
 - click green '+' and add following:
 
-{% highlight text %}
+```
 Name: any name associated with vhost ServerName 
 Host: (configured ServerName in vhosts!): in my case scotch.box
 Port: 80
 Debugger: xdebug
-{% endhighlight %}
+```
 
 <div class="callout callout-info">
   <h4>For Vagrant</h4>

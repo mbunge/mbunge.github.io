@@ -59,3 +59,5 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 ```
+
+Finally I need to replace all Pygments code block syntax with GitHub code block syntax.

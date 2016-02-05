@@ -15,9 +15,9 @@ tags:
 Nobody is perfect and sometimes you need to add some folders or files to .gitignore, but they are already pushed to repo.
 These lines will remove all files from cache and will only add valid files.
 
-{% highlight text %}
+```bash
 git rm -r --cached . 
 git add .
 git commit -m "Removed all ignored folders and files"
 git push origin master
-{% endhighlight %}
+```

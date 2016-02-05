@@ -15,11 +15,11 @@ tags:
 
 __Replace example with your target branch!__
 
-{% highlight text %}
+```
 git fetch origin
 git fetch origin example:example
 git merge example
-{% endhighlight %}
+```
 
 ## Problem
 

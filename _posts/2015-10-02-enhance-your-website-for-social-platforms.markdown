@@ -36,7 +36,7 @@ and <a target="_blank" href="https://twitter.com/makk_eightbit/status/6500038424
 I use Open Graph Protocol for my blog overview and each single post. We just need to implement 
 the markup into our html `<head>` section. The markup for my overview:
 
-{% highlight html %}
+```html
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:site" content="@makk_eightbit"/>
 <meta name="twitter:creator" content="@makk_eightbit"/>
@@ -49,7 +49,7 @@ the markup into our html `<head>` section. The markup for my overview:
 <meta property="og:image" content="http://www.marco-bunge.com/img/default.jpg" />
 
 <title>Marco Bunge</title>
-{% endhighlight%}
+```
 
 ## Facebook
 
