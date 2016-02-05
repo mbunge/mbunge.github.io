@@ -1,10 +1,13 @@
 .highlight pre {
     padding: 0;
-    background-color: #ffffff;
+    background-color: #f0f0f0;
     border: 0;
     border-radius: 0;
 }
-.highlight .table-responsive {
+.highlight .table-responsive,
+.highlight pre,
+.highlight td
+{
   border: none;
 }
 .highlight  { background: #ffffff; }
