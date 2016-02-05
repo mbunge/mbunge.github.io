@@ -6,7 +6,7 @@
 }
 .highlight .table-responsive,
 .highlight pre,
-.highlight td
+.highlight .table>tbody>tr>td
 {
   border: none;
 }
