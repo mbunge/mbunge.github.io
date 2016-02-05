@@ -59,5 +59,3 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 ```
-
-##
