@@ -4,6 +4,8 @@
 Laura invited me to like Iconary fan page on facebook a while ago. Iconary is new dictionary app with a very special story. I'm happy to interview Laura from Icanory.
 
 ### 1. Hello Laura, who are you and what is your job at Iconary? (Hallo Laura, wer bist du und was machst du bei Iconary?)
+I'm 31 years old and work as online-conceptioner for a digital agency in Bremen, Germany. Before that I worked as media designer. I'm working for 13 years in the advertising, design and media branch. I engage with Iconary as my own private project beside my job for the past months. I'm responsible for idea and concept, design and marketing and a huge amount of orgenizing at Iconary.
+
 ### 2. How do you hit upon the idea of creating Iconary? (Wie seit ihr auf die Idee zu Icanry gekommen?)
 ### 3. Iconary is an app designed for iOS and Android. Who should use Iconary and which advantages do Icanory have? (Was macht Iconary besonders und für wen ist es gedacht?)
 ### 4. Does the idea fit the final app? (Ist das Endergebnis von Iconary so, wie ihr es euch zu Anfang vorgestellt habt?)
