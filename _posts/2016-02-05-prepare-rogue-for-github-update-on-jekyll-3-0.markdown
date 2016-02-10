@@ -58,3 +58,7 @@ kramdown:
 ```
 
 Finally I need to replace all Pygments code block syntax with GitHub code block syntax.
+
+## Reference
+
+<a href="" target="_blank">Jekyll 3.0 post on GitHub</a>
