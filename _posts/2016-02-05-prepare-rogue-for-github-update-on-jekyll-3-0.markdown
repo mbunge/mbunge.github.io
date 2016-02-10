@@ -5,7 +5,7 @@ subtitle:   "Replace pygments with rogue and fix highlighting"
 date:       2016-02-05 23:54:47
 published:  2016-02-05 23:54:47
 author:     "Marco Bunge"
-header-img: "img/frontend.jpg"
+header-img: "img/development.jpg"
 series:     "application development"
 tags:
  - howto
@@ -49,7 +49,7 @@ My solution:
 Pygemnts needs to be replaced by rogue. I also add support for kramdown. Additionally I use `input: GFM` to use the same syntax for code blocks 
 on jekyll and GitHub.
 
-```
+```yml
 markdown: kramdown
 
 kramdown:
