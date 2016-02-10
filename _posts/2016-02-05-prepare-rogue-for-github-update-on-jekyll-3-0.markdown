@@ -5,7 +5,7 @@ subtitle:   "Replace pygments with rogue and fix highlighting"
 date:       2016-02-05 23:54:47
 published:  2016-02-05 23:54:47
 author:     "Marco Bunge"
-header-img: "img/modern-work-de.jpeg"
+header-img: "img/frontend.jpg"
 series:     "application development"
 tags:
  - howto
