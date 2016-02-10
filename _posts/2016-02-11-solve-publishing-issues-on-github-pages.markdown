@@ -5,7 +5,7 @@ subtitle:   "Issues occured due to update from Jekyll 2.x to 3.0"
 date:       2016-02-05 23:54:47
 published:  2016-02-05 23:54:47
 author:     "Marco Bunge"
-header-img: "img/blogging-hands.jpeg"
+header-img: "img/blogging-hands.jpg"
 series:     "application development"
 tags:
  - howto
