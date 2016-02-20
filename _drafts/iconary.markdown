@@ -29,7 +29,10 @@ We only have to manage a disappointing situation while app development, when ano
 
 We got a lot of good response but a true challenge is to reach our target audience. We need a marketing budget or a huge network of volunteers tp pass this challenge. We invest in flyers, facebook ads and businesscards, apart from that we use free resources like free meetups and events for refugees, mailings lists for volunteers, blogs or facebook groups. It is very hard to reach our target audience at a national scale considering that we dont't have time or money.
 
-### 6. "Refugees" are a hotly debated topic in politics and in the media. How does the debate affect your team? (Die Flüchlingsfrage ist sehr brisant. In politischen Lagern gibt es positive und nagative Meinung zur aktuellen Lage. Wie beeinflusst euch das in eurem Tun?)
+### 6. "Refugees" are a hotly debated topic in politics and in the media. How does the debate affect your team?
+
+This debate is not affecting our team. Of cource their is always crticism, but fortunately we got almost nothing. I do have my own oppinion and I'm really convinced that only doing is helping, instead of to have many redundant discussions. Thoughts of many others is not influencing myself. My work with refugees - now many friends - is a confirmation to myself, day by day.
+
 ### 7. Their is always a team behind a product. What is the iconary team size and which key skills do your team have? (Mit welchen Kompetenzen ist euer Team ausgestellt und wie groß seit Ihr?)
 ### 8. Finances are an essential part for further product development. How is Iconary funded? (Finanzen sind ein wichtiger und entscheidener Faktor für das Fortbestehen eines Produktes. Finanziert sich Iconary durch Bootstraping, Venture Capital oder ganz anders?)
 ### 9. Iconary is already broken into the market. What do you desire for the future of Iconary? (Iconary ist bereits am Markt, wie sieht die Zukunft von Iconary aus?)
