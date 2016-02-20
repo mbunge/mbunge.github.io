@@ -47,8 +47,12 @@ Nothing :). We are especially investing passion, a huge amount of a time and a s
 
 We are highly motivated and developing additonal custom features to fit the need of all refugees. The next release does have some improvements and new functions.
 
-A big desire is to increase the amount of more words or hole sentences. But this is not possible at the moment. We need more supporters to reach this goal and all these supporters could'nt only work for a better karma. I have to invest a lot of time for marketing tasks, such as this interview or to write to interessting multipliers. We could represent our projects besides 99 others at a event of refugee relief.
+A big desire is to increase the amount of more words or hole sentences. But this is not possible at the moment. We need more supporters to reach this goal and all these supporters could'nt only work for a better karma. I have to invest a lot of time for marketing tasks, such as this interview or to write to interessting multipliers. We could represent our projects besides 99 others at a event of refugee relief. It's still exciting.
 
-### 10. Thank you very much and further luck with Iconary! (Closing words / Schlussworte)
+### 10. Thank you very much and further luck with Iconary!
+
+Thank you, Marco!
+
+## Further information
 
 Getting more Information of <a href="http://iconary.eu/" target="_blank">Iconary</a> and be always <a href="https://www.facebook.com/iconary" target="_blank">up to date on facebook</a>.
