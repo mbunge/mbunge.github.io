@@ -33,9 +33,22 @@ We got a lot of good response but a true challenge is to reach our target audien
 
 This debate is not affecting our team. Of cource their is always crticism, but fortunately we got almost nothing. I do have my own oppinion and I'm really convinced that only doing is helping, instead of to have many redundant discussions. Thoughts of many others is not influencing myself. My work with refugees - now many friends - is a confirmation to myself, day by day.
 
-### 7. Their is always a team behind a product. What is the iconary team size and which key skills do your team have? (Mit welchen Kompetenzen ist euer Team ausgestellt und wie groß seit Ihr?)
-### 8. Finances are an essential part for further product development. How is Iconary funded? (Finanzen sind ein wichtiger und entscheidener Faktor für das Fortbestehen eines Produktes. Finanziert sich Iconary durch Bootstraping, Venture Capital oder ganz anders?)
-### 9. Iconary is already broken into the market. What do you desire for the future of Iconary? (Iconary ist bereits am Markt, wie sieht die Zukunft von Iconary aus?)
+### 7. Their is always a team behind a product. What is the iconary team size and which key skills do your team have?
+
+A big advantage is the small team which is consisting of me and Kevin. Kevin is volontary developing the app for android and apple during leisure time. We do have a lot of dear volonteers for voice recordings. Iconary could realized only this way.
+
+Kevin is one of my collegues but we didn't know before Iconary. As we getting know us and talking about Iconary, we've got the same vision for the app. It is very good to work together via internet and also to cover the most competences to relaize and market Iconary.
+
+### 8. Finances are an essential part for further product development. How is Iconary funded?
+
+Nothing :). We are especially investing passion, a huge amount of a time and a small amount of money for advertising and web hosting and thank-you-dinners for volunteers. 
+
+### 9. Iconary is already broken into the market. What do you desire for the future of Iconary?
+
+We are highly motivated and developing additonal custom features to fit the need of all refugees. The next release does have some improvements and new functions.
+
+A big desire is to increase the amount of more words or hole sentences. But this is not possible at the moment. We need more supporters to reach this goal and all these supporters could'nt only work for a better karma. I have to invest a lot of time for marketing tasks, such as this interview or to write to interessting multipliers. We could represent our projects besides 99 others at a event of refugee relief.
+
 ### 10. Thank you very much and further luck with Iconary! (Closing words / Schlussworte)
 
 Getting more Information of <a href="http://iconary.eu/" target="_blank">Iconary</a> and be always <a href="https://www.facebook.com/iconary" target="_blank">up to date on facebook</a>.
