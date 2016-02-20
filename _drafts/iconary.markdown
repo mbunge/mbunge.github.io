@@ -7,6 +7,8 @@ Laura invited me to like Iconary fan page on facebook a while ago. Iconary is ne
 I'm 31 years old and work as online-conceptioner for a digital agency in Bremen, Germany. Before that I worked as media designer. I'm working for 13 years in the advertising, design and media branch. I engage with Iconary as my own private project beside my job for the past months. I'm responsible for idea and concept, design and marketing and a huge amount of orgenizing at Iconary.
 
 ### 2. How do you hit upon the idea of creating Iconary? (Wie seit ihr auf die Idee zu Icanry gekommen?)
+I want to take action since a refugee camp has been established last year in summertime in the near of our office located in Überseestadt (Bremen, Germany). Along with a friend, I started to teach german once a week. And of course it's like a drop in a bucket. My wish was to make something avaiable for the peoable, when I'm not able teaching them. In addition I looked for a project where I could test myself and which inceases my competences combined with my interestes and personal life in he digital world. Most refugees own a smart phone and an app suggests itself.
+
 ### 3. Iconary is an app designed for iOS and Android. Who should use Iconary and which advantages do Icanory have? (Was macht Iconary besonders und für wen ist es gedacht?)
 ### 4. Does the idea fit the final app? (Ist das Endergebnis von Iconary so, wie ihr es euch zu Anfang vorgestellt habt?)
 ### 5. Success and disappointments are always part of product development. What is your expierence? (Welche Erfolgserlebnisse oder Enttäuschungen habt ihr bisher erlebt?)
