@@ -1,7 +1,20 @@
-# Interview with founders of iconary
-## Revolution of dictionaries audience?
+---
+layout:     post
+title:      "Interview with Laura, founder of Iconary"
+subtitle:   "A dictionary that really helps"
+date:       2016-02-20 14:31:47
+published:  2016-02-20 14:31:47
+author:     "Marco Bunge"
+header-img: "img/iconary.jpg"
+series:     "interviews"
+tags:
+ - interview
+ - app
+ - ios
+ - android
+---
 
-Laura invited me to like Iconary fan page on facebook a while ago. Iconary is new dictionary app with a very special story. I'm happy to interview Laura from Icanory.
+Laura invited me to like Iconary fan page on facebook a while ago. Iconary is innovative dictionary app with a very special story.
 
 ### 1. Hello Laura, who are you and what is your job at Iconary?
 
