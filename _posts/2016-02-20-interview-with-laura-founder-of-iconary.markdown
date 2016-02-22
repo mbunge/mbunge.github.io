@@ -22,17 +22,17 @@ I'm 31 years old and work as online-conceptioner for a digital agency in Bremen,
 
 ### 2. How do you hit upon the idea of creating Iconary?
 
-I want to take action since a refugee camp has been established last year in summertime in the near of our office located in Überseestadt (Bremen, Germany). Along with a friend, I started to teach german once a week. And of course it's like a drop in a bucket. My wish was to make something avaiable for the peoable, when I'm not able teaching them. In addition I looked for a project where I could test myself and which inceases my competences combined with my interestes and personal life in he digital world. Most refugees own a smart phone and an app suggests itself.
+I want to take action since a refugee camp has been established last year in summertime in the near of our office located in Überseestadt (Bremen, Germany). Along with a friend, I started to teach german once a week. And of course it's like a drop in a bucket. My wish was to make something avaiable for the peoable, when I'm not able to teaching them. In addition I looked for a project where I could test myself and which inceases my competences combined with my interestes and personal life in the digital world. Most refugees own a smart phone and an app suggests itself.
 
 ### 3. Iconary is an app designed for iOS and Android. Who should use Iconary and which advantages do Icanory have?
 
-I start with research for similar projects and of course their are a lot dictionary apps. But there was no pure icon dictionary which was made for refugees. My goal was to outdo the other apps, while I deliver a free app, which is accessible in offline mode, has a small file size, has an authentic recorded voice response. The app should also have a good appearance and a very good usability. A dictionary app combined with these features is an innovation. My goal was to start and just realize this idea, instead of to keep pace with the well-known apps.
+I start with research for similar projects and of course there are a lot dictionary apps. But no app was created as a pure icon dictionary which was made for refugees. My goal was to outdo the other apps, while I deliver a free app, which is accessible in offline mode, has a small file size, has an authentic recorded voice response. The app should also have a good appearance and a very good usability. A dictionary app combined with these features is an innovation. My goal was to start and just realize this idea, instead of to keep pace with the well-known apps.
 
-We ascertain that Iconary helps everyone which would like to improve it own languge skills. We are also figured out that the colored icons and the good usability appear very fine to kids.
+We ascertain that Iconary helps anyyone, who would like to improve it's own languge skills. We are also figured out that the colored icons and the good usability appear to kids.
 
 ### 4. Does the idea fit the final app?
 
-The final app complies exactly to my first idea and my vision, which I had in mind. But the current version of Iconary is a first release and we want to add more features. It is hard to deal with job, personal life and improve the app at the same time. But it's worth it. We are happy that we create this app within a few weeks and proud of the good feedback.
+The final app complies exactly to my first idea and my vision, which I had in mind. But the current version of Iconary is only the beginning and more features will be added in upcoming releases. It is hard to deal with job, personal life and improve the app at the same time. But it's worth it. We are happy that we create this app within a few weeks and proud of the good feedback.
 
 ### 5. Success and disappointments are always part of product development. What is your expierence?
 
