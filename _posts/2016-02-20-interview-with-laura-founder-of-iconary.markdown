@@ -14,7 +14,7 @@ tags:
  - android
 ---
 
-Laura invited me to like Iconary fan page on facebook a while ago. Iconary is innovative dictionary app with a very special story.
+Laura invited me to like Iconary <a href="https://www.facebook.com/iconary" target="_blank">fan page on facebook</a> a while ago. Iconary is innovative dictionary app with a very special story.
 
 ### 1. Hello Laura, who are you and what is your job at Iconary?
 
