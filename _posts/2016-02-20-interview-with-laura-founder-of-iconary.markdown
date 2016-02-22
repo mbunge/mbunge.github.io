@@ -3,7 +3,7 @@ layout:     post
 title:      "Interview with Laura, founder of Iconary"
 subtitle:   "A dictionary that really helps"
 date:       2016-02-20 14:31:47
-published:  2016-02-20 14:31:47
+published:  true
 author:     "Marco Bunge"
 header-img: "img/iconary.jpg"
 series:     "interviews"
