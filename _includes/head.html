@@ -1,11 +1,14 @@
+{% if page.page_type %}
+    {% assign page_type = page.page_type %}
+{% else %}
+    {% assign page_type = "article" %}
 <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}">
-    <!-- {{page}} -->
-    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% elsif page.categories %}{{ page.categories | join: ', '}}{% elsif page.tags %}{{ page.tags | join: ', '}}{% else %}{{ site.keywords }}{% endif %}" />
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% elsif page.tags %}{{ page.tags | join: ', '}}{% elsif page.categories %}{{ page.categories | join: ', '}}{% else %}{{ site.keywords }}{% endif %}" />
     <meta name="author" content="{{site.author}}">
     <meta name="robots" content="index, follow" />
     <meta name="revisit-after" content="4 days" />
@@ -13,7 +16,7 @@
     <meta name="twitter:site" content="@{{site.twitter_username}}"/>
     <meta name="twitter:creator" content="@{{site.twitter_username}}"/>
     <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="{{page.page_type}}" />
+    <meta property="og:type" content="{{page_type}}" />
     <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta property="og:description" content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}" />
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
