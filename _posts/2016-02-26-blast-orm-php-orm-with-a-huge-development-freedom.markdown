@@ -132,7 +132,7 @@ $userRepo = new Repository($user);
 
 Before accessing users we need to create one:
 
-```
+```php
 <?php
 
 $user->setName('Bob');
@@ -142,7 +142,7 @@ $userRepo->save($user);
 
 ### access and update user
 
-```
+```php
 <?php
 
 //find bob by id
@@ -155,7 +155,7 @@ $userRepo->save($user);
 
 ### delete user
 
-```
+```php
 <?php
 
 //delete user bob with id 1
