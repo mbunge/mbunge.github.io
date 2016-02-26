@@ -1,10 +1,10 @@
 # Site settings
-title: "Marco Bunge"
+title: "Marco Bunge - Development Blog"
 header-img: img/frontend.jpg
 email: mjls@web.de
-description: "Blogging about open-source, PHP and webtechnologies"
+description: "Tech-Blog about php application development, git and devops"
 author: "Marco Bunge"
-keywords: "open-source, PHP, webtechnologies"
+keywords: "php, git, application, blog, bunge"
 baseurl: ""
 twitter_username: makk_eightbit
 github_username:  mbunge
