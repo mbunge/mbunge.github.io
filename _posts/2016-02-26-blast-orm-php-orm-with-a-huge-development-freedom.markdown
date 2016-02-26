@@ -2,8 +2,8 @@
 layout:     post
 title:      "Blast ORM - PHP ORM with a huge development freedom"
 subtitle:   "framework agnostic data access and persistence layer based on Doctrine 2"
-date:       2016-02-26 23:54:47
-published:  false
+date:       2016-02-26 14:05:00
+published:  2016-02-26 14:05:00
 author:     "Marco Bunge"
 header-img: "img/code.jpg"
 series:     "application development"
@@ -16,11 +16,12 @@ tags:
 
 Two month ago I start to develop an ORM which is delivering a maximum of freedom to the developers. My goal is easy configuration, a minimum of dependencies and performance while accessing data and independent entities.
 
-Blast orm is just released in version 0.1.2 and accessible via composer or <a href="" target="_blank">github</a>.
+Blast orm latest released is version 0.2 and accessible via composer or <a href="http://bit.ly/php-orm" target="_blank">github</a>. I would like to show you how to use the orm with a simple user class.
 
-Blast orm is using a query object to manage access and persist data. An additonal repository is mediating between entities and query and is utilizing basic CRUD. Entities are representing database objects and don't need to follow a contract. 
-
-I would like to show you how to use this orm with a simple user class.
+<div class="callout callout-info">
+  <h4>Components</h4>
+  <p>A query object to manage access and persist data. An additonal repository is mediating between entities and query and is utilizing basic CRUD. Entities are representing database objects and don't need to follow a contract.</p>
+</div>
 
 ## Install
 
