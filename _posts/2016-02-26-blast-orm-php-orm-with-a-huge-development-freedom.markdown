@@ -47,7 +47,7 @@ class User
     private $name;
 
     /**
-    Primary key
+     * Primary key
      * @return int
      */
     public function getId()
