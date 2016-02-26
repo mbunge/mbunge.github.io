@@ -106,7 +106,8 @@ Add the table programatically:
 ```php
 <?php
 
-Manager::getInstance()->exec('CREATE TABLE IF NOT EXISTS user (
+Manager::getInstance()->exec('
+CREATE TABLE IF NOT EXISTS user (
 	id INT NOT NULL AUTO_INCREMENT,
 	name VARCHAR(255) NULL,
 	PRIMARY KEY (id)
