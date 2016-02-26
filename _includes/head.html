@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% elsif page.categories %}{{ page.categories | join: ', '}}{% else %}{{ site.keywords }}{% endif %}" />
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% elsif page.categories %}{{ page.categories | join: ', '}}{% elsif page.tags %}{{ page.tags | join: ', '}}{% else %}{{ site.keywords }}{% endif %}" />
     <meta name="author" content="{{site.author}}">
     <meta name="robots" content="index, follow" />
     <meta name="revisit-after" content="4 days" />
