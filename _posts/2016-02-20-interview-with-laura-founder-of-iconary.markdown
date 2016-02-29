@@ -2,8 +2,8 @@
 layout:     post
 title:      "Interview with Laura Brandt, founder of iconary"
 subtitle:   "Break down language barriers with an innovative icon based dictionary"
-date:       2016-02-29 08:00:00
-published:  false
+date:       2016-02-29 08:20:00
+published:  2016-02-29 08:20:00
 author:     "Marco Bunge"
 header-img: "img/iconary.jpg"
 series:     "interviews"
