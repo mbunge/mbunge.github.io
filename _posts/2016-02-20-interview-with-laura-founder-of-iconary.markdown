@@ -13,6 +13,8 @@ tags:
  - ios
  - android
  - dictionary
+ - lifestyle
+ - diy
 ---
 
 Laura Brandt invited me to like iconary <a href="https://www.facebook.com/iconary" target="_blank">fan page on facebook</a> a while ago. iconary is innovative icon based dictionary app for Android and iOS with a very exciting story.
