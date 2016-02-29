@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Interview with Laura, founder of Iconary"
+title:      "Interview with Laura Brandt, founder of Iconary"
 subtitle:   "A dictionary that really helps"
 date:       2016-02-29 08:00:00
 published:  false
@@ -15,7 +15,7 @@ tags:
  - dictionary
 ---
 
-Laura invited me to like Iconary <a href="https://www.facebook.com/iconary" target="_blank">fan page on facebook</a> a while ago. Iconary is innovative dictionary app with a very special story.
+Laura Brandt invited me to like iconary <a href="https://www.facebook.com/iconary" target="_blank">fan page on facebook</a> a while ago. iconary is innovative icon-dictionary app with a very exciting story.
 
 ### 1. Hello Laura, who are you and what is your job at iconary?
 
@@ -68,4 +68,4 @@ Thank you, Marco!
 
 ## Further information
 
-Getting more Information of <a href="http://iconary.eu/" target="_blank">Iconary</a> and be always <a href="https://www.facebook.com/iconary" target="_blank">up to date on facebook</a>.
+Getting more Information of <a href="http://iconary.eu/" target="_blank">iconary</a> and be always <a href="https://www.facebook.com/iconary" target="_blank">up to date on facebook</a>.
