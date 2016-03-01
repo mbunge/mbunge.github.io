@@ -78,12 +78,12 @@ Run `composer dumpautoload` to avoid autoload conflicts.
 
 ### 4. Create a new test with PhpStorm
 
-<video src="http://www.marco-bunge.com/img/new-phpunit-test.mp4" autobuffer controls>
+<video src="http://www.marco-bunge.com/img/new-phpunit-test.mp4" autobuffer controls style="width: 100%">
    <source src="http://www.marco-bunge.com/img/new-phpunit-test.mp4" type="video/mp4">
 </video>
 
 ### 5. Setup PHPUnit in PHPStorm for your current project
 
-<video src="http://www.marco-bunge.com/img/setup-phpunit-in-phpstorm.mp4" autobuffer controls>
+<video src="http://www.marco-bunge.com/img/setup-phpunit-in-phpstorm.mp4" autobuffer controls style="width: 100%">
    <source src="http://www.marco-bunge.com/img/setup-phpunit-in-phpstorm.mp4" type="video/mp4">
 </video>
