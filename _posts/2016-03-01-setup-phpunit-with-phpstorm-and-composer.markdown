@@ -26,12 +26,12 @@ I show you how to setup a project specific testing environment with PHPunit in P
   <p>If you use composer runtime, then use <code>composer</code></p>
 </div>
 
-Execute following command to install PHPUnit based in your PHP version. check your PHP Version on cli `php -v` or in your browser with `<?php phpinfo();`
+Execute following command to install PHPUnit based in your PHP version.
 
 <div class="callout callout-success">
   <h4>Check PHP Version</h4>
   <p>CLI: <code>php -v</code>.</p>
-  <p>In browser: <code><?php phpinfo();</code></p>
+  <p>In browser: <code>phpinfo();</code></p>
 </div>
 
 #### PHP 5.6 and greater
