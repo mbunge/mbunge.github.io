@@ -1,12 +1,11 @@
 ---
 layout:     post
-title:      "phpunit setup in PHPStorm 10.x"
-subtitle:   "project specific and convinient unit testing"
-date:       2016-03-02 14:05:00
-published:  false
+title:      "PHPUnit setup in PHPStorm 10.x"
+subtitle:   "Setup a project specific testing environment"
+date:       2016-03-01 21:51:00
+published:  2016-03-01 21:51:00
 author:     "Marco Bunge"
-header-img: "img/code.jpg"
-series:     "application development"
+header-img: "img/testing.jpg"
 tags:
  - howto
  - php
@@ -14,9 +13,9 @@ tags:
  - phpstorm
 ---
 
-PHPUnit is a well-known unit testing framework based on xUnit architecture for PHP developed by <a href="" target="_blank">Sebastian Bergmann</a>(https://sebastian-bergmann.de/). It based on the 
+PHPUnit is a well-known unit testing framework based on xUnit architecture for PHP developed by <a href="https://sebastian-bergmann.de/" target="_blank">Sebastian Bergmann</a>.
 
-I show you how to setup a project specific testing environment with PHPunit in PhpStorm 10.x within 3 steps. Within this testing environment allows you to test http and console applications.
+I show you how to setup a project specific testing environment with PHPUnit in PhpStorm 10.x within five steps. This testing environment allows you to test http and console applications.
 
 ### 1. Install PHPUnit with composer
 
@@ -61,7 +60,7 @@ Create `phpunit.xml` in your project root folder.
 </phpunit>
 ```
 
-### Create test folder and unit tests
+### 3. Create test folder
 
 Create the folder `tests` in your project root folder and register tests to autoloader in your `composer.json`.
 
@@ -75,13 +74,15 @@ Create the folder `tests` in your project root folder and register tests to auto
 ...
 ```
 
-Create a new test with PhpStorm:
+Run `composer dumpautoload` to avoid autoload conflicts.
+
+### 4. Create a new test with PhpStorm
 
 <video src="http://www.marco-bunge.com/img/new-phpunit-test.mp4" autobuffer controls>
    <source src="http://www.marco-bunge.com/img/new-phpunit-test.mp4" type="video/mp4">
 </video>
 
-### Setup PHPUnit in PHPStorm for your current project
+### 5. Setup PHPUnit in PHPStorm for your current project
 
 <video src="http://www.marco-bunge.com/img/setup-phpunit-in-phpstorm.mp4" autobuffer controls>
    <source src="http://www.marco-bunge.com/img/setup-phpunit-in-phpstorm.mp4" type="video/mp4">
