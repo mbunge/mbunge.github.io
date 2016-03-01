@@ -14,7 +14,7 @@ tags:
  - phpstorm
 ---
 
-PHPUnit is a well-known unit testing framework based on xUnit architecture for PHP developed by ![Sebastian Bergmann](https://sebastian-bergmann.de/). It based on the 
+PHPUnit is a well-known unit testing framework based on xUnit architecture for PHP developed by <a href="" target="_blank">Sebastian Bergmann</a>(https://sebastian-bergmann.de/). It based on the 
 
 I show you how to setup a project specific testing environment with PHPunit in PhpStorm 10.x within 3 steps. Within this testing environment allows you to test http and console applications.
 
@@ -77,6 +77,12 @@ Create the folder `tests` in your project root folder and register tests to auto
 
 Create a new test with PhpStorm:
 
-<video src="https://s3.amazonaws.com/img0.recordit.co/s8mGikqxkd.mp4?AWSAccessKeyId=AKIAINSRFOQXTN4DT46A&amp;Expires=1456866415&amp;Signature=k%2BVsQXwYriFAuObUVyd8djzBiXg%3D">
-   <source src="https://s3.amazonaws.com/img0.recordit.co/s8mGikqxkd.mp4?AWSAccessKeyId=AKIAINSRFOQXTN4DT46A&amp;Expires=1456866415&amp;Signature=k%2BVsQXwYriFAuObUVyd8djzBiXg%3D" type="video/mp4">
+<video src="http://www.marco-bunge.com/img/new-phpunit-test.mp4" autobuffer controls>
+   <source src="http://www.marco-bunge.com/img/new-phpunit-test.mp4" type="video/mp4">
+</video>
+
+### Setup PHPUnit in PHPStorm for your current project
+
+<video src="http://www.marco-bunge.com/img/setup-phpunit-in-phpstorm.mp4" autobuffer controls>
+   <source src="http://www.marco-bunge.com/img/setup-phpunit-in-phpstorm.mp4" type="video/mp4">
 </video>
