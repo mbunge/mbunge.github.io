@@ -32,16 +32,16 @@ We want to use git for our three step deployment strategy.
 
 ## Create update archive
 
-```
-git archive -o archive.zip
+```bash
+$ git archive -o archive.zip
 ```
 
 This command creates an archive containing all files from our current branch. But we want to get all latest changes from a specific date. 
 
 ### Get all changes of a commit, branch, or another reference
 
-```
-git diff --name-only HEAD
+```bash
+$ git diff --name-only HEAD
 ```
 
 We get a lis of all changes of our last commit.
@@ -68,14 +68,14 @@ But we need all changes since a specific date until now. Therefore we use git re
 
 ### Get a list of all changes from a specific date, related to head reference.
 
-```
-git diff --name-only HEAD@{"2016-01-15 00:00:00"}
+```bash
+$ git diff --name-only HEAD@{"2016-01-15 00:00:00"}
 ```
 
 We need a filtered list of all files except deleted file For our deployment. Adding `--diff-filter`:
 
-```
-git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB
+```bash
+$ git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB
 ```
 
 <div class="callout callout-info">
@@ -87,40 +87,40 @@ git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB
 
 Pass our change list as subcommand `$()`:
 
-```
-git archive -o update.zip HEAD $(git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB)
+```bash
+$ git archive -o update.zip HEAD $(git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB)
 ```
 
 ## Enhanced commands
 
 ### Archive with branch name and datetime
 
-```
-git archive -o update-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).zip HEAD $(git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB)
+```bash
+$ git archive -o update-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).zip HEAD $(git diff --name-only HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB)
 ```
 
 ### Archive with branch name and datetime for scrumteams (deployment every two weeks)
 
-```
-git archive -o update-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).zip HEAD $(git diff --name-only HEAD@{"2 weeks ago"} --diff-filter=ACMRTUXB)
+```bash
+$ git archive -o update-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).zip HEAD $(git diff --name-only HEAD@{"2 weeks ago"} --diff-filter=ACMRTUXB)
 ```
 
 ### txt file with all changes, including deleted
 
-```
-git diff --name-status HEAD@{"2016-01-15 00:00:00"} > updates-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).txt
+```bash
+$ git diff --name-status HEAD@{"2016-01-15 00:00:00"} > updates-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).txt
 ```
 
 ### txt file with all changes, excluding deleted
 
-```
-git diff --name-status HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB > updates-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).txt
+```bash
+$ git diff --name-status HEAD@{"2016-01-15 00:00:00"} --diff-filter=ACMRTUXB > updates-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).txt
 ```
 
 ### txt file with all deleted files
 
-```
-git diff --name-status HEAD@{"2016-01-15 00:00:00"} --diff-filter=D > deleted-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).txt
+```bash
+$ git diff --name-status HEAD@{"2016-01-15 00:00:00"} --diff-filter=D > deleted-$(git rev-parse --abbrev-ref HEAD)-$(date +%Y%m%d-%H%M%S).txt
 ```
 
 ## Conclusion
