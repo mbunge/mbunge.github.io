@@ -33,7 +33,7 @@ We want to use git for our three step deployment strategy.
 ## Create update archive
 
 ```bash
-$ git archive -o archive.zip
+git archive -o archive.zip
 ```
 
 This command creates an archive containing all files from our current branch. But we want to get all latest changes from a specific date. 
