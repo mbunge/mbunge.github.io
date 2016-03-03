@@ -87,3 +87,10 @@ Run `composer dumpautoload` to avoid autoload conflicts.
 <video src="http://www.marco-bunge.com/img/setup-phpunit-in-phpstorm.mp4" autobuffer controls style="width: 100%">
    <source src="http://www.marco-bunge.com/img/setup-phpunit-in-phpstorm.mp4" type="video/mp4">
 </video>
+
+<div class="callout callout-success">
+  <h4>Remote PHP Intepreter</h4>
+  <p><a href="https://confluence.jetbrains.com/display/PhpStorm/Working+with+Remote+PHP+Interpreters+in+PhpStorm" target ="_blank">Setup remote PHP interpreter</a></p>
+</div>
+
+
