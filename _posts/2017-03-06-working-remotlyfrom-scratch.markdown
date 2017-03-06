@@ -42,5 +42,5 @@ any other trouble.
 
 <div class="callout callout-success">
   <h4>Ask me</h4>
-  <p>If you want to start as a remote worker, just ask me via <a href="https://twitter.com/makk_eightbit">twitter</a>!</p>
+  <p>If you want to start as a remote worker, just ask me via <a target="_blank" href="https://twitter.com/makk_eightbit">twitter</a>!</p>
 </div>
