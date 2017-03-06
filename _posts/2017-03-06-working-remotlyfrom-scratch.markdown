@@ -5,7 +5,7 @@ subtitle:   "Remote ceremonies and improved productivity"
 date:       2017-03-06 14:12:00
 published:  2017-03-06 14:12:00
 author:     "Marco Bunge"
-header-img: "img/modern-work-de.jpeg"
+header-img: "img/downloads-bg.jpg"
 series:     "interviews"
 tags:
  - productivity
@@ -32,7 +32,7 @@ a shower, brushed tees and wearing reputable clothers. My day starts between 6:0
 
 Between 12:00 pm and 1:00 pm a have launch. 
 
-*Every single workday!*
+__Every single workday!__
 
 ## You may ask, why should I work remotly when I also need to keep the office time?
 
