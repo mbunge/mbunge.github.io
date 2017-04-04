@@ -6,6 +6,7 @@ date:       2016-03-01 21:51:00
 published:  2016-03-01 21:51:00
 author:     "Marco Bunge"
 header-img: "img/testing.jpg"
+series:     "application development"
 tags:
  - howto
  - php
