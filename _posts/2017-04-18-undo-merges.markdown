@@ -118,3 +118,4 @@ The option `-m 1` means to use commit id of source branch, `-m 2` means to use c
 <span name="links"></span>
 
 - <a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing" target="_blank">Merge vs. Rebase by Atlassian</a>
+- <a href="https://www.atlassian.com/git/tutorials/undoing-changes" target="_blank">Undo changes by Atlassian</a>
