@@ -64,7 +64,13 @@ Now we take one step backwards this commit _- with ^ after commit id -_ and rest
 $ git checkout <deleting_commit>^ -- <file_path>
 ```
 
-If you call `$ git status` you should get a message like this
+If you call 
+
+```
+$ git status
+``` 
+
+you should get a message like this
 
 ```
 $ git status
