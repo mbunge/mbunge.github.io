@@ -18,7 +18,7 @@ tags:
 While working on source code with a few people you may run into you merge conflicts or merges results in strange missing code mess. 
 Working a day and every thing is lost? No, it isn't ;)
 
-## Save from problems with fast-forward merging nor rebase 
+## Be save with fast-forward merging nor rebase 
 
 If you merge dev in your feature branch you should use 
 
