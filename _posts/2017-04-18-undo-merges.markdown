@@ -50,6 +50,34 @@ If you need to revert a special change from a previous commit, use following lin
 $ git revert <commit-id>
 ```
 
+## Restore files from previous commits
+
+First of all we need to recognize the id of deleting commit.
+
+```
+$ git rev-list -n 1 HEAD -- <file path>
+```
+
+Now we take one step backwards this commit _- with ^ after commit id -_ and restore the target file
+
+```
+$ git checkout <deleting_commit>^ -- <file_path>
+```
+
+If you call `$ git status` you should get a message like this
+
+```
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   index.html
+```
+
+Now you are able to commit all restored files.
+
 ## Revert a merge commit few days ago
 
 When merging branches together git creats a special commit called __Merge Commit__. The commit stores commit-id of 
