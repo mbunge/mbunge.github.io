@@ -114,7 +114,7 @@ $ git revert <commit-id> -m 1
 
 The option `-m 1` means to use commit id of source branch, `-m 2` means to use commit id of merged branch.
 
-## Links
+## Further reading
 <span name="links"></span>
 
 - <a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing" target="_blank">Merge vs. Rebase by Atlassian</a>
