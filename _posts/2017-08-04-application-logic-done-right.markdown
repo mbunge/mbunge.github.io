@@ -12,10 +12,22 @@ tags:
  - git
  - vcs
 ---
-# Logic within MVC
 
-> Model–view–controller (MVC) is a software architectural pattern for implementing user interfaces on computers. It divides a given application into three interconnected parts in order to separate internal representations of information from the ways that information is presented to and accepted from the user.[1][2] The MVC design pattern decouples these major components allowing for efficient code reuse and parallel development.
-Traditionally used for desktop graphical user interfaces (GUIs), this architecture has become popular for designing web applications and even mobile, desktop and other clients.[3] Popular programming languages like Java, C#, Ruby, PHP and others have popular MVC frameworks that are currently being used in web application development straight out of the box.
+A client performs a request, which is handled by a controller. The controller invoke the **model** and assigens the result data to a **view**. The **controller** converts the view into a response and delivers the response back to the client.
+
+If you look at this <a href="https://github.com/mbunge/application-examples/tree/master/mvc" target="_blank">simple example</a> the controller seems to be responsible for application logic. This is still true for very small approaches. But in huge systems, code needs to be reusable. It is even better to separate complex application logic from a controller. The **model** is responsible for complex application logic - or even better **business logic** or domain logic.
+
+**Controllers** should only responsible 
+ 1. for invoking business logic on a specific request
+ 2. and return a response, which is processed with data from business logic
+ 
+The **Model** is responsible for receive data from any datasource and process data.  
+ 
+I show you how to organize business logic for your example.
+
+# Business logic
+
+
 
 ## Repositories
 
@@ -295,29 +307,7 @@ da dieser nun bedingt durch die IoC-Architektur bekannt sein muss.
   <p><pre><code class="language-text" data-lang="text">$ git log --merge</code></pre></p>
 </div>
 
-```
-commit 49dd2fe95c288e9ed5cfe9ebdf4ad0d10238a946
-Merge: fd137992a ccbfb730c
-Author: mbunge <m@b.g>
-Date:   Tue Apr 11 22:26:51 2017 +0200
-
-    Merge branch 'master' into dev
-
-    # Conflicts:
-    #       app/views/projectx/index.php
-```
-
-Have a look at __Merge__. You see two commit id's. The first represents the source branch, the second the merged branch.
-
-```bash
-$ git revert <commit-id> -m 1
-```
-
-The option `-m 1` means to use commit id of source branch, `-m 2` means to use commit id of merged branch.
-
 ## Further reading
 <span name="links"></span>
 
-- <a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing" target="_blank">Merge vs. Rebase by Atlassian</a>
-- <a href="https://www.atlassian.com/git/tutorials/undoing-changes" target="_blank">Undo changes by Atlassian</a>
-- <a href="https://www.reddit.com/r/git/comments/660ohx/how_to_be_a_good_merge_master/" target="_blank">Merge master role on reddit</a>
+- <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_blank">MVC Pattern</a>
