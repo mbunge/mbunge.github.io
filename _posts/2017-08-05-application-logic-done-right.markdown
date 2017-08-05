@@ -29,9 +29,10 @@ Business logic performs operations between databases - **data tier** - and inter
 <figure>
  <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Overview_of_a_three-tier_application_vectorVersion.svg">
  <figcaption>
-  Public Domain, &copy; by <a href="https://commons.wikimedia.org/wiki/File:Overview_of_a_three-tier_application_vectorVersion.svg">Bartledan at Wikipedia English</a>
+  <i>Public Domain, &copy; by <a href="https://commons.wikimedia.org/wiki/File:Overview_of_a_three-tier_application_vectorVersion.svg" target="_blank">Bartledan at Wikipedia English</a></i>
  </figcaption>
 </figure>
+
 ## Repositories
 
 Each repository organize all kinds of data retrieval and data access for a single entity, like entries of an database table. The repository converts data from data sources into a domain model.
