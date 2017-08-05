@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Application logic done right"
-subtitle:   "How to organize code within MVC pattern"
+subtitle:   "How to organize source code with business logic"
 date:       2017-08-05 02:14:00
 published:  2017-08-05 02:14:00
 author:     "Marco Bunge"
@@ -20,7 +20,7 @@ Enterprise applications are often accessible via HTTP, Sockets, RPC, CLI or any 
 
 We don't want to write the same logic for each required interfaces. Furthermore we don't want to test and maintain code for each required interfaces. We want to write, test and maintain reusable source code at a central point of the application eco-system.
 
-I show you how to organize your reusable, testable and maintainable source code with business logic.
+I show you how to organize reusable, testable and maintainable source code with business logic.
 
 # Business logic
 
