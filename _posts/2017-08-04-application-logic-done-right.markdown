@@ -2,15 +2,16 @@
 layout:     post
 title:      "Application logic done right"
 subtitle:   "How to organize code within MVC pattern"
-date:       2017-08-04 21:46:00
-published:  false
+date:       2017-08-05 02:14:00
+published:  2017-08-05 02:14:00
 author:     "Marco Bunge"
-header-img: "img/modern-work-de.jpeg"
-series:     "git"
+header-img: "img/code.jpg"
+series:     "application development"
 tags:
- - howto
- - git
- - vcs
+ - PHP
+ - development
+ - how-to
+ - application
 ---
 
 Typically small http applications does only have to manage HTTP communication on top of a tiny MVC-Framework. A client performs a request, which is handled by a controller. The controller invoke the **model** and assigens the result data to a **view**. The **controller** converts the view into a response and delivers the response back to the client.
@@ -273,11 +274,16 @@ class BlogController
      */
     public function getPost(Request $request): Response
     {
+        // get input data
         $data = $request->getInput();
 
+        // recognize domain model
         $model = $this->postService->loadPost($data['identifier']);
-        $view = new View('blog/default', $model);
         
+        // build view for http model
+        // domain model could also converted to a view model
+        $view = new View('blog/default', $model);
+
         // build http response
         $response = new Response();
         $response->getBody()->write($view->render());
