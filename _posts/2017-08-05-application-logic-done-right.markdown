@@ -26,8 +26,12 @@ I show you how to organize your reusable, testable and maintainable source code 
 
 Business logic performs operations between databases - **data tier** - and interfaces - **presentation tier** and is part of a three-ier architecture. A good implementation of business logic separates operations on presentation-layer with business-services and on data-layer with repositories.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Overview_of_a_three-tier_application_vectorVersion.svg">
-
+<figure>
+ <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Overview_of_a_three-tier_application_vectorVersion.svg">
+ <figcaption>
+  Public Domain, &copy; by <a href="https://commons.wikimedia.org/wiki/File:Overview_of_a_three-tier_application_vectorVersion.svg">Bartledan at Wikipedia English</a>
+ </figcaption>
+</figure>
 ## Repositories
 
 Each repository organize all kinds of data retrieval and data access for a single entity, like entries of an database table. The repository converts data from data sources into a domain model.
