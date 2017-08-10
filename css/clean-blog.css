@@ -415,3 +415,7 @@ body {
 .callout-info h4 {
     color: #5bc0de;
 }
+
+.post-body a {
+  text-decoration: underline;
+}
