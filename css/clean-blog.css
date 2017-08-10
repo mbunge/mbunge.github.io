@@ -416,6 +416,8 @@ body {
     color: #5bc0de;
 }
 
-.post-body a {
-  text-decoration: underline;
+.post-body a,
+.post-body h4 a,
+.post-body li a{
+  text-decoration: underline !impotant;
 }
