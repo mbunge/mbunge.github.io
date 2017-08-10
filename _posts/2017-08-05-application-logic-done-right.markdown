@@ -21,7 +21,15 @@ Web based enterprise applications are often accessible via different user interf
 
 We don't want to write the same logic for each required interfaces. Furthermore we don't want to test and maintain code for each required interfaces. We want to write, test and maintain reusable source code at a central point of the application eco-system.
 
-I show you how to organize encapuled, reusable, testable and maintainable source code with business logic.
+I show you how to organize a clean, testable and reusbale application architecture.
+
+<figure>
+ <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Clean_Architecture_%2B_DDD%2C_full_application.svg">
+ <figcaption>
+  <h4><a href="https://www.entropywins.wtf/blog/2016/11/24/implementing-the-clean-architecture/" target="_blank">Implementing the Clean Architecture by Jereon De Dauw</a></h4>
+  <small><i>CC0 1.0, &copy; by <a href="https://commons.wikimedia.org/wiki/File:Overview_of_a_three-tier_application_vectorVersion.svg" target="_blank">Jeroen De Dauw</a></i></small>
+ </figcaption>
+</figure>
 
 # Business logic
 
@@ -36,18 +44,16 @@ Business logic - aka Domain logic - performs operations between databases - **da
 
 My understanding and implementation of business logic separates operations on presentation-layer with domain services and on data-layer with repositories.
 
-<figure>
- <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Clean_Architecture_%2B_DDD%2C_full_application.svg">
- <figcaption>
-  <small><i>CC0 1.0, &copy; by <a href="https://commons.wikimedia.org/wiki/File:Overview_of_a_three-tier_application_vectorVersion.svg" target="_blank">Jeroen De Dauw</a></i></small>
- </figcaption>
-</figure>
-
 The example code refers to the famous blog example.
 
 ## Repositories
 
-Each repository organize all kinds of data retrieval and data access for a single entity, like entries of a database table. The repository converts data from data sources into a domain model and takes domain models and converts them to an entity.
+Each <a href="https://martinfowler.com/eaaCatalog/repository.html" target="_blank">repository</a> organize all kinds of data retrieval and data access from a data source, like entries of a database table. The repository converts data into domain model and vice versa.
+
+<div class="callout callout-success">
+  <h4>Definition by Martin Fowler</h4>
+  <p>Mediates between the domain and data mapping layers using a collection-like interface for accessing domain objects.</p>
+</div>
 
 ```php
 <?php
@@ -586,9 +592,6 @@ The examples initiate classes directly. <a href="https://en.wikipedia.org/wiki/I
 
 I recomment to read following articles:
 
-- <a href="https://www.entropywins.wtf/blog/2016/11/24/implementing-the-clean-architecture/" target="_blank">Implementing the Clean Architecture</a>
-- <a href="https://martinfowler.com/eaaCatalog/domainModel.html" target="_blank">Domain Models by Martin Fowler</a>
-- <a href="https://martinfowler.com/eaaCatalog/repository.html" target="_blank">Repository by Martin Fowler</a>
 - <a href="https://en.wikipedia.org/wiki/SOLID_%28object-oriented_design%29" target="_blank">SOLID (object-oriented design)</a>
 - <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_blank">MVC Pattern</a>
 - <a href="https://en.wikipedia.org/wiki/Multitier_architecture#Three-tier_architecture" target="_blank">Three tier architecture</a>
