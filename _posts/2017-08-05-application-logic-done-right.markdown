@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Application logic done right"
-subtitle:   "How to organize source code with business logic"
+subtitle:   "How to organize a clean, testable and reusbale application logic"
 date:       2017-08-05 02:14:00
 published:  2017-08-05 02:14:00
 author:     "Marco Bunge"
@@ -13,6 +13,7 @@ tags:
  - how-to
  - application
  - clean
+ - application logic
 ---
 
 Typically small http applications does only have to manage HTTP communication on top of a tiny MVC-Framework. A client performs a request, which is handled by a controller. The controller invoke the **model** and assigens the result data to a **view**. The **controller** converts the view into a response and delivers the response back to the client.
@@ -21,7 +22,7 @@ Web based enterprise applications are often accessible via different user interf
 
 We don't want to write the same logic for each required interfaces. Furthermore we don't want to test and maintain code for each required interfaces. We want to write, test and maintain reusable source code at a central point of the application eco-system.
 
-I show you how to organize a clean, testable and reusbale application architecture.
+I show you how to organize a clean, testable and reusbale application logic.
 
 <figure>
  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Clean_Architecture_%2B_DDD%2C_full_application.svg">
