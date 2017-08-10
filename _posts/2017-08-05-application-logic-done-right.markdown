@@ -17,11 +17,11 @@ tags:
 
 Typically small http applications does only have to manage HTTP communication on top of a tiny MVC-Framework. A client performs a request, which is handled by a controller. The controller invoke the **model** and assigens the result data to a **view**. The **controller** converts the view into a response and delivers the response back to the client.
 
-Enterprise applications are often accessible via HTTP, Sockets, RPC, CLI or any other interface. MVC is still present but requests and responses needs to be handled in the way of their interface requirements.
+Web based enterprise applications are often accessible via different user interfaces through protocols like HTTP, Sockets, RPC, CLI. The Model-View-Controller is still present as a user-interface pattern. But requests and responses needs to be handled in the way of their interface requirements.
 
 We don't want to write the same logic for each required interfaces. Furthermore we don't want to test and maintain code for each required interfaces. We want to write, test and maintain reusable source code at a central point of the application eco-system.
 
-I show you how to organize reusable, testable and maintainable source code with business logic.
+I show you how to organize encapuled, reusable, testable and maintainable source code with business logic.
 
 # Business logic
 
@@ -34,13 +34,20 @@ Business logic - aka Domain logic - performs operations between databases - **da
  </figcaption>
 </figure>
 
-A good implementation of business logic separates operations on presentation-layer with domain services and on data-layer with repositories. The resulting domain model gets consumed by a presenter which decorates output represented by a presentation model.  
+My understanding and implementation of business logic separates operations on presentation-layer with domain services and on data-layer with repositories.
+
+<figure>
+ <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Clean_Architecture_%2B_DDD%2C_full_application.svg">
+ <figcaption>
+  <small><i>CC0 1.0, &copy; by <a href="https://commons.wikimedia.org/wiki/File:Overview_of_a_three-tier_application_vectorVersion.svg" target="_blank">Jeroen De Dauw</a></i></small>
+ </figcaption>
+</figure>
 
 The example code refers to the famous blog example.
 
 ## Repositories
 
-Each repository organize all kinds of data retrieval and data access for a single entity, like entries of an database table. The repository converts data from data sources into a domain model and takes domain models and converts them to an entity.
+Each repository organize all kinds of data retrieval and data access for a single entity, like entries of a database table. The repository converts data from data sources into a domain model and takes domain models and converts them to an entity.
 
 ```php
 <?php
@@ -138,7 +145,12 @@ class PostRepository implements Repository
 
 ## Domain Model
 
-<a href="https://martinfowler.com/eaaCatalog/domainModel.html" target="_blank">Domain models</a> avoid operation from data source or data layer in general. They perform validation and decoration on data. For example it is able to validate and convert json into an PHP-Object and vice versa.
+<a href="https://martinfowler.com/eaaCatalog/domainModel.html" target="_blank">Domain models</a> avoid operation from data source or data layer in general. They perform validation and decoration on data. For example it is able to validate and convert json into a PHP-Object and vice versa.
+
+<div class="callout callout-success">
+  <h4>Definition by Martin Fowler</h4>
+  <p>An object model of the domain that incorporates both behavior and data.</p>
+</div>
 
 ```php
 <?php
@@ -304,9 +316,13 @@ class PostService implements DomainService
 }
 ```
 
-### Presenter
+# Presentation logic
 
-The presenter uses the domain model for output decoration. The output is assigned to the presentation model which get returned by the presenter.
+Presenters and presenation models are separted from business logic. A presentation model takes a domain model and behavioral input data. The presentation model output gets decorated by a presenter based on behavioual data - input - and domain model.
+
+## Presenter
+
+The presenter consumes the presentation model and decorates it with output based on behavioral data from input and domain model.
 
 ```php
 <?php
@@ -331,12 +347,13 @@ The post presenter looks like this
 ```php
 <?php
 
+
 namespace Application\Presentation\Presenters;
 
 use Application\Domain\User\PostModel;
 use Application\Presentation\PresentationModel;
 use Application\Presentation\Presenter;
-use Application\Presentation\StringPresentationModel;
+use Application\Presentation\PostPresentationModel;
 
 class PostPresenter implements Presenter
 {
@@ -346,35 +363,43 @@ class PostPresenter implements Presenter
     private $model;
 
     /**
-     * @param PostModel $model
+     * @param PostPresentationModel $model
      */
-    public function __construct(PostModel $model)
+    public function __construct(PostPresentationModel $model)
     {
         $this->model = $model;
     }
 
     /**
-     * Take domain model and calculate presentation
+     * Decorate presentation model
      *
      * @return PresentationModel
      */
     public function present(): PresentationModel
     {
         $model = $this->model;
+        
+        // we assign the presentation model,
+        // for a better architecture we should assign a specific view model
         $view = new View('blog/post', $model);
+        $this->model->setOutput($view->render());
 
-        return new StringPresentationModel($model, $view->render());
+        return $model;
     }
 }
 ```
 
-### Presentation Model
+## Presentation Model
 
-The presentation model is aware of output and domain model. For simplicity the presentation model represents output as a string, but it could also a interface for output types.
+The <a href="https://martinfowler.com/eaaDev/PresentationModel.html" target="_blank">presentation model</a> is aware of input data / output data and behaviour of the presentation layer. The presentation model is also able to decorate data from domain model, e. g. `PostPresentationModel::getKeywords`.
+
+<div class="callout callout-success">
+  <h4>Definition by Martin Fowler</h4>
+  <p>Represent the state and behavior of the presentation independently of the GUI controls used in the interface</p>
+</div>
 
 ```php
 <?php
-
 namespace Application\Presentation;
 
 use Application\Domain\DomainModel;
@@ -387,21 +412,27 @@ interface PresentationModel
     public function getDomainModel(): DomainModel;
 
     /**
+     * @return mixed
+     */
+    public function getInput();
+
+    /**
      * @return string
      */
     public function getOutput(): string;
 }
 ```
 
-In our case we use the concrete string presentation model
+The Post presentation model with a key word decorator `PostPresentationModel::getKeywords`
 
 ```php
 <?php
+
 namespace Application\Presentation;
 
 use Application\Domain\DomainModel;
 
-class StringPresentationModel implements PresentationModel
+class PostPresentationModel implements PresentationModel
 {
     /**
      * @var DomainModel
@@ -411,16 +442,20 @@ class StringPresentationModel implements PresentationModel
      * @var string
      */
     private $output;
+    /**
+     * @var
+     */
+    private $input;
 
     /**
      * PresentationModel constructor.
      * @param DomainModel $domainModel
-     * @param string $output
+     * @param $input
      */
-    public function __construct(DomainModel $domainModel, string $output)
+    public function __construct(DomainModel $domainModel, $input)
     {
         $this->domainModel = $domainModel;
-        $this->output = $output;
+        $this->input = $input;
     }
 
     /**
@@ -432,11 +467,41 @@ class StringPresentationModel implements PresentationModel
     }
 
     /**
+     * @return mixed
+     */
+    public function getInput()
+    {
+        return $this->input;
+    }
+
+    /**
      * @return string
      */
     public function getOutput(): string
     {
         return $this->output;
+    }
+
+    /**
+     * @param string $output
+     */
+    public function setOutput(string $output)
+    {
+        $this->output = $output;
+    }
+    
+    /**
+     * Get keywords from kmeans clusterer
+     * @return array
+     */
+    public function getKeywords(): array
+    {
+        // for simplicity we declare decoration logic within this method
+        // for a better architecture we should declare a decorator class
+        $kMeans = new KMeans(2);
+        $vectorizer = new StringVectorize();
+        $samples = $vectorizer->vectorize($this->getContent());
+        return $kMeans->cluster($samples);
     }
 
 }
@@ -447,10 +512,17 @@ class StringPresentationModel implements PresentationModel
 
 Now you are able to use the domain service everywhere you need it. 
 
-You could adapt the controller logic for other usages, like CLI, Socket Streams or anything else.
+You could adapt the controller logic for other usages, like CLI, Socket Streams or anything else. Remeber the controller is invoking business and presentation logic and converts of input into output.
 
 ```php
 <?php
+
+namespace Application\Http\Controllers;
+
+use Application\Domain\User\PostRepository;
+use Application\Domain\User\PostService;
+use Application\Presentation;
+use Application\Presentation\Presenters\PostPresenter;
 
 class BlogController
 {
@@ -477,14 +549,14 @@ class BlogController
 
         // recognize domain model
         $model = $this->postService->loadPost($data['identifier']);
-        
-        // build view for http model
-        // domain model could also converted to a view model
-        $view = new View('blog/default', $model);
+
+        // build presentation
+        $presenter = new PostPresenter(new Presentation\PostPresentationModel($model, $request));
+        $presentationModel = $presenter->present();
 
         // build http response
         $response = new Response();
-        $response->getBody()->write($view->render());
+        $response->getBody()->write($presentationModel->getOutput());
 
         return $response;
     }
@@ -505,6 +577,10 @@ You could als dive deeper into presenters - a [decorator]() for the presentation
 ### ADR
 
 Paul M. Jones described ADR - Action-Domain-Responder - as a web-specific refinement of Model-View-Controller. <a href="" target="_blank">I recommend to getting know ADR</a> ;)
+
+### Inversion of Control
+
+The examples initiate classes directly. <a href="https://en.wikipedia.org/wiki/Inversion_of_control" target="_blank">Inversion of control</a> separates initialisation logic of classes from application logic. For a better and cleaner architecture I recommend IoC by using a <a href="http://container.thephpleague.com/">Dependecy injection containers</a>. These encapsulates initialization logic into separate providers.
 
 ### More stuff
 
