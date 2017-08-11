@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Application logic done right"
-subtitle:   "How to organize a clean, testable and reusbale application logic"
+subtitle:   "How to organize a clean, testable and reusable application logic"
 date:       2017-08-05 02:14:00
 published:  2017-08-05 02:14:00
 author:     "Marco Bunge"
@@ -16,25 +16,27 @@ tags:
  - application logic
 ---
 
+<div class="callout callout-info">
+  <h4>Update 2014/08/11</h4>
+  <p>I've got confused by the term of domain logic and application logic. Therefore I quote the differences between application services and domain services by <a href="http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/" target="_blank">Lev Gorodinski</a></p>
+</div>
+
+**A special thanks to <a href="http://paul-m-jones.com/" target="_blank">Paul M. Jones</a> for reviewing this post.**
+
 Typically small http applications does only have to manage HTTP communication on top of a tiny MVC-Framework. A client performs a request, which is handled by a controller. The controller invoke the **model** and assigens the result data to a **view**. The **controller** converts the view into a response and delivers the response back to the client.
 
 Web based enterprise applications are often accessible via different user interfaces through protocols like HTTP, Sockets, RPC, CLI. The Model-View-Controller is still present as a user-interface pattern. But requests and responses needs to be handled in the way of their interface requirements.
 
 We don't want to write the same logic for each required interfaces. Furthermore we don't want to test and maintain code for each required interfaces. We want to write, test and maintain reusable source code at a central point of the application eco-system.
 
-I show you how to organize a clean, testable and reusbale application logic.
+I show you how to organize a clean, testable and reusable application logic.
 
-<figure>
- <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Clean_Architecture_%2B_DDD%2C_full_application.svg">
- <figcaption>
-  <h4><a href="https://www.entropywins.wtf/blog/2016/11/24/implementing-the-clean-architecture/" target="_blank">Implementing the Clean Architecture by Jereon De Dauw</a></h4>
-  <small><i>CC0 1.0, &copy; by <a href="https://commons.wikimedia.org/wiki/File:Overview_of_a_three-tier_application_vectorVersion.svg" target="_blank">Jeroen De Dauw</a></i></small>
- </figcaption>
-</figure>
 
-# Business logic
+# An introduction
 
-Business logic - aka Domain logic - performs operations between databases - **data tier** - and user interfaces - **presentation tier** and is part of a three-ier architecture. 
+## Three-tier architecture
+
+In a three-tier-architecture business logic performs operations between databases - **data tier** - and user interfaces - **presentation tier**. 
 
 <figure>
  <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Overview_of_a_three-tier_application_vectorVersion.svg">
@@ -43,11 +45,46 @@ Business logic - aka Domain logic - performs operations between databases - **da
  </figcaption>
 </figure>
 
-My understanding and implementation of business logic separates operations on presentation-layer with domain services and on data-layer with repositories.
+## Domain-driven-design
 
-The example code refers to the famous blog example.
+Domain layer and application layer are very different in domain-driven-design. The application layer coordinates the domain layer with application services, where as domain services executing business logic on the domain layer.
 
-## Repositories
+<figure>
+ <img src="http://dddsample.sourceforge.net/images/layers.jpg">
+ <figcaption>
+  <small><i>Domain-Driven-Design by Source Forge <a href="https://commons.wikimedia.org/wiki/File:Overview_of_a_three-tier_application_vectorVersion.svg" target="_blank">Bartledan at Wikipedia English</a></i></small>
+ </figcaption>
+</figure>
+
+### Application services vs. domain services
+
+I recommend reading <a href="http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/" target="_blank">Services in Domain-Driven Design (DDD) by Lev Gorodinski</a>. A short list of differences quoted by Lev's post:
+
+> The differences between a domain service and an application services are subtle but critical:
+> 
+> - Domain services are very granular where as application services are a facade purposed with providing an API.
+> - Domain services contain domain logic that can’t naturally be placed in an entity or value object whereas application services orchestrate the execution of domain logic and don’t themselves implement any domain logic.
+> - Domain service methods can have other domain elements as operands and return values whereas application services operate upon trivial operands such as identity values and primitive data structures.
+> - Application services declare dependencies on infrastructural services required to execute domain logic.
+> - Command handlers are a flavor of application services which focus on handling a single command typically in a CQRS architecture.
+
+## My thoughts for web related architecture
+
+My understanding and implementation of business logic for the web separates operations on presentation and persistence. Application services process results for the presentation, e. g. HTTP-Response and repositories perform operations on persistence, e. g. database, filestorage. Source code needs to be framework-independent, reusable and furthermore easy to maintain. 
+
+Furthermore most web applications are client-server applications and need to match client-side and server-side requirements. This worth a separate post, because REST-Apps does have a requirement on HTTP but not JavaScript and therefore no real requirements to the client.
+
+## My meaning of the term _clean_
+
+Clean business logic is unequal to clean architecture. I focus on a clean implemantation and separation of business logic based on principles of domain-driven-design.
+
+# Implementation
+
+Based on my expierience, I show you how to implement a business logic layer in conjunction with a presentation layer and combine them in a MVC-Controller. 
+
+## Business logic
+
+### Repositories
 
 Each <a href="https://martinfowler.com/eaaCatalog/repository.html" target="_blank">repository</a> organize all kinds of data retrieval and data access from a data source, like entries of a database table. The repository converts data into domain model and vice versa.
 
@@ -150,7 +187,7 @@ class PostRepository implements Repository
 
 ```
 
-## Domain Model
+### Domain Model
 
 <a href="https://martinfowler.com/eaaCatalog/domainModel.html" target="_blank">Domain models</a> avoid operation from data source or data layer in general. They perform validation and decoration on data. For example it is able to validate and convert json into a PHP-Object and vice versa.
 
@@ -256,9 +293,9 @@ class PostModel implements DomainModel
 }
 ```
 
-## Domain services
+### Application services
 
-Domain services are responsible for a single context of use cases, like handling and authentication of users. Domain services process data represented by domain models and transfer them between presentation layer and repositories.
+Application services are responsible for a single context of use cases, like handling and authentication of users. Application services process data represented by domain models and transfer them between presentation layer and repositories.
 
 ```php
 <?php
@@ -278,9 +315,9 @@ And the post service looks like this
 
 namespace Application\Domain\User;
 
-use Application\Domain\DomainService;
+use Application\Domain\ApplicationService;
 
-class PostService implements DomainService
+class PostService implements ApplicationService
 {
     /**
      * @var PostRepository
@@ -323,11 +360,11 @@ class PostService implements DomainService
 }
 ```
 
-# Presentation logic
+## Presentation logic
 
 Presenters and presenation models are separted from business logic. A presentation model takes a domain model and behavioral input data. The presentation model output gets decorated by a presenter based on behavioual data - input - and domain model.
 
-## Presenter
+### Presenter
 
 The presenter consumes the presentation model and decorates it with output based on behavioral data from input and domain model.
 
@@ -396,7 +433,7 @@ class PostPresenter implements Presenter
 }
 ```
 
-## Presentation Model
+### Presentation Model
 
 The <a href="https://martinfowler.com/eaaDev/PresentationModel.html" target="_blank">presentation model</a> is aware of input data / output data and behaviour of the presentation layer. The presentation model is also able to decorate data from domain model, e. g. `PostPresentationModel::getKeywords`.
 
@@ -517,9 +554,7 @@ class PostPresentationModel implements PresentationModel
 
 ## Usage
 
-Now you are able to use the domain service everywhere you need it. 
-
-You could adapt the controller logic for other usages, like CLI, Socket Streams or anything else. Remeber the controller is invoking business and presentation logic and converts of input into output.
+You could adapt the controller logic for other usages, like CLI, Socket Streams or anything else. Our BlogController acts as a HTTP-Controller of MVC.
 
 ```php
 <?php
@@ -571,25 +606,37 @@ class BlogController
 }
 ```
 
+As you can see the application service performs logic where as the presenter processes the response. The next task could be to reduce the building of the response by using a HTTP-Based presenter.
+
 # Further reading
 
-### Command Bus
+## Command Bus
 
 The design of a business service or repositories could be even cleaner by using a Command Bus like Tactician of <a href="https://tactician.thephpleague.com/" target="_blank">The PHP League</a>.
 
-### Presenters
+## Presenters
 
-You could als dive deeper into presenters - a [decorator]() for the presentation, e. g. the http response - and the <a href="https://martinfowler.com/eaaDev/PresentationModel.html" target="_blank">presentation model</a>
+You could als dive deeper into presenters - a <a href="https://sourcemaking.com/design_patterns/decorator" target="_blank">decorator</a> for the presentation, e. g. the http response - and the <a href="https://martinfowler.com/eaaDev/PresentationModel.html" target="_blank">presentation model</a>
 
-### ADR
+## ADR
 
-Paul M. Jones described ADR - Action-Domain-Responder - as a web-specific refinement of Model-View-Controller. <a href="" target="_blank">I recommend to getting know ADR</a> ;)
+Paul M. Jones described ADR - Action-Domain-Responder - as a web-specific refinement of Model-View-Controller. <a href="http://pmjones.io/adr" target="_blank">I recommend to getting know ADR</a> ;)
 
-### Inversion of Control
+## Inversion of Control
 
 The examples initiate classes directly. <a href="https://en.wikipedia.org/wiki/Inversion_of_control" target="_blank">Inversion of control</a> separates initialisation logic of classes from application logic. For a better and cleaner architecture I recommend IoC by using a <a href="http://container.thephpleague.com/">Dependecy injection containers</a>. These encapsulates initialization logic into separate providers.
 
-### More stuff
+## Implementing clean architecture
+
+<figure>
+ <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Clean_Architecture_%2B_DDD%2C_full_application.svg">
+ <figcaption>
+  <h4><a href="https://www.entropywins.wtf/blog/2016/11/24/implementing-the-clean-architecture/" target="_blank">Implementing the Clean Architecture by Jereon De Dauw</a></h4>
+  <small><i>CC0 1.0, &copy; by <a href="https://commons.wikimedia.org/wiki/File:Overview_of_a_three-tier_application_vectorVersion.svg" target="_blank">Jeroen De Dauw</a></i></small>
+ </figcaption>
+</figure>
+
+## More stuff
 
 I recomment to read following articles:
 
