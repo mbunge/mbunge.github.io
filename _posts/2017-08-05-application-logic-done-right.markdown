@@ -189,7 +189,7 @@ class PostRepository implements Repository
 
 ### Domain Model
 
-<a href="https://martinfowler.com/eaaCatalog/domainModel.html" target="_blank">Domain models</a> avoid operation from data source or data layer in general. They perform validation and decoration on data. For example it is able to validate and convert json into a PHP-Object and vice versa.
+<a href="https://martinfowler.com/eaaCatalog/domainModel.html" target="_blank">Domain models</a> avoid operation from data source or data layer in general. They perform validation and decoration on data. For example it is able to validate and convert json into a PHP-Object and vice versa. The domain model is also able to decorate data, e. g. `PostPresentationModel::getKeywords`.
 
 <div class="callout callout-success">
   <h4>Definition by Martin Fowler</h4>
@@ -435,7 +435,7 @@ class PostPresenter implements Presenter
 
 ### Presentation Model
 
-The <a href="https://martinfowler.com/eaaDev/PresentationModel.html" target="_blank">presentation model</a> is aware of input data / output data and behaviour of the presentation layer. The presentation model is also able to decorate data from domain model, e. g. `PostPresentationModel::getKeywords`.
+The <a href="https://martinfowler.com/eaaDev/PresentationModel.html" target="_blank">presentation model</a> is aware of input data / output data and behaviour of the presentation layer.
 
 <div class="callout callout-success">
   <h4>Definition by Martin Fowler</h4>
@@ -532,20 +532,6 @@ class PostPresentationModel implements PresentationModel
     public function setOutput(string $output)
     {
         $this->output = $output;
-    }
-    
-    /**
-     * Get keywords from kmeans clusterer
-     * @return array
-     */
-    public function getKeywords(): array
-    {
-        // for simplicity we declare decoration logic within this method
-        // for a better architecture we should declare a decorator class
-        $kMeans = new KMeans(2);
-        $vectorizer = new StringVectorize();
-        $samples = $vectorizer->vectorize($this->getContent());
-        return $kMeans->cluster($samples);
     }
 
 }
