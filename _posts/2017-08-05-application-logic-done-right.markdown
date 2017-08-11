@@ -52,7 +52,7 @@ Domain layer and application layer are very different in domain-driven-design. T
 <figure>
  <img src="http://dddsample.sourceforge.net/images/layers.jpg">
  <figcaption>
-  <small><i>Domain-Driven-Design by Source Forge <a href="https://commons.wikimedia.org/wiki/File:Overview_of_a_three-tier_application_vectorVersion.svg" target="_blank">Bartledan at Wikipedia English</a></i></small>
+  <small><i><a href="http://dddsample.sourceforge.net/architecture.html" target="_blank">Domain-Driven-Design by Source Forge</a></i></small>
  </figcaption>
 </figure>
 
