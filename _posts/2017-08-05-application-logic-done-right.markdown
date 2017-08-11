@@ -17,7 +17,7 @@ tags:
 ---
 
 <div class="callout callout-info">
-  <h4>Update 2014/08/11</h4>
+  <h4>Update 2017/08/11</h4>
   <p>I've got confused by the term of domain logic and application logic. Therefore I quote the differences between application services and domain services by <a href="http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/" target="_blank">Lev Gorodinski</a></p>
 </div>
 
