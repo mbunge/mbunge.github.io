@@ -302,7 +302,7 @@ Application services are responsible for a single context of use cases, like han
 
 namespace Application\Domain;
 
-interface DomainService
+interface ApplicationService
 {
 
 }
