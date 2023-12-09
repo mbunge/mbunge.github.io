@@ -2,13 +2,13 @@
 title: "Marco Bunge"
 header-img: img/frontend.jpg
 email: mjls@web.de
-description: "Tech-Blog about php application development, git and devops"
+description: "Guides for Magic: the Gathering and Supplements for Dungeons & Dragons"
 author: "Marco Bunge"
-keywords: "php, git, application, blog, bunge"
+keywords: "magic the gathering, dunegeons and dragons, guides, supplements"
 baseurl: ""
-twitter_username: makk_eightbit
-github_username:  mbunge
-facebook_username:  marco.bunge.dev
+# twitter_username: zombienoxx
+# github_username:  mbunge
+# facebook_username:  marco.bunge.dev
 url: "http://www.marco-bunge.com"
 max_recent_posts: 3
 
