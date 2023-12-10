@@ -16,4 +16,4 @@ max_recent_posts: 3
 permalink: /:year/:month/:day/:title/
 future: true
 paginate: 5
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","_drafts"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","_drafts", "CNAME", "mail", ".idea", "LICENSE", "_old_index.html", "_config.yml", ".gitignore"]
