@@ -21,7 +21,7 @@ Magic: The Gathering (MTG) Arena introduces a thrilling new format: Timeless. Th
 
 ## Khans of Tarkir introduces the Delve mechanic
 
-Delve is a keyword that allows you to exile cards from your graveyard to help pay for the mana cost of a spell. This mechanic shines in Timeless, where graveyards often fill up quickly, thanks to fetchlands and early interaction. Delve transforms your graveyard into a resource, reducing the cost of powerful spells. The strategy lies in carefully selecting which cards to exile, balancing the immediate benefits of casting potent spells against potential future uses of those graveyard cards.
+*Delve* is a keyword that allows you to exile cards from your graveyard to help pay for the mana cost of a spell. This mechanic shines in Timeless, where graveyards often fill up quickly, thanks to fetchlands and early interaction. Delve transforms your graveyard into a resource, reducing the cost of powerful spells, such as **Temporal trespass**, **Treasure Cruise** or **Dig thru time**. The strategy lies in carefully selecting which cards to exile, balancing the immediate benefits of casting potent spells against potential future uses of those graveyard cards.
 
 ## Synergy of Fetchlands with Brainstorm, Mishra's Bauble, and Deathrite Shaman
 
@@ -30,10 +30,6 @@ The Timeless format introduces Fetchlands from Khans of Takir in MTG Arena. Fetc
 **Mishra's Bauble**, offers deck thinning and information gathering, providing a peek at the top card of either player's deck. The combination with Fetchlands ensures you're not drawing into something you don't need.
 
 **Deathrite Shaman**, a versatile creature, gains additional utility in this environment. It can manipulate graveyards, which is critical considering the fetchland's ability to fill graveyards rapidly. Notably, Deathrite Shaman's prowess has led to its ban in both Modern and Legacy formats due to its high power level.
-
-## Khans of Tarkir introduces the Delve mechanic
-
-Delve is a keyword that allows you to exile cards from your graveyard to help pay for the mana cost of a spell. This mechanic shines in Timeless, where graveyards often fill up quickly, thanks to fetchlands and early interaction. Delve transforms your graveyard into a resource, reducing the cost of powerful spells. The strategy lies in carefully selecting which cards to exile, balancing the immediate benefits of casting potent spells against potential future uses of those graveyard cards.
 
 ## My Personal Favorite Cards in Timeless
 
