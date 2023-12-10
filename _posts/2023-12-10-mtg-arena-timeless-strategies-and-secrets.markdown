@@ -13,6 +13,8 @@ categories:
   - arena
 ---
 
+> Back in late 2021, while battling cancer, I just wanted to have a good time and play with my favorite cards online in the hospital: Lightning Bolt, Uro, and Oko. I played against Sparky and won every time. Those cards mean a lot to me, as does Magic in general. It helped me take my mind off the battle against cancer. And believe me, there was a time in late 2021 when they told me I probably wouldn't survive. But I did, and now I'm excited to start playing digital cards in the new Timeless format!
+
 ## Introduction
 
 Magic: The Gathering (MTG) Arena introduces a thrilling new format: Timeless. This format, which blends elements from across the MTG universe, offers players an unparalleled experience. In this blog post, we'll delve into the nuances of Timeless, exploring powerful cards and new delve mechanics that can help you dominate this new battlefield. Whether you're a seasoned player or new to the Arena, this introduction will provide valuable insights into making the most of your Timeless adventures.
