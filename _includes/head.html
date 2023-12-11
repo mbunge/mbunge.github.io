@@ -25,6 +25,40 @@
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+    <script src="{{ "/js/cookieconsent.js" | prepend: site.baseurl }}" async="async" rel="preload" as="script"></script>
+    <script>
+        const individualHasConsentedName = 'individualHasConsented';
+        function createCookieConsentEvent(consent) {
+            return new CustomEvent('app:cookieConsent', {consent: consent});
+        }
+        window.addEventListener('storage', function(ev) {
+            if(ev.key === individualHasConsentedName) {
+                window.dispatchEvent(createCookieConsentEvent(ev.newValue === 'y'))
+            }
+        });
+        window.cookieconsent.initialise({
+         //container: document.getElementById("content"),
+         /*palette:{
+          popup: {background: "#fff"},
+          button: {background: "#aa0000"},
+         },
+         */
+         revokable:true,
+         onStatusChange: function(status) {
+            window.dispatchEvent(createCookieConsentEvent(this.hasConsented()))
+          if(this.hasConsented()) {
+            window.localStorage.setItem(individualHasConsentedName, 'y');
+          } else {
+            window.localStorage.removeItem(individualHasConsentedName);
+          }
+         },
+         /*law: {
+          regionalLaw: false,
+         },*/
+         location: true,
+        });
+       </script>
+
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}" type="text/css">
 
