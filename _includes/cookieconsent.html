@@ -10,12 +10,9 @@
             }
         });
         window.cookieconsent.initialise({
-         //container: document.getElementById("content"),
-         /*palette:{
-          popup: {background: "#fff"},
-          button: {background: "#aa0000"},
-         },
-         */
+            cookie: {
+                domain: page.url
+            },
          revokable:true,
          onStatusChange: function(status) {
             window.dispatchEvent(createCookieConsentEvent(this.hasConsented()))
@@ -24,10 +21,6 @@
           } else {
             window.localStorage.removeItem(individualHasConsentedName);
           }
-         },
-         /*law: {
-          regionalLaw: false,
-         },*/
-         location: true,
+         }
         });
        </script>
