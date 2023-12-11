@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "UW Tempo"
-subtitle:   "A tempo-combo deck designed for the MTG Arena Timeless format. "
+subtitle:   "A tempo-combo deck designed for the MTG Arena Timeless format."
 author:     "Marco Bunge"
 date:       2023-12-11 17:00:00
 published:  true
@@ -12,8 +12,6 @@ categories:
   - timeless
   - deck
 ---
-
-# UW Tempo
 
 UW Tempo is a tempo-combo deck designed for the MTG Arena Timeless format. Centered around the **Teferi, Time Raveler** and **Displacer Kitten** synergy, this deck focuses on controlling the early game, executing the combo with **Teferi, Time Raveler** and **Displacer Kitten**, and ultimately securing victory through Monastery Mentor, Thassa's Oracle, or by utilizing the Power 9 from the Oracle of the Alpha's spellbook.
 
