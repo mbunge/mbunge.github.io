@@ -25,7 +25,7 @@
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <script src="{{ "/js/cookieconsent.js" | prepend: site.baseurl }}" async="async" rel="preload" as="script"></script>
+    <script src="{{ "/js/cookieconsent.js" | prepend: site.baseurl }}" rel="preload" as="script"></script>
     <script>
         const individualHasConsentedName = 'individualHasConsented';
         function createCookieConsentEvent(consent) {
