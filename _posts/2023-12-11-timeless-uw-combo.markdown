@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      "MTG Arena Timeless: Unleash the beast"
-subtitle:   "Arenas very own Vintage-like Eternal format"
+title:      "UW Tempo"
+subtitle:   "A tempo-combo deck that could dominate the format early on"
 author:     "Marco Bunge"
-date:       2023-12-10 6:32:11
+date:       2023-12-11 17:00:00
 published:  true
 header-img: "img/uw.webp"
 series:     "MTG Arena Timeless"
@@ -40,21 +40,28 @@ To clinch the game with the combo, you can either deplete your library and play 
 4 **Teferi, Time Raveler**
 3-4 **Displacer Kitten**
 3-4 **Mishra's Bauble**
+1-2 **Mox Amber**
 2-4 **Monastery Mentor**
 
 **Displacer Kitten** is the beating heart of the combo. It is able to protect itself against **Lightning Bolt** and **Fatal Push** by target itself with it's ability. Three should be enough, due to several possibilities of finding and filtering.
 
 **Teferi, Time Raveler** serves as the second component of the combo. Beyond its role in the combo, it offers virtual card advantage by neutralizing permission spells and disrupting strategies based on Dreadhorde Arcanist or Wilderness Reclamation. Additionally, it aids in buying time and locating combo pieces by temporarily neutralizing a threat.
 
+**Mox Amber** serves as mana accelerator and combo enable.
+
 **Mishra's Bauble** is another component of the combo. Additionally, it acts as a zero-mana card advantage engine, effectively functioning as a scry 1 when combined with a fetchland, and drawing a card at the next upkeep.
+
+**Counterspell** and **Spell Pierce** serve two crucial functions in the deck. Firstly, they address combo hate cards such as **Thalia, Guardian of Thraben**, **Deafening Silence**, **Blood Moon**, and **Defense Grid**. Secondly, they effectively counter early threats like **Beseech the Mirror**, **Sneak Attack**, **Natural Order**, and **Wilderness Reclamation**. 
 
 **Monastery Mentor** fits exceptionally well within the tempo-oriented game plan and serves as a formidable win condition, both with and without the **Displacer Kitten** and **Teferi, Time Raveler** combo. It can grow significantly in a short time due to the numerous non-creature spells in the deck. It functions effectively on its own and synergizes well with the combo involving **Displacer Kitten** and **Teferi, Time Raveler**.
 
 ## Other Card Choices
 
+**Thassa's Oracle** serves as an alternative win condition in the deck.
+
 **Oracle of the Alpha** introduces additional combo pieces through the Power 9. It also provides a solid 2/3 body and scrys 1 with each attack, enhancing both board presence and deck manipulation.
 
-**Counterspell**, **Reprieve**, **Spell Pierce**, and **Swords to Plowshares** safeguard the early game stages, complement **Monastery Mentor**, and enhance the combo's effectiveness.
+**Reprieve** and **Swords to Plowshares** safeguard the early game stages.
 
 **Brainstorm** stands out as the premier draw spell in Timeless, offering access to three potential solutions from the library. Furthermore, it shuffle away two undesired cards from the hand, when used with Fetchlands.
 
@@ -101,6 +108,6 @@ The UW Tempo deck faces significant challenges against opponents with **Orcish B
 
 UW Tempo offers a variety of responses through its permission spells, removal options, and **Teferi, Time Raveler**, enabling it to effectively control the game.
 
-## Outlook
+## Adjustments & Outlook
 
-UW Tempo has the potential to adapt to the metagame, thanks to its straightforward tempo game plan. This adaptability is further enhanced by the flexibility of its card choices and sideboard adjustments. For instance, **Counterspell** could be exchanged for **Memory Lapse**, or **Dig Through Time** might be substituted with **Treasure Cruise** to reduce reliance on double blue mana, especially when splashing for another color. The deck could evolve by focusing more on the combo aspect, possibly splashing an additional color for efficient storm cards like **Grapeshot**. Alternatively, the current combo could be swapped out for more streamlined threats, laying the groundwork for the deck's next evolutionary step.
+UW Tempo has the potential to adapt to the metagame, thanks to its straightforward tempo game plan. This adaptability is further enhanced by the flexibility of its card choices and sideboard adjustments. For instance, **Counterspell** could be exchanged for **Memory Lapse**, or **Dig Through Time** might be substituted with **Treasure Cruise** to reduce reliance on double blue mana, especially when splashing for another color. The quantity of **Mox Amber** in the deck could be increased if more legendary creatures or planeswalkers are incorporated. The deck could evolve by focusing more on the combo aspect, possibly splashing an additional color for efficient storm cards like **Grapeshot**. Alternatively, the current combo could be swapped out for more streamlined threats, laying the groundwork for the deck's next evolutionary step.
