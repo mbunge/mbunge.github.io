@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "UW Tempo"
-subtitle:   "A tempo-combo deck that could dominate the format early on"
+subtitle:   "A tempo-combo deck designed for the MTG Arena Timeless format. "
 author:     "Marco Bunge"
 date:       2023-12-11 17:00:00
 published:  true
