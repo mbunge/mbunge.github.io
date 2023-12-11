@@ -3,17 +3,6 @@ import 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.17/dist/co
 // Enable dark mode
 document.documentElement.classList.add('cc--darkmode');
 
-function createCookieConsentEvent(category, consent) {
-    return new CustomEvent('app:cookieConsent:' + category, {consent: consent});
-}
-
-window.addEventListener('cc:onConsent', ({detail}) => {
-    console.log('Consented', detail);
-    changedCategories.forEach(function(category) {
-        window.dispatchEvent(createCookieConsentEvent(category, CookieConsent.acceptedCategory(category)));
-    });
-});
-
 CookieConsent.run({
     guiOptions: {
         consentModal: {
