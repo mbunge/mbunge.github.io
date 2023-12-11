@@ -31,14 +31,11 @@
                 </li>
                 {% endif %}{% endfor %}
                 <li>
-                    <a href="http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fwww.marco-bunge.com%2Ffeed.xml"  target="_blank"><img id="feedlyFollow" src="http://s3.feedly.com/img/follows/feedly-follow-logo-black_2x.png" alt="follow us in feedly" width="28" height="28"></a>
-                </li>
-                <li>
-                    <a target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss fa-2x"></i></a>
+                    <a target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS Feed<!--<i class="fa fa-rss fa-2x"></i>--></a>
                 </li>
                 {% if site.twitter_username %}
                 <li>
-                    <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter fa-2x"></i></a>
+                    <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}">Twitter<!--<i class="fa fa-twitter fa-2x"></i>--></a>
                 </li>
                 {% endif %}
                 {% if site.facebook_username %}
