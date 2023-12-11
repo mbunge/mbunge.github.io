@@ -5,7 +5,7 @@ subtitle:   "Arenas very own Vintage-like Eternal format"
 author:     "Marco Bunge"
 date:       2023-12-10 6:32:11
 published:  true
-header-img: "img/downloads-bg.jpg"
+header-img: "img/timeless.webp"
 series:     "MTG Arena Timeless"
 categories:
   - mtg
