@@ -1,12 +1,12 @@
 # Site settings
 title: "Marco Bunge"
 header-img: img/d20.jpg
-email: mjls@web.de
+email: zombienoxx@gmail.de
 description: "Guides for Magic: the Gathering and Supplements for Dungeons & Dragons"
 author: "Marco Bunge"
 keywords: "magic the gathering, dunegeons and dragons, guides, supplements"
 baseurl: ""
-# twitter_username: zombienoxx
+twitter_username: zombienoxx
 # github_username:  mbunge
 # facebook_username:  marco.bunge.dev
 url: "http://www.marco-bunge.com"
