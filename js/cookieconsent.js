@@ -8,7 +8,7 @@ function loadMoxfieldDecks() {
     const srcDataAttr = 'data-moxfield-src';
     document.querySelectorAll('[' + srcDataAttr + ']').forEach(
         function(frame) {
-            const src = frame.getAttribute.getAttribute(srcDataAttr);
+            const src = frame.getAttribute(srcDataAttr);
             frame.setAttribute('src', src);
         }
     );
