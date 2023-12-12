@@ -19,4 +19,4 @@ Key components include creatures like *Ragavan, Nimble Pilferer*, *Deathrite Sha
 
 <iframe data-moxfield-src="https://www.moxfield.com/embed/XOVXkInxcUKx7WTxfajSLg" id="moxfield-frame-1" frameBorder="0" width="700px" onload="moxfieldOnLoad(event)"></iframe>
 
-<a class="btn btn-link" href="https://www.moxfield.com/embed/XOVXkInxcUKx7WTxfajSLg" data-moxfield>UW Tempo at Moxfield</a>
+<a class="btn btn-link" href="https://www.moxfield.com/embed/XOVXkInxcUKx7WTxfajSLg" data-moxfield>Grixis Tempo at Moxfield</a>
