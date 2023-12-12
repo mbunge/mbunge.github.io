@@ -17,7 +17,7 @@ UW Tempo is a tempo-combo deck designed for the MTG Arena Timeless format. This 
 
 <iframe data-moxfield-src="https://www.moxfield.com/embed/2zVccpDUd0SoP1FsHocV8Q" id="moxfield-frame-1" frameBorder="0" width="700px" onload="moxfieldOnLoad(event)"></iframe>
 
-<a class="btn btn-link" href="https://www.moxfield.com/embed/2zVccpDUd0SoP1FsHocV8Q" data-moxfield>UW Tempo at Moxfield</a>
+<a class="btn btn-link" href="https://www.moxfield.com/embed/2zVccpDUd0SoP1FsHocV8Q" target="_blank" data-moxfield>UW Tempo at Moxfield</a>
 
 ## A Word on Numbers and Choices
 
