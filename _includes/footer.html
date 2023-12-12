@@ -3,7 +3,10 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p class="copyright text-muted">Blog posts about Magic: The Gathering and Dungeons &amp; Dragons by Marco Bunge is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. &copy; Wizards of the Coast LLC.</p>
+                <p class="copyright text-muted">Blog posts about Magic: The Gathering and Dungeons &amp; Dragons by
+                    Marco Bunge is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed
+                    by Wizards. Portions of the materials used are property of Wizards of the Coast. &copy; Wizards of
+                    the Coast LLC.</p>
             </div>
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <hr>
@@ -11,12 +14,12 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
                     <li>
-                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                        <a href="{{ " /feed.xml" | prepend: site.baseurl }}">
                             Privacy Policy
                         </a>
                     </li>
                     <li>
-                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                        <a href="{{ " /feed.xml" | prepend: site.baseurl }}">
                             <!--<span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
@@ -67,7 +70,7 @@
                 </ul>
                 <ul class="list-inline text-center">
                     <li>
-                        <a href="{{ "/privacy-policy.html" | prepend: site.baseurl }}">
+                        <a href="{{ " /privacy-policy.html" | prepend: site.baseurl }}">
                             Privacy Policy
                         </a>
                     </li>
@@ -79,14 +82,25 @@
 </footer>
 
 <!-- jQuery -->
-<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /js/jquery.min.js " | prepend: site.baseurl }}"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="{{ "/js/clean-blog.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /js/clean-blog.js " | prepend: site.baseurl }}"></script>
 
-<script> function moxfieldOnMessage(e){const t=e.data;if("object"==typeof t&&"moxfield"===t.type){const e=document.getElementById(t.id);e&&(e.style.height=t.data+"px")}}function moxfieldOnLoad(e){e.target&&e.target.contentWindow&&e.target.contentWindow.postMessage({type:"moxfield",data:e.target.id},"*")}window.addEventListener("message",moxfieldOnMessage); </script>
+<script>
+    function moxfieldOnMessage(e) {
+        const t = e.data;
+        if ("object" == typeof t && "moxfield" === t.type) {
+            const e = document.getElementById(t.id);
+            e && (e.style.height = t.data + "px")
+        }
+    }
+    function moxfieldOnLoad(e) {
+        e.target && e.target.contentWindow && e.target.contentWindow.postMessage({ type: "moxfield", data: e.target.id }, "*")
+    } window.addEventListener("message", moxfieldOnMessage);
+</script>
 
 {% include cookieconsent.html %}
