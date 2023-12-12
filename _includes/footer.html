@@ -85,18 +85,4 @@
 <!-- Custom Theme JavaScript -->
 <script src="{{ " /js/clean-blog.js " | prepend: site.baseurl }}"></script>
 
-<script type="text/plain" data-category="functional">
-    console.log('call functional category');
-
-    function loadMoxfieldDecks() {
-        const srcDataAttr = 'data-moxfield-src';
-        document.querySelectorAll('[' + srcDataAttr + ']').forEach(
-            function(frame) {
-                const src = frame.getAttribute.getAttribute(srcDataAttr);
-                frame.setAttribute('src', src);
-            }
-        );
-    }
-</script>
-
 {% include cookieconsent.html %}

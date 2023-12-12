@@ -3,6 +3,20 @@ import 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.17/dist/co
 // Enable dark mode
 document.documentElement.classList.add('cc--darkmode');
 
+function loadMoxfieldDecks() {
+    console.log('Load mox');
+    const srcDataAttr = 'data-moxfield-src';
+    document.querySelectorAll('[' + srcDataAttr + ']').forEach(
+        function(frame) {
+            const src = frame.getAttribute.getAttribute(srcDataAttr);
+            frame.setAttribute('src', src);
+        }
+    );
+}
+
+window.addEventListener('cc:onChange', loadMoxfieldDecks);
+
+
 CookieConsent.run({
     guiOptions: {
         consentModal: {
