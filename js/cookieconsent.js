@@ -14,8 +14,16 @@ function loadMoxfieldDecks() {
     );
 }
 
-window.addEventListener('cc:onChange', loadMoxfieldDecks);
+function handleCanLoadMoxfieldDecks() {
+    return function() {
+        if(CookieConsent.acceptedCategory('analytics')) {
+            loadMoxfieldDecks()
+        }
+    }
+}
 
+window.addEventListener('cc:onChange', handleCanLoadMoxfieldDecks());
+window.addEventListener('cc:onConsent', handleCanLoadMoxfieldDecks());
 
 CookieConsent.run({
     guiOptions: {
