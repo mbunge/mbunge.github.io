@@ -17,6 +17,8 @@ UW Tempo is a tempo-combo deck designed for the MTG Arena Timeless format. This 
 
 <iframe data-moxfield-src="https://www.moxfield.com/embed/2zVccpDUd0SoP1FsHocV8Q" id="moxfield-frame-1" frameBorder="0" width="700px" onload="moxfieldOnLoad(event)"></iframe>
 
+<a class="btn btn-link" href="https://www.moxfield.com/embed/2zVccpDUd0SoP1FsHocV8Q" data-moxfield>UW Tempo at Moxfield</a>
+
 ## A Word on Numbers and Choices
 
 This deck might evolve based on the metagame. Employing a mix of permission spells, removal spells, and card advantage often proves to be a successful strategy, both with and without the integrated combo. The selection of cards and lands is determined by the likelihood of drawing a specific effect and the aim of ensuring an excellent starting hand.
