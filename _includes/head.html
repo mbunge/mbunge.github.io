@@ -1,65 +1,60 @@
-<head>{% if page.page_type %}{% assign page_type = page.page_type %}{% else %}{% assign page_type = "article" %}{% endif %}
+<head>{% if page.page_type %}{% assign page_type = page.page_type %}{% else %}{% assign page_type = "article" %}{% endif
+    %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% elsif page.tags %}{{ page.tags | join: ', '}}{% elsif page.categories %}{{ page.categories | join: ', '}}{% else %}{{ site.keywords }}{% endif %}" />
+    <meta name="description"
+        content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="keywords"
+        content="{% if page.keywords %}{{ page.keywords }}{% elsif page.tags %}{{ page.tags | join: ', '}}{% elsif page.categories %}{{ page.categories | join: ', '}}{% else %}{{ site.keywords }}{% endif %}" />
     <meta name="author" content="{{site.author}}">
     <meta name="robots" content="index, follow" />
     <meta name="revisit-after" content="4 days" />
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:site" content="@{{site.twitter_username}}"/>
-    <meta name="twitter:creator" content="@{{site.twitter_username}}"/>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@{{site.twitter_username}}" />
+    <meta name="twitter:creator" content="@{{site.twitter_username}}" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="{{page_type}}" />{% if page_type == "article"%}
-    <meta property="og:article:author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}" />{% if page.tags %}{% for tag in page.tags %}
+    <meta property="og:article:author"
+        content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}" />{% if page.tags %}{% for
+    tag in page.tags %}
     <meta property="og:article:tag" content="{{tag}}" />{% endfor %}{% endif %}{% if page.date %}
-    <meta property="og:article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}" />{% endif %}{% endif %}
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
-    <meta property="og:description" content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}" />
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:article:published_time" content="{{ page.date | date: " %Y-%m-%d" }}" />{% endif %}{% endif %}
+    <meta property="og:title"
+        content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:description"
+        content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:url"
+        content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
     <meta property="og:site_name" content="{{ site.title }}" />
-    <meta property="og:image" content="{% if page.header-img %}{{site.url}}/{{ page.header-img }}{% else %}{{site.url}}/{{ site.header-img }}{% endif %}" />
+    <meta property="og:image"
+        content="{% if page.header-img %}{{site.url}}/{{ page.header-img }}{% else %}{{site.url}}/{{ site.header-img }}{% endif %}" />
 
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}" type="text/css">
+    <link rel="stylesheet" href="{{ " /css/bootstrap.min.css" | prepend: site.baseurl }}" type="text/css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/clean-blog.css" | prepend: site.baseurl }}" type="text/css">
+    <link rel="stylesheet" href="{{ " /css/clean-blog.css" | prepend: site.baseurl }}" type="text/css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.17/dist/cookieconsent.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.17/dist/cookieconsent.css">
 
     <!-- Pygments Github CSS -->
     <!-- <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}" type="text/css"> -->
 
     <!-- Custom Fonts -->
-    <link href="{{ "/css/fontawesome.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
-    <link href="{{ "/css/fonts.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
+    <link href="{{ " /css/fontawesome.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
+    <link href="{{ " /css/fonts.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- invalidate imports
-    <script src="//load.sumome.com/" data-sumo-site-id="c53933c200c099c1e99bbd5b67ba1528b53ffc53e67e022f8aed374e5ac87c88" async="async"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-      ga('create', 'UA-6181886-2', 'auto', {
-          anonymizeIp: true
-      });
-      ga('send', 'pageview');
-    
+    <script async type="text/plain" data-category="analytics" data-src="https://www.googletagmanager.com/gtag/js?id=G-KGBPXT458L"></script>
+    <script type="text/plain" data-category="analytics">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-KGBPXT458L');
     </script>
-    -->
-
 </head>
