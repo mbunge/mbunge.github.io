@@ -1,4 +1,4 @@
-import './cookieconsent-impl.js';
+import '/js/cookieconsent-impl.js';
 
 // Enable dark mode
 document.documentElement.classList.add('cc--darkmode');
