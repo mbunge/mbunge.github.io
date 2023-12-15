@@ -14,7 +14,7 @@ page_type: article
 		                    {% if page.subtitle %}
 		                    <h2 class="subheading" itemprop="description">{{ page.subtitle }}</h2>
 		                    {% endif %}
-		                    <span class="meta">Posted by <span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="url" content="{{ "/about.html" | prepend: site.baseurl | append: "#" append: post.author }}">{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}</span> on {{ page.date | date: "%B %d, %Y" }}</span>
+		                    <span class="meta">Posted by <span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="url" content="{{ "/about.html" | prepend: site.baseurl | append: "#" | append: post.author }}">{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}</span> on {{ page.date | date: "%B %d, %Y" }}</span>
 		                    <meta itemprop="datePublished" content="{{ page.date }}">
 		                    <span class="hide"><img itemprop="image" src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" alt="{{ page.title }}"></span>
 		                </div>
