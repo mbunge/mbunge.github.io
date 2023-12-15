@@ -17,10 +17,6 @@ categories:
 
 The timeless 4C Yorion is inspired by the modern 4C Yorion. The deck is designed for Best-Of-3 and is best described as a midrange deck. The deck is built around *Teferi, Time Raveler*, *Expressive Iteration*, *Brainstorm*, *Lightning Bolt*, and *Counterspell*. In addition, Timeless 4C Yorion plays pure value engines in the form of *Deathrite Shaman*, *Uro, Titan of Nature's Wrath*, *Oko, Thief of Crowns*, *Omnath*, *Ragavan*, and *The One Ring*. All in all, Timeless 4C Yorion is completely trimmed for efficiency and value.
 
-<iframe data-moxfield-src="https://www.moxfield.com/embed/llfdtnAUAUivbO0hHUWoNA" id="moxfield-frame-1" frameBorder="0" width="700px" onload="moxfieldOnLoad(event)"></iframe>
-
-<a class="btn btn-link" href="https://www.moxfield.com/embed/llfdtnAUAUivbO0hHUWoNA" target="_blank" data-moxfield>Temur Creativity at Moxfield</a>
-
 ## Game Plan
 
 In the early game, the deck has a two-pronged strategy. One is to ramp with *Deathrite Shaman*, *Utopia Sprawl*, *Ragavan, Nimble Pirate*, or *Uro, Titan of Nature's Wrath*. On the other hand, *Expressive Iteration* and *Brainstorm* should be used to look for turn 3 and 4 plays with appropriate protection in the form of *Oko*, *Teferi*, *Omnath*. After that, the game plan is to control the board and resources until the opponent's Life Points are reduced to zero.
@@ -34,6 +30,10 @@ Against midrange and Tempo, it's more of a battle for board presence and resourc
 Against Control, on the other hand, the game plan is overrun with value. Control plays a limited arsenal of counters and removals that should never be underestimated. Any permissive spells or removal forced early on will give later answers breathing room to stay on the board for several turns and play to their strengths. An early *Teferi* nullifies opponent's Approval spells and slows the game, and is usually the best play against Control.
 
 The game plan against combo is as variable as the combo decks themselves. But you should always focus on the combo enablers. If you can eliminate them, a combo deck's Plan B is usually easy to defeat - but should never be considered an easy or automatic win.
+
+<iframe data-moxfield-src="https://www.moxfield.com/embed/llfdtnAUAUivbO0hHUWoNA" id="moxfield-frame-1" frameBorder="0" width="700px" onload="moxfieldOnLoad(event)"></iframe>
+
+<a class="btn btn-link" href="https://www.moxfield.com/embed/llfdtnAUAUivbO0hHUWoNA" target="_blank" data-moxfield>Temur Creativity at Moxfield</a>
 
 ## Cards That Did Not Make the Cut (Yet)
 
