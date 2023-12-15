@@ -11,9 +11,9 @@ header-img: "img/default.jpg"
 <p>We apologize, but the content you are seeking no longer exists. May we suggest exploring the options listed below instead?</p>
 <p>For more updates and insights, follow me on Twitter <a href="https://twitter.com/zombienoxx" target="_blank">@zombienoxx</a>!</p>
 
-<div itemscope itemtype="http://schema.org/Blog">
+<div itemscope itemtype="https://schema.org/Blog">
 {% for post in site.posts %}
-            <div class="post-preview" itemscope itemtype="http://schema.org/BlogPosting">
+            <div class="post-preview" itemscope itemtype="https://schema.org/BlogPosting">
                 <a href="{{ post.url | prepend: site.baseurl }}">
                     <h2 itemprop="headline" class="post-title">{{ post.title }}</h2>
                     {% if post.subtitle %}

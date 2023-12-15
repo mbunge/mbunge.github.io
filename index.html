@@ -2,9 +2,9 @@
 layout: page
 description: "Passionate Gamemaster, MtG Enthusiast, Guitarplayer"
 ---
-<div itemscope itemtype="http://schema.org/Blog">
+<div itemscope itemtype="https://schema.org/Blog">
 {% for post in paginator.posts %}
-<div class="post-preview" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="post-preview" itemscope itemtype="https://schema.org/BlogPosting">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 itemprop="headline" class="post-title">{{ post.title }}</h2>
         {% if post.subtitle %}

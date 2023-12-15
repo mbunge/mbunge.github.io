@@ -18,10 +18,10 @@ tags:
 
 <div class="callout callout-info">
   <h4>Update 2017/08/11</h4>
-  <p>I've got confused by the term of domain logic and application logic. Therefore I quote the differences between application services and domain services by <a href="http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/" target="_blank">Lev Gorodinski</a></p>
+  <p>I've got confused by the term of domain logic and application logic. Therefore I quote the differences between application services and domain services by <a href="https://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/" target="_blank">Lev Gorodinski</a></p>
 </div>
 
-**A special thanks to <a href="http://paul-m-jones.com/" target="_blank">Paul M. Jones</a> for reviewing this post.**
+**A special thanks to <a href="https://paul-m-jones.com/" target="_blank">Paul M. Jones</a> for reviewing this post.**
 
 Typically small http applications does only have to manage HTTP communication on top of a tiny MVC-Framework. A client performs a request, which is handled by a controller. The controller invoke the **model** and assigens the result data to a **view**. The **controller** converts the view into a response and delivers the response back to the client.
 
@@ -50,15 +50,15 @@ In a three-tier-architecture business logic performs operations between database
 Domain layer and application layer are very different in domain-driven-design. The application layer coordinates the domain layer with application services, where as domain services executing business logic on the domain layer.
 
 <figure>
- <img src="http://dddsample.sourceforge.net/images/layers.jpg">
+ <img src="https://dddsample.sourceforge.net/images/layers.jpg">
  <figcaption>
-  <small><i><a href="http://dddsample.sourceforge.net/architecture.html" target="_blank">Domain-Driven-Design by Source Forge</a></i></small>
+  <small><i><a href="https://dddsample.sourceforge.net/architecture.html" target="_blank">Domain-Driven-Design by Source Forge</a></i></small>
  </figcaption>
 </figure>
 
 ### Application services vs. domain services
 
-I recommend reading <a href="http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/" target="_blank">Services in Domain-Driven Design (DDD) by Lev Gorodinski</a>. A short list of differences quoted by Lev's post:
+I recommend reading <a href="https://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/" target="_blank">Services in Domain-Driven Design (DDD) by Lev Gorodinski</a>. A short list of differences quoted by Lev's post:
 
 > The differences between a domain service and an application services are subtle but critical:
 > 
@@ -606,11 +606,11 @@ You could als dive deeper into presenters - a <a href="https://sourcemaking.com/
 
 ## ADR
 
-Paul M. Jones described ADR - Action-Domain-Responder - as a web-specific refinement of Model-View-Controller. <a href="http://pmjones.io/adr" target="_blank">I recommend to getting know ADR</a> ;)
+Paul M. Jones described ADR - Action-Domain-Responder - as a web-specific refinement of Model-View-Controller. <a href="https://pmjones.io/adr" target="_blank">I recommend to getting know ADR</a> ;)
 
 ## Inversion of Control
 
-The examples initiate classes directly. <a href="https://en.wikipedia.org/wiki/Inversion_of_control" target="_blank">Inversion of control</a> separates initialisation logic of classes from application logic. For a better and cleaner architecture I recommend IoC by using a <a href="http://container.thephpleague.com/">Dependecy injection containers</a>. These encapsulates initialization logic into separate providers.
+The examples initiate classes directly. <a href="https://en.wikipedia.org/wiki/Inversion_of_control" target="_blank">Inversion of control</a> separates initialisation logic of classes from application logic. For a better and cleaner architecture I recommend IoC by using a <a href="https://container.thephpleague.com/">Dependecy injection containers</a>. These encapsulates initialization logic into separate providers.
 
 ## Implementing clean architecture
 

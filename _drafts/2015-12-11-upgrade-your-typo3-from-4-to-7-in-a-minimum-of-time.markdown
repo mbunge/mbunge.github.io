@@ -23,7 +23,7 @@ Basically we need to carry out three steps.
 2. We need to deactivate all custom extensions to proceed a clean upgrade.
 3. <a href="https://docs.typo3.org/typo3cms/InstallationGuide/UpgradeLTS/Preparation/Index.html" target="blank">Following further instructions of preparing your Typo3 4.x</a>
 4. <a href="https://docs.typo3.org/typo3cms/InstallationGuide/UpgradeLTS/UpgradeProcess/Index.html" tragte="_blank">carry out all upgrade instructions <b>(Ignore `typo3_src` symlink upgrade!)</b>.</a>
-5. <a href="http://prdownloads.sourceforge.net/typo3/typo3_src-6.2.15.zip?download" target="_blank">Download</a> the latest Version of 6.2
+5. <a href="https://prdownloads.sourceforge.net/typo3/typo3_src-6.2.15.zip?download" target="_blank">Download</a> the latest Version of 6.2
 6. Archive your current `index.php` and `typo3/`
 7. Extract `index.php` and `typo3/` from 6.2 archive into your current version.
 8. Execute installtool and proceed all steps `<your_url>/typo3/sysext/install/Start/Install.php`
@@ -33,7 +33,7 @@ Basically we need to carry out three steps.
 ### Upgrade from 6.2 to 7.6
 
 1. Backup your sourcefiles and Database (again)!
-2. <a href="http://prdownloads.sourceforge.net/typo3/typo3_src-7.6.0.zip?download" target="_blank">Download</a> the latest Version of 7.6
+2. <a href="https://prdownloads.sourceforge.net/typo3/typo3_src-7.6.0.zip?download" target="_blank">Download</a> the latest Version of 7.6
 3. Archive your current `index.php` and `typo3/`
 4. Extract `index.php`, `vendor/` and `typo3/` folder from 7.6 archive into your current version.
 5. Execute installtool and proceed all steps `<your_url>/typo3/sysext/install/Start/Install.php`

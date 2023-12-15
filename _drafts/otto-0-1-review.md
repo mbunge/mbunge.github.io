@@ -52,7 +52,7 @@ Nun führen wir `otto` aus und wenn alles geklappt hat bekommen wir folgenden Ou
 
 #### Vagrant und VirtualBox installieren
 
-Unter Windows benötigen wir ebenfalls Vagrant 1.7.4 und Virtualbox ab Version 4.0. Dazu laden wir uns einfach [Virtualbox](http://download.virtualbox.org/virtualbox/5.0.4/VirtualBox-5.0.4-102546-Win.exe) und [Vagrant](https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4.msi) herunter und installieren beide, anschließend müssen wir Windows neu starten.
+Unter Windows benötigen wir ebenfalls Vagrant 1.7.4 und Virtualbox ab Version 4.0. Dazu laden wir uns einfach [Virtualbox](https://download.virtualbox.org/virtualbox/5.0.4/VirtualBox-5.0.4-102546-Win.exe) und [Vagrant](https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4.msi) herunter und installieren beide, anschließend müssen wir Windows neu starten.
 
 #### Otto installieren
 

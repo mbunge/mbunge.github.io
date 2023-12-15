@@ -44,9 +44,9 @@ the markup into our html `<head>` section. The markup for my overview:
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Marco Bunge" />
 <meta property="og:description" content="Blogging about open-source, PHP and webtechnologies" />
-<meta property="og:url" content="http://www.marco-bunge.com/" />
+<meta property="og:url" content="https://www.marco-bunge.com/" />
 <meta property="og:site_name" content="Marco Bunge" />
-<meta property="og:image" content="http://www.marco-bunge.com/img/default.jpg" />
+<meta property="og:image" content="https://www.marco-bunge.com/img/default.jpg" />
 
 <title>Marco Bunge</title>
 ```
@@ -60,7 +60,7 @@ Facebook needs basically four options to display your presantion correctly:
  - og:image (e. g. product picture, logo, title image)
  - og:description (a short description of the containing content)
 
-You find detailed information about Open Graph Protocol on <a href="http://ogp.me" target="_blank">ogp.me</a>.
+You find detailed information about Open Graph Protocol on <a href="https://ogp.me" target="_blank">ogp.me</a>.
 And you could also test your Open Graph Protocol definitions with 
 <a href="https://developers.facebook.com/tools/debug/" target="_blank">Facebook's OpenGraph Debugger tool</a>. 
  

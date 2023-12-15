@@ -21,4 +21,4 @@ some reason new created posts will not automatically published when post has a v
   <p>Set <code>future: true</code> in <code>_config.yml</code> and your posts will be published asap.</p>
 </div>
 
-For more issues please read this <a href="" target="_blank">post on GitHub</a> and following Jekyll <a href="http://jekyllrb.com/docs/upgrading/2-to-3/" target="_blank">upgrade instructions</a>.
+For more issues please read this <a href="" target="_blank">post on GitHub</a> and following Jekyll <a href="https://jekyllrb.com/docs/upgrading/2-to-3/" target="_blank">upgrade instructions</a>.

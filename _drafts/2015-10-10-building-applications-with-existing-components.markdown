@@ -63,11 +63,11 @@ This series of Modern Applications with PHP has a defined roadmap:
  - a CLI-Interface to manage our blog
  - to be continued...
 
-We also follow a modern release cycle with <a href="http://semver.org/" target="_blank">semantic versioning</a>,
-<a href="http://keepachangelog.com/" target="_blank">changelog</a> and 
+We also follow a modern release cycle with <a href="https://semver.org/" target="_blank">semantic versioning</a>,
+<a href="https://keepachangelog.com/" target="_blank">changelog</a> and 
 <a href="https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows" target="_blank">a branching workflow</a>.
 
-We will also comply with the PSR standards defined by <a href="http://www.php-fig.org/" target="_blank">PHP-FIG</a>
+We will also comply with the PSR standards defined by <a href="https://www.php-fig.org/" target="_blank">PHP-FIG</a>
 
 ## Waht's next?
 

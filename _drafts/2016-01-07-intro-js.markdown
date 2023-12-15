@@ -13,7 +13,7 @@ categories:
   - development
 ---
 
-Today I will show you how to setup the project foundation, with all tools and services mentioned <a href="http://www.marco-bunge.com/2015/10/23/blast-the-modern-application-wrapper/" target="_blank">in post "Tools and services for modern applications"</a>. We will also create our first class, test it and explore the magical continious integration process. Feel free to ask questions! I would also be happy if you share this post.
+Today I will show you how to setup the project foundation, with all tools and services mentioned <a href="https://www.marco-bunge.com/2015/10/23/blast-the-modern-application-wrapper/" target="_blank">in post "Tools and services for modern applications"</a>. We will also create our first class, test it and explore the magical continious integration process. Feel free to ask questions! I would also be happy if you share this post.
 
 ## Intro
 
@@ -80,5 +80,5 @@ We will use travis-ci, a free continious integration service.
 
 ### Git
 
-<a href="http://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup" target="_blank">First time Setup</a>
+<a href="https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup" target="_blank">First time Setup</a>
 <a href="https://help.github.com/articles/generating-ssh-keys/" target="_blank">Generating </a>

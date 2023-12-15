@@ -13,7 +13,7 @@ tags:
  - http
 ---
 
-In my daily work I often need the possibility of file downloads. I basically use <a href="http://www.php-fig.org/psr/psr-7/" target="blank">PSR-7 standard</a> and <a href="https://zendframework.github.io/zend-diactoros/" target="blank">Zend Diactoros</a> for HTTP communication.
+In my daily work I often need the possibility of file downloads. I basically use <a href="https://www.php-fig.org/psr/psr-7/" target="blank">PSR-7 standard</a> and <a href="https://zendframework.github.io/zend-diactoros/" target="blank">Zend Diactoros</a> for HTTP communication.
 Zend Diactoros does not have a built in support for file downloads. Therefore I wrote a response which is supporting file 
 downloads. Here it is:
 

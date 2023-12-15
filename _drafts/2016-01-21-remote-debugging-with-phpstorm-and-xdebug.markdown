@@ -147,7 +147,7 @@ Or you could use these convenience snippets to enable debugging directly within 
 
 ## Reference Links:
 
- - <a href="http://www.sitepoint.com/install-xdebug-phpstorm-vagrant/" target="_blank">How to Install Xdebug with PHPStorm and Vagrant</a>
+ - <a href="https://www.sitepoint.com/install-xdebug-phpstorm-vagrant/" target="_blank">How to Install Xdebug with PHPStorm and Vagrant</a>
  - <a href="https://confluence.jetbrains.com/display/PhpStorm/Working+with+Remote+PHP+Interpreters+in+PhpStorm" target="_blank">Adding a remote PHP interpreter over SSH</a>
  - <a href="https://www.jetbrains.com/phpstorm/help/debugging-php-applications.html" target="_blank">Debugging PHP Applications</a>
  - <a href="https://www.jetbrains.com/phpstorm/help/zero-configuration-debugging.html" target="_blank">Zero debugging configuration</a>

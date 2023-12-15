@@ -72,4 +72,4 @@ Thank you, Marco!
 
 ## Further information
 
-Getting more Information of <a href="http://iconary.eu/" target="_blank">iconary</a> and be always <a href="https://www.facebook.com/iconary" target="_blank">up to date on facebook</a>.
+Getting more Information of <a href="https://iconary.eu/" target="_blank">iconary</a> and be always <a href="https://www.facebook.com/iconary" target="_blank">up to date on facebook</a>.

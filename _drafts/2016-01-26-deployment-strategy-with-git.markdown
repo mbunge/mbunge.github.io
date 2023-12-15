@@ -129,4 +129,4 @@ This small tool is helping small teams to provide a manual deployment strategy f
 
 ## Further links
 
-<a href="http://www.binarytides.com/linux-scp-command/" target="_blank">Upload files with SCP</a>
+<a href="https://www.binarytides.com/linux-scp-command/" target="_blank">Upload files with SCP</a>
