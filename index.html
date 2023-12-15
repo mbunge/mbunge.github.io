@@ -5,6 +5,8 @@ description: "Passionate Gamemaster, MtG Enthusiast, Guitarplayer"
 <div itemscope itemtype="https://schema.org/Blog">
 {% for post in paginator.posts %}
 <div class="post-preview" itemscope itemtype="https://schema.org/BlogPosting">
+    <meta itemprop="datePublished" content="{{ post.date }}">
+    <meta itemprop="image" content="{{ site.baseurl }}/{% if post.header-img %}{{ post.header-img }}{% else %}{{ site.header-img }}{% endif %}">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 itemprop="headline" class="post-title">{{ post.title }}</h2>
         {% if post.subtitle %}
@@ -13,9 +15,7 @@ description: "Passionate Gamemaster, MtG Enthusiast, Guitarplayer"
         </h3>
         {% endif %}
     </a>
-    <p class="post-meta">Posted by <span itemprop="author">{% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %}</span> on {{ post.date | date: "%B %d, %Y" }}</p>
-    <meta itemprop="datePublished" content="{{ post.date }}">
-    <meta itemprop="image" content="{{ site.baseurl }}/{% if post.header-img %}{{ post.header-img }}{% else %}{{ site.header-img }}{% endif %}">
+    <p class="post-meta">Posted by <span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="url" content="{{ "/about.html" | prepend: site.baseurl | append: "#" append: post.author }}">{% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %}</span> on {{ post.date | date: "%B %d, %Y" }}</p>
 </div>
 <hr>
 {% if forloop.index == -1 %}
