@@ -53,7 +53,7 @@ CookieConsent.run({
         translations: {
             en: {
                 consentModal: {
-                    title: "Hello traveller, it's cookie time!",
+                    title: "Hello planeswalker, it's cookie time!",
                     description: "We implement essential cookies to ensure our website operates smoothly, and to gather anonymous data regarding your session. You have the option to disable these essential cookies through your browser's settings. Additionally, we deploy optional cookies to tailor the content and advertisements, enable social media interactions, and scrutinize web traffic for optimizing the user experience. This includes analyzing website usage to enhance the overall user experience.",
                     acceptAllBtn: "Accept all",
                     acceptNecessaryBtn: "Reject all",
