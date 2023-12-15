@@ -1,0 +1,8 @@
+---
+layout: null
+---
+https://www.marco-bunge.com/
+{% for post in site.posts %}
+{{ post.url | prepend: site.baseurl | prepend: site.url }}
+{% endfor %}
+https://www.marco-bunge.com/about.html
