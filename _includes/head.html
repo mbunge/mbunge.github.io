@@ -41,6 +41,14 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+    <link rel="preload" as="font" href="{{ "/fonts/Lora/Lora-Italic.ttf" | prepend: site.baseurl }}">
+    <link rel="preload" as="font" href="{{ "/fonts/Lora/Lora-Regular.ttf" | prepend: site.baseurl }}">
+    <link rel="prefetch" as="font" href="{{ "/fonts/Lora/Lora-Bold.ttf" | prepend: site.baseurl }}">
+    <link rel="preload" as="font" href="{{ "/fonts/OpenSans/OpenSans-ExtraBold.ttf" | prepend: site.baseurl }}">
+    <link rel="preload" as="font" href="{{ "/fonts/OpenSans/OpenSans-Light.ttf" | prepend: site.baseurl }}">
+    <link rel="prefetch" as="font" href="{{ "/fonts/OpenSans/OpenSans-SemiBold.ttf" | prepend: site.baseurl }}">
+
 <!--
     <link rel="prefetch" as="font" href="{{ "/fonts/OpenSans/OpenSans-Bold.ttf" | prepend: site.baseurl }}">
     <link rel="prefetch" as="font" href="{{ "/fonts/OpenSans/OpenSans-BoldItalic.ttf" | prepend: site.baseurl }}">
@@ -56,15 +64,13 @@
     <link rel="prefetch" as="font" href="{{ "/fonts/OpenSans/OpenSans-SemiBoldItalic.ttf" | prepend: site.baseurl }}">
     <link rel="prefetch" as="font" href="{{ "/fonts/Lora/Lora-Bold.ttf" | prepend: site.baseurl }}">
     <link rel="prefetch" as="font" href="{{ "/fonts/Lora/Lora-BoldItalic.ttf" | prepend: site.baseurl }}">
-    <link rel="preload" as="font" href="{{ "/fonts/Lora/Lora-Italic.ttf" | prepend: site.baseurl }}">
-    <link rel="preload" as="font" href="{{ "/fonts/Lora/Lora-Medium.ttf" | prepend: site.baseurl }}">
     <link rel="prefetch" as="font" href="{{ "/fonts/Lora/Lora-MediumItalic.ttf" | prepend: site.baseurl }}">
     <link rel="prefetch" as="font" href="{{ "/fonts/Lora/Lora-Regular.ttf" | prepend: site.baseurl }}">
     <link rel="prefetch" as="font" href="{{ "/fonts/Lora/Lora-SemiBold.ttf" | prepend: site.baseurl }}">
     <link rel="prefetch" as="font" href="{{ "/fonts/Lora/Lora-SemiBoldItalic.ttf" | prepend: site.baseurl }}">
 -->
-    <link href="{{ "/css/fonts.css" | prepend: site.baseurl }}" rel="prefetch" as="style" type="text/css">
-    <link href="{{ "/css/fonts.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
+    <link href="{{ "/css/fonts-optimized.css" | prepend: site.baseurl }}" rel="prefetch" as="style" type="text/css">
+    <link href="{{ "/css/fonts-optimized.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core CSS -->
     <link rel="preload" as="style" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}" type="text/css">
