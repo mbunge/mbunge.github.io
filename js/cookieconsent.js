@@ -1,4 +1,4 @@
-import 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.17/dist/cookieconsent.umd.js';
+import './cookieconsent-impl.js';
 
 // Enable dark mode
 document.documentElement.classList.add('cc--darkmode');
