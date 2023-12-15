@@ -15,7 +15,7 @@ description: "Passionate Gamemaster, MtG Enthusiast, Guitarplayer"
     </a>
     <p class="post-meta">Posted by <span itemprop="author">{% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %}</span> on {{ post.date | date: "%B %d, %Y" }}</p>
     <meta itemprop="datePublished" content="{{ post.date }}">
-    <!--<span class="hide"><img itemprop="image" src="{{ site.baseurl }}/{% if post.header-img %}{{ post.header-img }}{% else %}{{ site.header-img }}{% endif %}" alt="{{ post.title }}"></span>-->
+    <meta itemprop="image" content="{{ site.baseurl }}/{% if post.header-img %}{{ post.header-img }}{% else %}{{ site.header-img }}{% endif %}">
 </div>
 <hr>
 {% if forloop.index == -1 %}
