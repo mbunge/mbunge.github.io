@@ -42,14 +42,20 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+
+    <link href="{{ " /css/fonts.css" | prepend: site.baseurl }}" rel="prefetch" as="style" type="text/css">
     <link href="{{ " /css/fonts.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core CSS -->
+    <link rel="preload" as="style" href="{{ " /css/bootstrap.min.css" | prepend: site.baseurl }}" type="text/css">
     <link rel="stylesheet" href="{{ " /css/bootstrap.min.css" | prepend: site.baseurl }}" type="text/css">
 
     <!-- Custom CSS -->
+    <link rel="prefetch" as="style" href="{{ " /css/clean-blog.css" | prepend: site.baseurl }}" type="text/css">
     <link rel="stylesheet" href="{{ " /css/clean-blog.css" | prepend: site.baseurl }}" type="text/css">
 
+    <link rel="preload" as="style"
+        href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.17/dist/cookieconsent.css">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.17/dist/cookieconsent.css">
 
@@ -57,6 +63,7 @@
     <!-- <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}" type="text/css"> -->
 
     <!-- Custom Fonts -->
+    <link href="{{ " /features/font-awesome-6/css/all.css" | prepend: site.baseurl }}" rel="prefetch" as="style" type="text/css">
     <link href="{{ " /features/font-awesome-6/css/all.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
 
     <script defer type="text/plain" data-category="analytics" data-src="https://www.googletagmanager.com/gtag/js?id=G-KGBPXT458L"></script>
