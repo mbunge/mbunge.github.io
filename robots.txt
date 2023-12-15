@@ -3,10 +3,8 @@ Layout: null
 ---
 User-agent: *
 
-Disallow: /img/
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
-Disallow: /mail/
 
 Sitemap: {{site.url}}/sitemap.xml
