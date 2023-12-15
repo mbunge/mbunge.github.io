@@ -1,0 +1,31 @@
+---
+layout: page
+title: "404 - Page not found"
+description: "The Requested Page Cannot Be Found"
+header-img: "img/default.jpg"
+---
+
+<h1>Oh NO! Your request has been countered!</h1>
+<h2>Mana Screwed! The Spell to Summon This Page Has Failed</h2>
+
+<p>We apologize, but the content you are seeking no longer exists. May we suggest exploring the options listed below instead?</p>
+<p>For more updates and insights, follow me on Twitter <a href="https://twitter.com/zombienoxx" target="_blank">@zombienoxx</a>!</p>
+
+<div itemscope itemtype="http://schema.org/Blog">
+{% for post in site.posts %}
+            <div class="post-preview" itemscope itemtype="http://schema.org/BlogPosting">
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                    <h2 itemprop="headline" class="post-title">{{ post.title }}</h2>
+                    {% if post.subtitle %}
+                    <h3 itemprop="description" class="post-subtitle">
+                      {{ post.subtitle }}
+                    </h3>
+                    {% endif %}
+                </a>
+                <p class="post-meta">Posted by <span itemprop="author">{% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %}</span> on {{ post.date | date: "%B %d, %Y" }}</p>
+                <meta itemprop="datePublished" content="{{ post.date }}">
+                <span class="hide"><img itemprop="image" src="{{ site.baseurl }}/{% if post.header-img %}{{ post.header-img }}{% else %}{{ site.header-img }}{% endif %}" alt="{{ post.title }}"></span>
+            </div>
+            <hr>
+{% endfor %}
+</div>
