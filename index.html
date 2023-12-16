@@ -15,7 +15,7 @@ description: "Passionate Gamemaster, MtG Enthusiast, Guitarplayer"
         </h3>
         {% endif %}
     </a>
-    <p class="post-meta">Posted by <span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="url" content="{{ "/about.html" | prepend: site.baseurl | append: "#" | append: post.author }}">{% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %}</span> on {{ post.date | date: "%B %d, %Y" }}</p>
+    <p class="post-meta">Posted by <span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="url" content="{{ "/about.html" | prepend: site.baseurl | append: "#" | append: post.author }}"><meta itemprop="name" content="{{ post.author }}">{% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %}</span> on {{ post.date | date: "%B %d, %Y" }}</p>
 </div>
 <hr>
 {% if forloop.index == -1 %}
