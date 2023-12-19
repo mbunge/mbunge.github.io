@@ -108,6 +108,14 @@ The format is still evolving and new Decks are about to break into Best-Of-3 Tim
 |Creativity        |51%    |2.66%    |
 |Tainted Pact      |67%    |1.08%    |
 
+## Best of 1
+
+If you are interested in playing Best of One rather than Best of Three, I recommend watching this video by <a href="https://www.youtube.com/@MTGJoe" target="_blank">MTG Joe</a> about the Top 10 Best Decks Timeless Best of One (Bo1) Decks.
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=pZxviZ62450"></iframe>
+</div>
+
 ## Conclusion
 
 Players can easily opt for two-color decks or, with the versatility of Fetchlands, venture into multi-color decks with so many exceptional cards to choose from. With so many options to choose from, there are a lot of complex decisions to be made starting on Turn 1, including how to sequence your lands and spells, and how to time them against your opponents' decks. Eternal formats like Legacy or Modern provide inspriation of Deck's than can be built. Timeless is a fun format, especially when played in a best-of-three format. In my opinion, it is only a matter of time before we see the first Timeless tournaments.
