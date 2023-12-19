@@ -113,7 +113,7 @@ The format is still evolving and new Decks are about to break into Best-Of-3 Tim
 If you are interested in playing Best of One rather than Best of Three, I recommend watching this video by <a href="https://www.youtube.com/@MTGJoe" target="_blank">MTG Joe</a> about the Top 10 Best Decks Timeless Best of One (Bo1) Decks.
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=pZxviZ62450"></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/pZxviZ62450?si=6fbFkm2HUU1pJJNh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 ## Conclusion
