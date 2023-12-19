@@ -29,35 +29,35 @@ For the data analysis of the MTG Arena Timeless format, the focus will be on bes
 
 ## Top 5 cards
 
-The format is filled with a variety of effective and efficient spells and abilities that add to the fun. Games are fast-paced, and players are faced with complex decisions on their very first turn. Let's break down the top 5 spells that has been played so far.
+The format is filled with a variety of effective and efficient spells and abilities that add to the fun. Games are fast-paced, and players are faced with complex decisions on their very first turn. Let's break down the top 5 spells from 16 decks of the format that has been played so far.
 
 ### Orcish Bowmaster
 
-Orcish Bowmaster is already an all-star in other formats like Modern and Legacy. From the very beginning, Orcish Bowmaster has been considered one of the top cards in Timeless, and the numbers are backing it up. It combines removal, board presence, and works exceptionally well against card draw strategies like Brainstorm or Mishra's Bauble. It is the most played card in the format, appearing as 2-of to 4-of in 71% of decks across 15 different builds.
+*Orcish Bowmaster* is already an all-star in other formats like Modern and Legacy. From the very beginning, *Orcish Bowmaster* has been considered one of the top cards in Timeless, and the numbers are backing it up. It combines removal, board presence, and works exceptionally well against card draw strategies like *Brainstorm* or *Mishra's Bauble*. It is the most played card in the format, appearing as 2-of to 4-of in 71% of decks across 16 different builds.
 
 ### Lightning Bolt
 
-Lightning Bolt, the second most played card and a versatile removal option. It sees play in all eternal formats, much like Orcish Bowmaster, and is rightfully considered the best removal in Magic. It appears as a 4-of in 64% of decks, spanning 15 different builds.
+*Lightning Bolt*, the second most played card and a versatile removal option. It sees play in all eternal formats, much like *Orcish Bowmaster*, and is rightfully considered the best removal in Magic. It appears as a 4-of in 64% of decks, spanning 16 different builds.
 
 ### Mishra's bauble
 
-A powerful zero-mana card draw engine, especially in combination with Lurrus of the Dream Den or Fetchlands. It's commonly included as a 3 or 4 in 57% of decks in 15 different builds.
+A powerful zero-mana card draw engine, especially in combination with *Lurrus of the Dream Den* or Fetchlands. It's commonly included as a 3 or 4 in 57% of decks in 16 different builds.
 
 ### Deathrite Shaman
 
-Often referred to as a "one-man planeswalker" when it was legal in Modern and Legacy, Deathrite Shaman is known for its versatile utility, providing ramp, graveyard hate, life drain, and life gain. It also uses the opponent's graveyard as a resource while punishing them for playing Fetchlands. Due to the introduction of Fetchlands in the MTG Arena Timeless format, it's commonly played as a 2-of-4-of in 43% of 15 different decks.
+Often referred to as a "one-man planeswalker" when it was legal in Modern and Legacy, *Deathrite Shaman* is known for its versatile utility, providing ramp, graveyard hate, life drain, and life gain. It also uses the opponent's graveyard as a resource while punishing them for playing Fetchlands. Due to the introduction of Fetchlands in the MTG Arena Timeless format, it's commonly played as a 2-of-4-of in 43% of 16 different decks.
 
 ### Brainstorm
 
-Brainstorm is one of the best card draw spells in MTG history, especially in combination with Fetchlands, where it feels like Ancestral Recall. Nearly every Blue-based deck includes Brainstorm, resulting in it appearing as a 4-of in 43% of 15 different decks.
+*Brainstorm* is one of the best card draw spells in MTG history, especially in combination with Fetchlands, where it feels like Ancestral Recall. Nearly every Blue-based deck includes *Brainstorm*, resulting in it appearing as a 4-of in 43% of 16 different decks.
 
-### More Spells
+### Further Spells
 
 There are numerous other spells that are common to various decks, such as *Ragavan, Nimble Pilferer*, and *Dragon's Rage Channeler*, as well as premier hand disruption spells like *Thoughtseize* and *Inquisition of Kozilek*. Then there are cards that shape decks like *Necropotence*, *Natural Order*, and *Sneak Attack*. Just because they're not in the top 5 doesn't mean they're not excellent cards in the format.
 
 ## Top 3 decks
 
-Timeless features a wide variety of decks that use the format's top cards in different combinations, or are built around a central combo or strategy. This review focuses on three of the 14 decks, highlighting Domain Zoo, Necro, and Sultai Midrange decks that are shaping the early meta.
+Timeless features a wide variety of decks that use the format's top cards in different combinations, or are built around a central combo, ability or strategy. This review focuses on three best decks of the 16 decks, highlighting Domain Zoo, Necro, and Sultai Midrange decks that are shaping the early meta.
 
 ### 3. Sultai Midrange
 
