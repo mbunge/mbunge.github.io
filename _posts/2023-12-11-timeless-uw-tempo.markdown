@@ -15,7 +15,7 @@ categories:
 
 UW Tempo is a tempo-combo deck designed for the MTG Arena Timeless format. This deck focuses on controlling the early game, executing the combo with **Teferi, Time Raveler** and **Displacer Kitten**, and ultimately securing win with **Monastery Mentor**, **Thassa's Oracle**, or by utilizing the Power 9 from the **Oracle of the Alpha**'s spellbook.
 
-<iframe data-moxfield-src="https://www.moxfield.com/embed/2zVccpDUd0SoP1FsHocV8Q" id="moxfield-frame-1" frameBorder="0" width="700px" onload="moxfieldOnLoad(event)"></iframe>
+<iframe data-moxfield-src="https://www.moxfield.com/embed/2zVccpDUd0SoP1FsHocV8Q" id="moxfield-frame-1" frameBorder="0" width="100%" onload="moxfieldOnLoad(event)"></iframe>
 
 <a class="btn btn-link" href="https://www.moxfield.com/embed/2zVccpDUd0SoP1FsHocV8Q" target="_blank" data-moxfield>UW Tempo at Moxfield</a>
 

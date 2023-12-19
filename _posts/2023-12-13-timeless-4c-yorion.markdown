@@ -31,7 +31,7 @@ Against Control, on the other hand, the game plan is overrun with value. Control
 
 The game plan against combo is as variable as the combo decks themselves. But you should always focus on the combo enablers. If you can eliminate them, a combo deck's Plan B is usually easy to defeat - but should never be considered an easy or automatic win.
 
-<iframe data-moxfield-src="https://www.moxfield.com/embed/llfdtnAUAUivbO0hHUWoNA" id="moxfield-frame-1" frameBorder="0" width="700px" onload="moxfieldOnLoad(event)"></iframe>
+<iframe data-moxfield-src="https://www.moxfield.com/embed/llfdtnAUAUivbO0hHUWoNA" id="moxfield-frame-1" frameBorder="0" width="100%" onload="moxfieldOnLoad(event)"></iframe>
 
 <a class="btn btn-link" href="https://www.moxfield.com/embed/llfdtnAUAUivbO0hHUWoNA" target="_blank" data-moxfield>Temur Creativity at Moxfield</a>
 

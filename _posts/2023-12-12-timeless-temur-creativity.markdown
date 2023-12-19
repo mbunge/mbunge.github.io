@@ -17,6 +17,6 @@ Temur Creativity is a combo-control deck that uses card advantage, permission an
 
 At its core, the deck aims to generate tokens using *Oko, Thief of Crowns*, *Minsc & Boo*, *Fable of the Mirror-Breaker* and *Dwarven Mine*. These tokens serve as fodder for *Indomitable Creativity*. *Memory Lapse* and *Spell Pierce* protect the combo from disruption and counteract the opponent's plays. *Veil of Summer* is added to the mainboard due to the anticipated meta of blue permission and black disruption. *Lightning Bolt* offers a direct way to deal with opposing creatures, maintaining board control. For consistency and digging deeper into the library to find the necessary combo pieces, the deck uses *Brainstorm*, *Treasure Cruise*, and *Fetchlands*.
 
-<iframe data-moxfield-src="https://www.moxfield.com/embed/nkYnZSMxvkWslvUQtVArUw" id="moxfield-frame-1" frameBorder="0" width="700px" onload="moxfieldOnLoad(event)"></iframe>
+<iframe data-moxfield-src="https://www.moxfield.com/embed/nkYnZSMxvkWslvUQtVArUw" id="moxfield-frame-1" frameBorder="0" width="100%" onload="moxfieldOnLoad(event)"></iframe>
 
 <a class="btn btn-link" href="https://www.moxfield.com/embed/nkYnZSMxvkWslvUQtVArUw" target="_blank" data-moxfield>Temur Creativity at Moxfield</a>
