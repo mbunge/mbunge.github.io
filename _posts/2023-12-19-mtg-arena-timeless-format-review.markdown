@@ -72,7 +72,7 @@ Sultai Midrange's most common line is to control the early game by disrupting th
 
 For much of 1996, Magic tournaments were dominated by Necropotence-based decks, which is why the period was called the Black Summer. Necro is built around the card of the same name, Necropotence, and aims to effectively control the opponent with hand disruption like *Inquisition of Kozilek* or *Duress*, and removal like *Fatal Push* and *March of Wretched Sorrow*. A very popular play is to get cards with *Necropotence* at the end of the turn and remove a creature or planeswalker before discarding with *March of Wretched Sorrow*.
 
-<iframe data-moxfield-src="https://www.moxfield.com/embed/YLNDkTn4f0u_AbcgvaQc_w" id="moxfield-frame-1" frameBorder="0" width="100%" onload="moxfieldOnLoad(event)"></iframe>
+<iframe data-moxfield-src="https://www.moxfield.com/embed/YLNDkTn4f0u_AbcgvaQc_w" id="moxfield-frame-2" frameBorder="0" width="100%" onload="moxfieldOnLoad(event)"></iframe>
 
 <a class="btn btn-link" href="https://www.moxfield.com/embed/YLNDkTn4f0u_AbcgvaQc_w" target="_blank" data-moxfield>Grixis Tempo at Moxfield</a>
 
@@ -80,7 +80,7 @@ For much of 1996, Magic tournaments were dominated by Necropotence-based decks, 
 
 Domain Zoo is a synergistic aggro deck built around the Domain ability or abilities that benefit from different basic land types. The strategy revolves around deploying early threats like *Feral Nacatl*, *Territorial Kavu*, or *Nishoba Brawler* that grow in power quickly, and protecting them with discounted *Leyline Binding*, a huge *Tribal Flames*, or *Stubborn Denial*. Cards like *Ragavan, Nimble Pilferer*, and *Orcish Bowmaster* provide additional utility to push the strategy forward early.
 
-<iframe data-moxfield-src="https://www.moxfield.com/embed/gKHpQadxhkeIqiJEqHxRDQ" id="moxfield-frame-1" frameBorder="0" width="100%" onload="moxfieldOnLoad(event)"></iframe>
+<iframe data-moxfield-src="https://www.moxfield.com/embed/gKHpQadxhkeIqiJEqHxRDQ" id="moxfield-frame-3" frameBorder="0" width="100%" onload="moxfieldOnLoad(event)"></iframe>
 
 <a class="btn btn-link" href="https://www.moxfield.com/embed/gKHpQadxhkeIqiJEqHxRDQ" target="_blank" data-moxfield>Grixis Tempo at Moxfield</a>
 
