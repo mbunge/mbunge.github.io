@@ -1,11 +1,11 @@
 ---
 layout:     post
-title:      "Timeless Blue-x Control"
-subtitle:   "An in-depth guide to control in timeless"
+title:      "UW Control and Dimir Bowmaster"
+subtitle:   "A guide to reactive blue-based control in MTG Arena Timeless"
 author:     "Marco Bunge"
-date:       2023-12-27 17:30:00
-published:  false
-header-img: "img/temur.webp"
+date:       2023-12-27 23:45:00
+published:  true
+header-img: "img/uw.webp"
 series:     "MTG Arena Timeless"
 categories:
   - mtg
@@ -13,22 +13,60 @@ categories:
   - deck
 ---
 
-In diesem Guide schauen wir und Blue-based control decks in MTG Arena Timeless Best-Of three an. Grundsätzlich nutzen U-based control Decks eine Mischung aus Permission, Removal und Cardadvantage um den Gegner zu kontrollieren und dann im Lategame mit einer Wincondition das Spiel zu beenden.
+Magic is a game of information and anticipation. This is especially true of Control decks. A Control player must understand the meta, the decks to beat, and how to sequence resources, interactions, and card advantage. This guide covers classic UW Control a new take on Dimir Bowmaster with *Lurrus, of the Dream Den* and *Orcish Bowmasters*. Both decks are reactive by nature, trying to control the opponent's turns until a Win Condition is brought to the board to quickly end the game. That win condition could be a creature, a combo, or something similar.
 
-Damit Controldecks gut funktionieren muss vorerst die Meta mit ihren wichtigsten Decks, Karten und Synergien studiert werden, damit ein Gegner mit entsprechenden Antworten dominiert werden kann.
+<a class="btn btn-secondary btn-block" target="_blank" alt="Follow me on Twitter" href="https://twitter.com/zombienoxx">I'll be posting an updated MTG Arena Timeless meta report in the next few days. Follow me on Twitter and stay tuned!</a>
 
-Generell gilt, dass Blau selbst kein Removal oder herrausragende Windconditions besitzt und daher mit einer weiteren Farbe gesplasht werden. Weiß bietet hervoragendes Removal, Boardsweeper und mit Teferi, Hero of Dominaria oder Wandering Emperor auch gute Winconditions. Schwarz bringt günstiges spotremoval mit Fatal Push oder Orcish Bowmaster, sowie Handisruption in Form von Inquisition of Kozilek oder Thoughtseize. Ein Grünsplash lohnt sich für ramp und Oko, Uro, Veil of Summer und Wilderness Reclamation. Rot liefert burn-basiertes Removal. Diese Farbkombinationen können auch untereinander Gemischt werden, sodass sich eine Menge an Möglichkeiten für unterschiedliche Blue-based control decks ergeben.
+## Key cards
 
-Zusätzlich muss beim Design des Decks grob zwischen einem Proaktiven und einen Reaktiven Ansatz gewählt werden, denn diese Entscheiden letztendlich darüber welche Karten gespielt werden. Bei einem Proaktiven Ansatz, wird mit Handdisruption gearbeitet und dem Gegner wird der Deckspielplan durch starker Permanents wie Blood Moon oder Sorceries aufgezwungen. Bei einem reaktiver Ansatz findet meistens im Zug des Gegners statt indem seine Spells mit einem klassischen Counterspell verhindert werden oder mit instant-Speedremoval seine Threads aus dem Spiel verbannt werden, bevor sie etwas tun können.
+Following cards present the most important bule-based spells in almost every Ux-Control deck.
 
-Es ist anzumerken, dass Control gegen einige Archetypen Probeleme haben kann bzw.  gegen Aggro und Midrange probeleme haben kann. Aggro agiert in den Early turns und ist darauf ausgelegt schnell zu gewinnen, manchmal schnelle als das Control passende Antworten parat hat. Hier muss also insbesondere einfach Überlebt werden. Aggro hat von natur aus keine guten Draws, und sobald die Boardposition vom Controlspieler gesichert wurde, kommt ein Aggrodeck nur noch selten zurück ins Spiel.  Midrange wiederum kann sehr schnell eine Starke Boardposition etablieren und nutzt oft black-based disruption, gegen welches Control seine Probelme haben kann. Insbesondere Discard wirkt gegen Cardadvantage und führt oft dazu, dass entsprechende Antworten auf der Starthand entfernt werden.
+### Brainstorm
 
-Aber fangen wir doch einfach mit der Meta an und schauen, welche Farben liefern die richtigen Werkzeuge in der aktuellen Timeless meta.
+*Brainstorm* can be played both as a card advantage engine with Fetchlands and as a protection against hand disruption. Knowing whether a card in your hand really adds value in the current matchup and stage of the game is the key to good *Brainstorm* play. 
 
-## Die Aktuelle Meta
+When playing *Brainstorm* for card advantage, you always need a shuffling effect. Otherwise, you can be slowed down for the next two turns, especially early in the game. Almost all of the top decks in Timeless will punish you if you play *Brainstorm* at the wrong time.
 
-Ich habe bereits ein paar Analysen zur aktuellen Meta mit Hilfe von MTG-Decks.com angestellt.
+Playing *Brainstorm* as a hand disruption protection prevents you from losing necessary quality cards at the current stage of the game.
 
-Zum einen zeigt die Analyse, dass vorwiegend Schwarz und Rot gespielt wird, gefolgt von Blau und Grün, und nur wenig Weiß. Dies bedeutet, dass eine hohe Wahrscheinlichkeit besteht auf Discard und viel Removal mit Fokus auf Planeswalker und Creaturs zu stoßen. Zu den Top-Cards zählen Orcish Bowmaster, Deathrite Shaman. Karten die Card-Advantage sollten daher eher als Regeltext "Put card into hand" statt "Draw x Cards" haben, sofern es hier entsprechend gut Alternativen gibt. Brainstorm ist nach wie vor ein sehr guter Card-Advantage Spell, insbesondere mit Fetchlands.
+### Counterspell and other counter magic
 
-Mit Rakdos, Jund und Sultai werden einige Midrange
+Hard counters like Counterspell are the cleanest reactive way to control your opponent's turns starting in turn two. In addition to *Counterspell*, *Change the Equation*, *Spell Pierce*, and *Memory Lapse* do a very good job of controlling your opponent's plays. *Memory Lapse* could replace Counterspell in a list that plays three plus colors. 
+
+The amount of *Change the Equation* on the board depends on the Timeless metagame. Right now, it counters a lot of staples like *Orcish Bowmaster*, *Oko, Thief of Crowns*, *Sneak Attack*, *Natural Order*.
+
+*Spell Pierce* is useful in a meta with fast non-creature spells, like combo decks, like turn 1 Necropotence with opponents on the draw, etc.
+
+### Snapcaster Mage and Mystic Snactuary
+
+*Snapcaster Mage* has been a staple in control decks for a long time because of the body it provides as a blocker, the help it provides with spell replay, and the value it adds with instant speed. 
+
+*Mystic Snactuary*, on the other hand, increases deck consistency by returning an instant or sorcery to the top of the library, can be found with a Fetchland since it also counts as an island, and provides blue mana.
+
+### Fetchlands and Landcycling
+
+Fetchlands and landcycling cards like *Lorien Revealed* are key for consistent land drops and shuffling effects together with *Brainstorm* or *Mishra's Bauble*.
+
+## UW Control
+
+Also known as Azorius Control, it combines instant speed spot removal like *Swords to Plowshares* or *Leyline Binding*, sweepers like *Supreme Verdict*, and versatile planeswalkers that add value to different aspects of a control game. *Search for Azcanta*, *Dig Through Time*, and *The One Ring* add card advantage, while *The One Ring* also provides one-turn protection.
+
+The manabase is optimized to provide the necessary mana resources with Fetchlands and *Lorien Revealed*.
+
+The following list aims to win with The Wandering Emperor, Teferi, Hero of Dominaria, or Restless Anchorage.
+
+<iframe data-moxfield-src="https://www.moxfield.com/embed/TtBMyS8V80Gk95CwfutOXA" id="moxfield-frame-1" frameBorder="0" width="100%" onload="moxfieldOnLoad(event)"></iframe>
+
+<a class="btn btn-link" href="https://www.moxfield.com/embed/TtBMyS8V80Gk95CwfutOXA" target="_blank" data-moxfield>UW Control at Moxfield</a>
+
+## Dimir Bowmaster
+
+In addition to UW control, Dimir Bowmaster aka UB control uses *Lurrus of the Dream Den* to generate value and insane consistency with replayed *Orcish Bowmaster*, *Snapcaster Mage*, or *Mishra's Bauble*. The deck focuses on a reactive game plan with Permission and Spot Removal and establishing a strong board position as early as turn two with *Orcish Bowmasters*. The manabase is optimized to provide the necessary mana resources with Fetchlands and *Lorien Revealed*.
+
+<iframe data-moxfield-src="https://www.moxfield.com/embed/gkTfOVQQskG_07Nlnvq0jw" id="moxfield-frame-2" frameBorder="0" width="100%" onload="moxfieldOnLoad(event)"></iframe>
+
+<a class="btn btn-link" href="https://www.moxfield.com/embed/gkTfOVQQskG_07Nlnvq0jw" target="_blank" data-moxfield>Dimir Bowmaster at Moxfield</a>
+
+### Conclusion
+
+The MTG Arena Timeless meta is starting to settle, and now is the time for control decks. I expect to see fine-tuned, meta-adapting control decks in the next two weeks. In my opinion, Dimir Bowmaster seems to be the best control deck right now due to it's consistent reactive control plan.
