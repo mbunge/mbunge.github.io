@@ -15,7 +15,13 @@ categories:
 
 Magic is a game of information and anticipation. This is especially true of Control decks. A Control player must understand the meta, the decks to beat, and how to sequence resources, interactions, and card advantage. This guide covers classic UW Control a new take on Dimir Bowmaster with *Lurrus, of the Dream Den* and *Orcish Bowmasters*. Both decks are reactive by nature, trying to control the opponent's turns until a Win Condition is brought to the board to quickly end the game. That win condition could be a creature, a combo, or something similar.
 
-<a class="btn btn-secondary btn-block" target="_blank" alt="Follow me on Twitter" href="https://twitter.com/zombienoxx">I'll be posting an updated MTG Arena Timeless meta report in the next few days. Follow me on Twitter and stay tuned!</a>
+<div class="panel panel-default">
+  <div class="panel-body">
+I'll be posting an updated MTG Arena Timeless meta report in the next few days. 
+
+<a class="btn btn-info btn-block" target="_blank" alt="Follow me on Twitter" href="https://twitter.com/zombienoxx">Follow me on Twitter and stay tuned!</a>
+  </div>
+</div>
 
 ## Key cards
 
